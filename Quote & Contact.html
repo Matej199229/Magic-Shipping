@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Us</title>
+    <link rel="icon" href="Images/Magic Shipping Logo.jpg">
+</head>
+<body>
+    <!-- Navbar Begin -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar__container container">
+          <div class="navbar__logo">
+        <a href="index.html" aria-label="Magic Shipping Logo Home Link"><img src="Images/Magic Shipping Logo.jpg" alt="Magic Shipping logo"></a>
+      </div>
+          <!-- Desktop Menu Begin -->
+          <div class="navbar__main-menu-items">
+              <ul class="navbar__main-menu-list">
+                  <li class="navbar__menu-item"><a href="index.html" class="navbar__menu-link">Home</a></li>
+                  <li class="navbar__menu-item"><a href="index.html#services" class="navbar__menu-link">Shipping Services</a></li>
+                  <li class="navbar__menu-item"><a href="index.html#about" class="navbar__menu-link">About Us</a></li>
+                  <li class="navbar__menu-item"><a href="Quote & Contact.html" class="navbar__menu-link">Quotes &amp; Contact</a></li>
+                  <li class="navbar__menu-item"><a href="Quote & Contact.html#contact-form" class="btn_blue navbar__menu-link--primary" aria-label="Quote & Contact">Get a Quote</a></li>
+              </ul>
+          </div>
+          <!-- Desktop Menu End -->
+          <!-- Mobile Menu Begin -->
+          <div class="navbar__mobile-menu">
+              <!-- Hamburger Button -->
+              <div class="navbar__mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="navbar__mobile-menu-items" aria-label="Open Mobile Menu" tabindex="0">
+                <i class="fas fa-bars fa-2x"></i>
+              </div>
+          <div class="navbar__mobile-menu-items" id="navbar__mobile-menu-items">
+              <ul class="navbar__mobile-menu-list">
+                  <li class="navbar__mobile-menu-item"><a href="index.html" class="navbar__mobile-menu-link">Home</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="index.html#services" class="navbar__mobile-menu-link">Shipping Services</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="index.html#about" class="navbar__mobile-menu-link">About Us</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="Quote & Contact.html" class="navbar__mobile-menu-link">Quotes &amp; Contact</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="Quote & Contact.html#contact-form" class="btn_blue" aria-label="Quote & Contact">Get a Quote</a></li>
+              </ul>
+          </div>
+          </div>
+          <!-- Mobile Menu End -->
+      </div>
+  </nav>
+  <!-- Navbar End -->
+   <main>
+     <!-- Contact Hero Begin -->
+     <section class="contact__hero" role="banner" aria-label="Contact Us">
+        <div class="container">
+            <div class="contact__hero-content">
+          <h1 class="contact__hero-title">Contact Us</h1>
+          <p class="contact__hero-text">
+            Got questions or need assistance?
+            </p>
+            <p class="contact__hero-text">
+                Contact us at Magic Shipping! Our friendly and knowledgeable customer support team is ready to help you. Reach out to us via phone or email otherwise, for all quote requests just fill out the form below and we will get back to you with your own personalized quote within  24 hours. Don't hesitate to get in touch with us for all your shipping needs!
+              </p>
+              <div class="contact__hero-image-wrapper">
+              <img class="contact__hero-image" role="img" src="Images/Quote & Contact/connection.jpg" alt="Contact Image">
+              </div>
+        </div>              
+    </section>
+     <!-- Contact Hero End -->
+         <!-- Contact Us Form Begin -->
+      <section class="contact__form" id="contact-form" role="form" aria-label="Contact Us">
+        <div class="container contact__form-wrapper">
+            <div class="contact__form-content">
+                <h4 class="contact__form-header">Contact Us</h4>
+                <h2 class="contact__form-title">REQUEST A QUOTE</h2>
+                <p class="contact__form-text">
+                    If you require a quote, please fill in the following form and we will get back to you within 24 hours.
+                  </p>
+              </div>  
+              <form action="https://formspree.io/f/mrbrraoz" method="post" role="form">
+            <!-- Service selection -->
+        <fieldset class="contact__form-services">
+  <legend>Which service(s) are you looking for today?</legend>
+  <div class="contact__form-services-options">
+    <!-- Air Express -->
+    <label class="contact__form-checkbox">
+      <i class="fa-solid fa-plane"></i>
+      <input type="checkbox" name="service[]" value="Air Express">
+      <span>Air Express</span>
+    </label>
+    <!-- Trucking -->
+    <label class="contact__form-checkbox">
+      <i class="fa-solid fa-truck"></i>
+      <input type="checkbox" name="service[]" value="Trucking">
+      <span>Trucking</span>
+    </label>
+    <!-- Ocean Freight -->
+     <label class="contact__form-checkbox">
+      <i class="fa-solid fa-ship"></i>
+      <input type="checkbox" name="service[]" value="Ocean Freight">
+      <span>Ocean Freight</span>
+       </label>
+        </div>
+      <p class="contact__form-note">
+    Please select the service(s) you&rsquo;re interested in.
+      </p>
+    </fieldset>
+        <!-- Contact / company info -->
+      <div class="contact__form-row">
+        <div class="contact__form-field">
+          <label for="first-name">First Name *</label>
+            <input class="contact__form-input" name="first_name" type="text" id="first-name"
+             placeholder="First name" required>
+        </div>
+      <div class="contact__form-field">
+          <label for="last-name">Last Name *</label>
+            <input class="contact__form-input" name="last_name" type="text" id="last-name"
+             placeholder="Last name" required>
+        </div>
+      </div>
+      <div class="contact__form-row">
+        <div class="contact__form-field">
+          <label for="email">Email Address *</label>
+            <input class="contact__form-input" name="email" type="email" id="email"
+             placeholder="you@company.com" required>
+          </div>
+        <div class="contact__form-field">
+            <label for="company">Company Name *</label>
+              <input class="contact__form-input" name="company" type="text" id="company"
+             placeholder="Company name" required>
+          </div>
+      </div>
+      <div class="contact__form-row">
+        <div class="contact__form-field">
+            <label for="phone">Phone Number *</label>
+              <input class="contact__form-input" name="phone" type="tel" id="phone"
+             placeholder="+1 (555) 555-5555" required>
+          </div>
+          <div class="contact__form-field">
+          <label for="website">Website</label>
+            <textarea class="contact__form-message contact__form-message--small"
+                id="website" name="website" placeholder="Website (optional)"></textarea>
+            </div>
+        </div>
+          <!-- Volume / service details -->
+        <label for="monthly-volume">Anticipated Monthly Volume *</label>
+            <textarea class="contact__form-message" id="monthly-volume" name="monthly_volume"
+            placeholder="e.g., 10&dash;15 shipments per month, typical weights, lanes, etc."
+            required></textarea>
+              <div class="contact__form-row">
+                <div class="contact__form-field">
+                  <label for="fcl-lcl">Full Container Load (FCL) / Full Truck Load (FTL) or Less than Container Load (LCL) / Less than Truckload (LTL)</label>
+                    <select class="contact__form-input" id="fcl-lcl" name="fcl_lcl">
+                      <option value="">Please select</option>
+                      <option value="FCL">FCL</option>
+                      <option value="LCL">LCL</option>
+                      <option value="FTL">FTL</option>
+                      <option value="LTL">LTL</option>
+                      <option value="Both / Not sure">Both / Not sure</option>
+                  </select>
+                </div>
+              <div class="contact__form-field">
+                <label for="incoterms">Incoterms</label>
+                  <select class="contact__form-input" id="incoterms" name="incoterms">
+                    <option value="">Please select</option>
+                    <option value="FOB">FOB</option>
+                    <option value="EXW">EXW</option>
+                    <option value="CIF">CIF</option>
+                    <option value="DAP">DAP</option>
+                    <option value="DDP">DDP</option>
+                    <option value="Other">Other / Not sure</option>
+                  </select>
+              </div>
+          </div>
+        <div class="contact__form-row">
+          <div class="contact__form-field">
+              <label for="port-loading">Port of Loading / Origin City *</label>
+                  <textarea class="contact__form-message contact__form-message--small"
+                id="port-loading" name="port_loading" required></textarea>
+          </div>
+        <div class="contact__form-field">
+              <label for="port-destination">Port of Destination / Destination City *</label>
+                <textarea class="contact__form-message contact__form-message--small"
+                id="port-destination" name="port_destination" required></textarea>
+            </div>
+        </div>
+            <label for="door-delivery">Do you need delivery to your door?</label>
+              <select class="contact__form-input" id="door-delivery" name="door_delivery">
+                <option value="">Please select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            <!-- Commodity & hazard/insurance -->
+                  <label for="commodity">What commodity are you planning to ship? *</label>
+                      <textarea class="contact__form-message" id="commodity" name="commodity"
+                                placeholder="Brief description of your goods" required></textarea>
+                      <fieldset class="contact__form-radio-group">
+                          <legend>Is your commodity hazardous? *</legend>
+                        <label>
+                      <input type="radio" name="hazardous" value="Yes" required>
+                              Yes
+                        </label>
+                      <label>
+                      <input type="radio" name="hazardous" value="No" required>
+                              No
+                      </label>
+                    </fieldset>
+                      <label for="insurance">Would you like to be covered through our insurance?</label>
+                          <select class="contact__form-input" id="insurance" name="insurance">
+                            <option value="">Please select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            <option value="Not sure">Not sure / please advise</option>
+                        </select>
+                    <label for="commercial-value">Commercial Value *</label>
+                      <input class="contact__form-input" name="commercial_value" type="text" id="commercial-value"
+                              placeholder="Declared commercial value (currency)" required>
+                <!-- General notes (optional) -->
+                      <label for="message">Additional Details</label>
+                          <textarea class="contact__form-message" id="message" name="message"
+                                    placeholder="Anything else we should know about this shipment or your needs?"></textarea>
+                              <button type="submit" class="contact__form-button btn_blue" aria-label="Send message">
+                            Request a Quote Now!
+                                </button>
+                              </form>
+                           </div>
+                      </section>
+                <!-- Contact Us Form End -->
+    </main>
+      <!-- Footer Begin -->
+         <section class="footer" id="footer" role="contentinfo">
+            <div class="footer__grid">
+            <div class="footer__links" aria-label="Quick Links">
+              <h4 class="footer__header">Quick Links</h4>
+              <ul class="footer__links-list" aria-label="Quick Links List">
+                <li class="footer__links-item"><a href="index.html#home" class="footer__links-link" aria-label="Home">Home</a></li>
+                <li class="footer__links-item"><a href="index.html#services" class="footer__links-link" aria-label="Services">Shipping Services</a></li>
+                <li class="footer__links-item"><a href="index.html#about" class="footer__links-link" aria-label="About us">About Us</a></li>
+                <li class="footer__links-item"><a href="Quote & Contact.html" class="footer__links-link" aria-label="Quote & Contact">Quotes &amp; Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer__links" aria-label="Additional Information">
+              <h4 class="footer__header">Additional Information</h4>
+              <ul class="footer__links-list" aria-label="Additional Information Links List">
+                <li class="footer__links-item"><a href="Privacy Policy.html" class="footer__links-link" aria-label="Privacy Policy">Privacy Policy</a></li>
+                <li class="footer__links-item"><a href="T&C.html" class="footer__links-link" aria-label="Terms and Conditions">Terms and Conditions</a></li>
+                <li class="footer__links-item"><a href="FAQs.html" class="footer__links-link" aria-label="FAQs">FAQs</a></li>
+                <li class="footer__links-item"><a href="sitemap.html" class="footer__links-link" aria-label="Sitemap">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="footer__links" aria-label="Contact">
+              <div class="footer__contact">
+              <h4 class="footer__header">Contact</h4>
+              <ul class="footer__links-list" aria-label="contact">
+                <li class="footer__links-item">
+                  <a href="mailto:admin@mymagicshipping.com" class="footer__links-link" target="_blank" aria-label="Email Address">Email: admin@mymagicshipping.com</a></li>
+              </ul>
+            </div>
+              <div class="footer__newsletter">
+                <div class="footer__title">
+                <h4 class="footer__header">Newsletter Signup</h4>
+              </div>
+                <form action="https://formspree.io/f/xrbewgql" method="post" role="form">
+                <label for="email" class="visually-hidden">Sign Up</label>
+                <input class="footer__newsletter-input" name="Email" type="email" id="email" placeholder="Enter email to get updates"/>
+                <button type="submit" class="footer__newsletter-button" aria-label="Click to sign up"><i class="fas fa-arrow-right"></i></button>
+              </form>
+              </div>
+            </div>
+          </div>
+          </div>
+         </section>
+         <section class="footer__second-section" role="contentinfo"> 
+            <div class="footer__flex">
+              <div class="footer__copyright">
+                <p>&copy; 2025 Magic Shipping. All rights reserved</p>
+              </div>
+              <div class="footer__social">
+                <ul class="footer__social-links" aria-label="Social Links">
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.linkedin.com/company/109941022/admin/dashboard/" target="_blank" aria-label="Follow Us On LinkedIn"><span class="footer-social__icon-circle"><i class="fa-brands fa-linkedin"></i></span></a></li>
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com" target="_blank" aria-label="Follow Us On Facebook"><span class="footer-social__icon-circle"><i class="fa-brands fa-facebook"></i></span></a></li>
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.twitter.com" target="_blank" aria-label="Follow Us On X"><span class="footer-social__icon-circle"><i class="fa-brands fa-tiktok"></i></span></a></li>
+                </ul>
+              </div>
+            </div>
+         </section>
+        <!-- Footer End -->
+    <script src="script.js"></script>
+</body>
+</html>
