@@ -1901,8 +1901,25 @@ document.addEventListener("DOMContentLoaded", () => {
   // Event listeners for both language dropdowns
   document.querySelectorAll(".language-switcher").forEach(sel => {
     sel.addEventListener("change", (e) => {
-      setLanguage(e.target.value);
+  const lang = e.target.value;
+  // Change language
+  setLanguage(lang);
+  // Track language selection
+  gtag('event', 'language_selected', {
+    selected_language: lang
+    });
     });
   });
 });
 
+// Tracking
+
+// Track scroll Depth
+let scrollTracked = false;
+
+window.addEventListener('scroll', () => {
+  if (!scrollTracked && (window.scrollY / (document.body.scrollHeight - window.innerHeight)) > 0.50) {
+      scrollTracked = true;
+      gtag('event', 'scroll_50');
+  }
+});

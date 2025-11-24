@@ -13,38 +13,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Magic Shipping | Carriers</title>
     <link rel="icon" href="Images/Magic Shipping Logo.jpg">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRS9VZWX3C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XRS9VZWX3C');
+    </script>
 </head>
 <body>
     <!-- Navbar Begin -->
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar__container container">
           <div class="navbar__logo">
-        <a href="index.html" aria-label="Magic Shipping Logo Home Link"><img src="Images/Magic Shipping Logo.jpg" alt="Magic Shipping logo"></a>
+        <a href="index.html" aria-label="Magic Shipping Logo Home Link" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Logo' });"><img src="Images/Magic Shipping Logo.jpg" alt="Magic Shipping logo"></a>
       </div>
-          <!-- Desktop Menu Begin -->
+          <!-- Desktop Menu Begin --> 
           <div class="navbar__main-menu-items">
               <ul class="navbar__main-menu-list">
-                  <li class="navbar__menu-item"><a href="index.html" class="navbar__menu-link" data-i18n="nav.home">Home</a></li>
-                  <li class="navbar__menu-item"><a href="index.html#about" class="navbar__menu-link" data-i18n="nav.about">About Us</a></li>
-                  <li class="navbar__menu-item"><a href="index.html#contact" class="navbar__menu-link" data-i18n="nav.contact">Contact Us</a></li>
-                  <li class="navbar__menu-item"><a href="services.html" class="navbar__menu-link" data-i18n="nav.services">Services</a></li>
-                  <li class="navbar__menu-item"><a href="carriers.html" class="navbar__menu-link" data-i18n="nav.carriers">Carriers</a></li>
-                  <li class="navbar__menu-item"><a href="insights.html" class="navbar__menu-link" data-i18n="nav.insights">Insights</a></li>
+                  <li class="navbar__menu-item"><a href="index.html" class="navbar__menu-link" data-i18n="nav.home" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Desktop-Home' });">Home</a></li>
+                  <li class="navbar__menu-item"><a href="index.html#about" class="navbar__menu-link" data-i18n="nav.about" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Desktop-AboutUs' });">About Us</a></li>
+                  <li class="navbar__menu-item"><a href="index.html#contact" class="navbar__menu-link" data-i18n="nav.contact" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Desktop-ContactUs' });">Contact Us</a></li>
+                  <li class="navbar__menu-item"><a href="services.html" class="navbar__menu-link" data-i18n="nav.services" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Desktop-Services' });">Services</a></li>
+                  <li class="navbar__menu-item"><a href="carriers.html" class="navbar__menu-link" data-i18n="nav.carriers" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Desktop-Carriers' });">Carriers</a></li>
+                  <li class="navbar__menu-item"><a href="insights.html" class="navbar__menu-link" data-i18n="nav.insights" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Desktop-Insights' });">Insights</a></li>
                   <!-- Language switcher (desktop) -->
                   <li class="navbar__menu-item navbar__menu-item--language">
-                    <label for="language-switcher" class="visually-hidden">Select language</label>
-                    <select id="language-switcher" class="language-switcher">
-                      <option value="en">EN</option>
-                      <option value="fr">FR</option>
-                      <option value="es">ES</option>
+                   <label for="language-switcher" class="visually-hidden">Select language</label>
+                   <select id="language-switcher" class="language-switcher">
+                     <option value="en">EN</option>
+                     <option value="fr">FR</option>
+                     <option value="es">ES</option>
                     </select>
-                  </li>
-                  <li class="navbar__menu-item">
-                    <a href="Quotes.html#contact-form"
-                       class="btn_blue navbar__menu-link--primary"
-                       aria-label="Quotes"
-                       data-i18n="nav.quote">Get a Quote</a>
-                  </li>
+                 </li>
+                  <li class="navbar__menu-item"><a href="Quotes.html#contact-form" class="btn_blue navbar__menu-link--primary" aria-label="Quotes" data-i18n="nav.quote" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Desktop-Get_a_Quote' });">Get a Quote</a></li>
               </ul>
           </div>
           <!-- Desktop Menu End -->
@@ -62,18 +65,16 @@
                     <select id="language-switcher-mobile" class="language-switcher">
                       <option value="en">EN</option>
                       <option value="fr">FR</option>
-                      <option value="es">ES</option>
+                     <option value="es">ES</option>
                     </select>
                   </li>
-                  <li class="navbar__mobile-menu-item"><a href="index.html" class="navbar__mobile-menu-link" data-i18n="nav.home">Home</a></li>
-                  <li class="navbar__mobile-menu-item"><a href="index.html#about" class="navbar__mobile-menu-link" data-i18n="nav.about">About Us</a></li>
-                  <li class="navbar__mobile-menu-item"><a href="index.html#contact" class="navbar__mobile-menu-link" data-i18n="nav.contact">Contact Us</a></li>
-                  <li class="navbar__mobile-menu-item"><a href="services.html" class="navbar__mobile-menu-link" data-i18n="nav.services">Services</a></li>
-                  <li class="navbar__mobile-menu-item"><a href="carriers.html" class="navbar__mobile-menu-link" data-i18n="nav.carriers">Carriers</a></li>
-                  <li class="navbar__mobile-menu-item"><a href="insights.html" class="navbar__mobile-menu-link" data-i18n="nav.insights">Insights</a></li>
-                  <li class="navbar__mobile-menu-item">
-                    <a href="Quotes.html#contact-form" class="btn_blue" aria-label="Quotes" data-i18n="nav.quote">Get a Quote</a>
-                  </li>
+                  <li class="navbar__mobile-menu-item"><a href="index.html" class="navbar__mobile-menu-link" data-i18n="nav.home" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Mobile-Home' });">Home</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="index.html#about" class="navbar__mobile-menu-link" data-i18n="nav.about" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Mobile-AboutUs' });">About Us</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="index.html#contact" class="navbar__mobile-menu-link" data-i18n="nav.contact" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Mobile-ContactUs' });">Contact Us</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="services.html" class="navbar__mobile-menu-link" data-i18n="nav.services" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Mobile-Services' });">Services</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="carriers.html" class="navbar__mobile-menu-link" data-i18n="nav.carriers" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Mobile-Carriers' });">Carriers</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="insights.html" class="navbar__mobile-menu-link" data-i18n="nav.insights" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Mobile-Inisghts' });">Insights</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="Quotes.html#contact-form" class="btn_blue" aria-label="Quotes" data-i18n="nav.quote" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Navbar-Mobile-Get_a_Quote' });">Get a Quote</a></li>
               </ul>
           </div>
           </div>
@@ -205,7 +206,6 @@
             />
           </div>
         </div>
-
         <label for="Asset-Based-Resources" data-i18n="carriers.assets.label">Asset Based Resources *</label>
         <select class="contact__form-input" id="Asset-Based-Resources" name="Asset-Based-Resources" required>
           <option value="" data-i18n="carriers.assets.placeholder">Please select</option>
@@ -216,7 +216,6 @@
           <option value="Conestoga/Specialized" data-i18n="carriers.assets.conestoga">Conestoga/Specialized</option>
           <option value="Other" data-i18n="carriers.assets.other">Other</option>
         </select>
-
         <!-- General notes (optional) -->
         <label for="message" data-i18n="carriers.details.label">Additional Details</label>
         <textarea
@@ -226,7 +225,6 @@
           placeholder=""
           data-i18n-placeholder="carriers.details.placeholder"
         ></textarea>
-
         <button
           type="submit"
           class="contact__form-button btn_blue"
@@ -246,23 +244,23 @@
          <section class="footer" id="footer" role="contentinfo">
             <div class="footer__grid">
             <div class="footer__links" aria-label="Quick Links">
-              <h4 class="footer__header" data-i18n="footer.quickLinks.heading">Quick Links</h4>
+              <h3 class="footer__header" data-i18n="footer.quickLinks.heading">Quick Links</h3>
               <ul class="footer__links-list" aria-label="Quick Links List">
-                <li class="footer__links-item"><a href="index.html" class="footer__links-link" aria-label="Home" data-i18n="nav.home">Home</a></li>
-                <li class="footer__links-item"><a href="index.html#about" class="footer__links-link" aria-label="About us" data-i18n="nav.about">About Us</a></li>
-                <li class="footer__links-item"><a href="index.html#contact" class="footer__links-link" aria-label="Contact Us" data-i18n="nav.contact">Contact Us</a></li>
-                <li class="footer__links-item"><a href="services.html" class="footer__links-link" aria-label="Services" data-i18n="nav.services">Services</a></li>
-                <li class="footer__links-item"><a href="carriers.html" class="footer__links-link" aria-label="Carriers" data-i18n="nav.carriers">Carriers</a></li>
-                <li class="footer__links-item"><a href="insights.html" class="footer__links-link" aria-label="Insights" data-i18n="nav.insights">Insights</a></li>
+                <li class="footer__links-item"><a href="index.html" class="footer__links-link" aria-label="Home" data-i18n="nav.home" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-Home' });">Home</a></li>
+                <li class="footer__links-item"><a href="index.html#about" class="footer__links-link" aria-label="About us" data-i18n="nav.about" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-AboutUs' });">About Us</a></li>
+                <li class="footer__links-item"><a href="index.html#contact" class="footer__links-link" aria-label="Contact Us" data-i18n="nav.contact" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-ContactUs' });">Contact Us</a></li>
+                <li class="footer__links-item"><a href="services.html" class="footer__links-link" aria-label="Services" data-i18n="nav.services" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-Services' });">Services</a></li>
+                <li class="footer__links-item"><a href="carriers.html" class="footer__links-link" aria-label="Carriers" data-i18n="nav.carriers" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-Carriers' });">Carriers</a></li>
+                <li class="footer__links-item"><a href="insights.html" class="footer__links-link" aria-label="Insights" data-i18n="nav.insights" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-Insights' });">Insights</a></li>
               </ul>
             </div>
             <div class="footer__links" aria-label="Additional Information">
               <h4 class="footer__header" data-i18n="footer.additional.heading">Additional Information</h4>
               <ul class="footer__links-list" aria-label="Additional Information Links List">
-                <li class="footer__links-item"><a href="Privacy Policy.html" class="footer__links-link" aria-label="Privacy Policy" data-i18n="footer.privacy">Privacy Policy</a></li>
-                <li class="footer__links-item"><a href="T&C.html" class="footer__links-link" aria-label="Terms and Conditions" data-i18n="footer.terms">Terms and Conditions</a></li>
-                <li class="footer__links-item"><a href="FAQs.html" class="footer__links-link" aria-label="FAQs" data-i18n="footer.faqs">FAQs</a></li>
-                <li class="footer__links-item"><a href="sitemap.html" class="footer__links-link" aria-label="Sitemap" data-i18n="footer.sitemap">Sitemap</a></li>
+                <li class="footer__links-item"><a href="Privacy Policy.html" class="footer__links-link" aria-label="Privacy Policy" data-i18n="footer.privacy" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-PrivacyPolicy' });">Privacy Policy</a></li>
+                <li class="footer__links-item"><a href="T&C.html" class="footer__links-link" aria-label="Terms and Conditions" data-i18n="footer.terms" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-T&C' });">Terms and Conditions</a></li>
+                <li class="footer__links-item"><a href="FAQs.html" class="footer__links-link" aria-label="FAQs" data-i18n="footer.faqs" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-FAQ' });">FAQs</a></li>
+                <li class="footer__links-item"><a href="sitemap.html" class="footer__links-link" aria-label="Sitemap" data-i18n="footer.sitemap" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer-Sitemap' });">Sitemap</a></li>
               </ul>
             </div>
             <div class="footer__links" aria-label="Contact">
@@ -270,7 +268,7 @@
               <h4 class="footer__header" data-i18n="footer.contact.heading">Contact Us</h4>
               <ul class="footer__links-list" aria-label="contact">
                 <li class="footer__links-item">
-                  <a href="mailto:admin@mymagicshipping.com" class="footer__links-link" target="_blank" aria-label="Email Address" data-i18n="footer.contact.emailLink">Email: admin@mymagicshipping.com</a></li>
+                  <a href="mailto:admin@mymagicshipping.com" class="footer__links-link" target="_blank" aria-label="Email Address" data-i18n="footer.contact.emailLink" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer - Email' });">Email: admin@mymagicshipping.com</a></li>
               </ul>
             </div>
               <div class="footer__newsletter">
@@ -295,9 +293,9 @@
               </div>
               <div class="footer__social">
                 <ul class="footer__social-links" aria-label="Social Links">
-                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.linkedin.com/company/magic-shipping/?viewAsMember=true" target="_blank" aria-label="Follow Us On LinkedIn"><span class="footer-social__icon-circle"><i class="fa-brands fa-linkedin"></i></span></a></li>
-                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com" target="_blank" aria-label="Follow Us On Facebook"><span class="footer-social__icon-circle"><i class="fa-brands fa-facebook"></i></span></a></li>
-                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.twitter.com" target="_blank" aria-label="Follow Us On X"><span class="footer-social__icon-circle"><i class="fa-brands fa-tiktok"></i></span></a></li>
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.linkedin.com/company/magic-shipping/?viewAsMember=true" target="_blank" aria-label="Follow Us On LinkedIn" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer - LinkedIn' });"><span class="footer-social__icon-circle"><i class="fa-brands fa-linkedin"></i></span></a></li>
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com" target="_blank" aria-label="Follow Us On Facebook" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer - Facebook' });"><span class="footer-social__icon-circle"><i class="fa-brands fa-facebook"></i></span></a></li>
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.tiktok.com/" target="_blank" aria-label="Follow Us On TikTok" onclick="gtag('event', 'cta_click', { event_label: 'Carriers — Footer - TikTok' });"><span class="footer-social__icon-circle"><i class="fa-brands fa-tiktok"></i></span></a></li>
                 </ul>
               </div>
             </div>
