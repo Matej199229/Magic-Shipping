@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Disable Chrome/Google auto-translate -->
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Magic Shipping | Get a Quote</title>
+    <link rel="icon" href="Images/Magic Shipping Logo.jpg">
+</head>
+<body>
+    <!-- Navbar Begin -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar__container container">
+        <div class="navbar__logo">
+          <a href="index.html" aria-label="Magic Shipping Logo Home Link">
+            <img src="Images/Magic Shipping Logo.jpg" alt="Magic Shipping logo">
+          </a>
+        </div>
+        <!-- Desktop Menu Begin -->
+        <div class="navbar__main-menu-items">
+          <ul class="navbar__main-menu-list">
+            <li class="navbar__menu-item"><a href="index.html" class="navbar__menu-link" data-i18n="nav.home">Home</a></li>
+            <li class="navbar__menu-item"><a href="index.html#about" class="navbar__menu-link" data-i18n="nav.about">About Us</a></li>
+            <li class="navbar__menu-item"><a href="index.html#contact" class="navbar__menu-link" data-i18n="nav.contact">Contact Us</a></li>
+            <li class="navbar__menu-item"><a href="services.html" class="navbar__menu-link" data-i18n="nav.services">Services</a></li>
+            <li class="navbar__menu-item"><a href="carriers.html" class="navbar__menu-link" data-i18n="nav.carriers">Carriers</a></li>
+            <li class="navbar__menu-item"><a href="insights.html" class="navbar__menu-link" data-i18n="nav.insights">Insights</a></li>
+            <!-- Language switcher (desktop) -->
+            <li class="navbar__menu-item navbar__menu-item--language">
+              <label for="language-switcher" class="visually-hidden">Select language</label>
+              <select id="language-switcher" class="language-switcher">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+              </select>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="Quotes.html#contact-form"
+                 class="btn_blue navbar__menu-link--primary"
+                 aria-label="Quotes"
+                 data-i18n="nav.quote">Get a Quote</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Desktop Menu End -->
+        <!-- Mobile Menu Begin -->
+        <div class="navbar__mobile-menu">
+          <!-- Hamburger Button -->
+          <div class="navbar__mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="navbar__mobile-menu-items" aria-label="Open Mobile Menu" tabindex="0">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div class="navbar__mobile-menu-items" id="navbar__mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <!-- Language switcher (mobile) -->
+              <li class="navbar__mobile-menu-item">
+                <label for="language-switcher-mobile" class="visually-hidden">Select language</label>
+                <select id="language-switcher-mobile" class="language-switcher">
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="es">ES</option>
+                </select>
+              </li>
+              <li class="navbar__mobile-menu-item"><a href="index.html" class="navbar__mobile-menu-link" data-i18n="nav.home">Home</a></li>
+              <li class="navbar__mobile-menu-item"><a href="index.html#about" class="navbar__mobile-menu-link" data-i18n="nav.about">About Us</a></li>
+              <li class="navbar__mobile-menu-item"><a href="index.html#contact" class="navbar__mobile-menu-link" data-i18n="nav.contact">Contact Us</a></li>
+              <li class="navbar__mobile-menu-item"><a href="services.html" class="navbar__mobile-menu-link" data-i18n="nav.services">Services</a></li>
+              <li class="navbar__mobile-menu-item"><a href="carriers.html" class="navbar__mobile-menu-link" data-i18n="nav.carriers">Carriers</a></li>
+              <li class="navbar__mobile-menu-item"><a href="insights.html" class="navbar__mobile-menu-link" data-i18n="nav.insights">Insights</a></li>
+              <li class="navbar__mobile-menu-item">
+                <a href="Quotes.html#contact-form" class="btn_blue" aria-label="Quotes" data-i18n="nav.quote">Get a Quote</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mobile Menu End -->
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <main>
+      <!-- Contact Hero Begin -->
+      <section class="contact__hero" role="banner" aria-label="Contact Us">
+        <div class="container">
+          <div class="contact__hero-content">
+            <div class="contact__hero-image-wrapper">
+              <img class="contact__hero-image" role="img" src="Images/Quotes/connection.jpg" alt="Contact Image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Hero End -->
+      <!-- Contact / Quote Form Begin -->
+      <section class="contact__form" id="contact-form" role="form" aria-label="Contact Us">
+        <div class="container contact__form-wrapper">
+          <div class="contact__form-content">
+            <h2 class="contact__form-title" data-i18n="quote.title">REQUEST A QUOTE</h2>
+            <p class="contact__form-text" data-i18n="quote.intro">
+              If you require a quote, please fill in the following form and we will get back to you within 24 hours.
+            </p>
+          </div>
+          <form action="https://formspree.io/f/mrbrraoz" method="post" role="form">
+            <input type="hidden" name="_redirect" value="https://www.mymagicshipping.com/Quote-thank-you.html">
+            <!-- SERVICE SELECTION -->
+            <fieldset class="contact__form-services">
+              <legend data-i18n="quote.services.legend">Which service(s) are you looking for today?</legend>
+              <div class="contact__form-services-options">
+                <!-- Air Express -->
+                <label class="contact__form-checkbox">
+                  <i class="fa-solid fa-plane"></i>
+                  <input type="checkbox" name="service[]" value="Air Express" />
+                  <span data-i18n="quote.services.air">Air Express</span>
+                </label>
+                <!-- Trucking -->
+                <label class="contact__form-checkbox">
+                  <i class="fa-solid fa-truck"></i>
+                  <input type="checkbox" name="service[]" value="Trucking" />
+                  <span data-i18n="quote.services.trucking">Trucking</span>
+                </label>
+                <!-- Ocean Freight -->
+                <label class="contact__form-checkbox">
+                  <i class="fa-solid fa-ship"></i>
+                  <input type="checkbox" name="service[]" value="Ocean Freight" />
+                  <span data-i18n="quote.services.ocean">Ocean Freight</span>
+                </label>
+              </div>
+              <p class="contact__form-note" data-i18n="quote.services.note">
+                Please select the service(s) you&rsquo;re interested in.
+              </p>
+              <button type="button" class="contact__form-change-service is-hidden" data-i18n="quote.services.change">
+                Change service
+              </button>
+            </fieldset>
+            <!-- MAIN FIELDS (hidden until a service is chosen) -->
+            <div class="contact__form-main-fields is-hidden">
+              <!-- Basic contact info -->
+              <div class="contact__form-row">
+                <div class="contact__form-field">
+                  <label for="first-name" data-i18n="quote.form.firstName.label">First Name *</label>
+                  <input
+                    class="contact__form-input"
+                    name="first_name"
+                    type="text"
+                    id="first-name"
+                    placeholder="First name"
+                    data-i18n-placeholder="quote.form.firstName.placeholder"
+                    required
+                  />
+                </div>
+                <div class="contact__form-field">
+                  <label for="last-name" data-i18n="quote.form.lastName.label">Last Name *</label>
+                  <input
+                    class="contact__form-input"
+                    name="last_name"
+                    type="text"
+                    id="last-name"
+                    placeholder="Last name"
+                    data-i18n-placeholder="quote.form.lastName.placeholder"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="contact__form-row">
+                <div class="contact__form-field">
+                  <label for="email" data-i18n="quote.form.email.label">Email Address *</label>
+                  <input
+                    class="contact__form-input"
+                    name="email"
+                    type="email"
+                    id="email"
+                    placeholder="you@company.com"
+                    data-i18n-placeholder="quote.form.email.placeholder"
+                    required
+                  />
+                </div>
+                <div class="contact__form-field">
+                  <label for="company" data-i18n="quote.form.company.label">Company Name</label>
+                  <input
+                    class="contact__form-input"
+                    name="company"
+                    type="text"
+                    id="company"
+                    placeholder="Company name (optional)"
+                    data-i18n-placeholder="quote.form.company.placeholder"
+                  />
+                </div>
+              </div>
+              <div class="contact__form-row">
+                <div class="contact__form-field">
+                  <label for="phone" data-i18n="quote.form.phone.label">Phone Number *</label>
+                  <input
+                    class="contact__form-input"
+                    name="phone"
+                    type="tel"
+                    id="phone"
+                    placeholder="+1 (555) 555-5555"
+                    data-i18n-placeholder="quote.form.phone.placeholder"
+                    required
+                  />
+                </div>
+                <div class="contact__form-field">
+                  <label for="website" data-i18n="quote.form.website.label">Website</label>
+                  <textarea
+                    class="contact__form-message contact__form-message--small"
+                    id="website"
+                    name="website"
+                    placeholder="Website (optional)"
+                    data-i18n-placeholder="quote.form.website.placeholder"
+                  ></textarea>
+                </div>
+              </div>
+              <!-- ====================== AIR EXPRESS FIELDS ====================== -->
+              <div id="air-express-fields" class="air-express-fields is-hidden">
+                <!-- From/To countries -->
+                <div class="contact__form-row">
+                  <div class="contact__form-field">
+                    <label for="air-from-country" data-i18n="quote.air.fromCountry.label">From Country/Territory *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-from-country"
+                      name="air_from_country"
+                      placeholder="Canada"
+                      data-i18n-placeholder="quote.air.fromCountry.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="air-to-country" data-i18n="quote.air.toCountry.label">To Country/Territory *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-to-country"
+                      name="air_to_country"
+                      placeholder="United States of America"
+                      data-i18n-placeholder="quote.air.toCountry.placeholder"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- From/To street address -->
+                <div class="contact__form-row">
+                  <div class="contact__form-field">
+                    <label for="air-from-address" data-i18n="quote.air.fromAddress.label">From Address *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-from-address"
+                      name="air_from_address"
+                      placeholder="123 My Street"
+                      data-i18n-placeholder="quote.air.fromAddress.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="air-to-address" data-i18n="quote.air.toAddress.label">To Address *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-to-address"
+                      name="air_to_address"
+                      placeholder="123 Your Street"
+                      data-i18n-placeholder="quote.air.toAddress.placeholder"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- From address details -->
+                <div class="contact__form-row contact__form-address-row">
+                  <div class="contact__form-field">
+                    <label for="air-from-postal" data-i18n="quote.air.fromPostal.label">From Postal/ZIP Code *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-from-postal"
+                      name="air_from_postal"
+                      placeholder="A1A 1A1"
+                      data-i18n-placeholder="quote.air.fromPostal.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="air-from-city" data-i18n="quote.air.fromCity.label">From City *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-from-city"
+                      name="air_from_city"
+                      placeholder="Toronto"
+                      data-i18n-placeholder="quote.air.fromCity.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="air-from-region" data-i18n="quote.air.fromRegion.label">From Province/State *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-from-region"
+                      name="air_from_region"
+                      placeholder="Ontario"
+                      data-i18n-placeholder="quote.air.fromRegion.placeholder"
+                      required
+                    />
+                  </div>
+                </div>
+               <!-- To address details -->
+                <div class="contact__form-row contact__form-address-row">
+                  <div class="contact__form-field">
+                    <label for="air-to-postal" data-i18n="quote.air.toPostal.label">To ZIP/Postal Code *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-to-postal"
+                      name="air_to_postal"
+                      placeholder="60139"
+                      data-i18n-placeholder="quote.air.toPostal.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="air-to-city" data-i18n="quote.air.toCity.label">To City *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-to-city"
+                      name="air_to_city"
+                      placeholder="Glendale Heights"
+                      data-i18n-placeholder="quote.air.toCity.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="air-to-region" data-i18n="quote.air.toRegion.label">To State/Province *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-to-region"
+                      name="air_to_region"
+                      placeholder="Illinois"
+                      data-i18n-placeholder="quote.air.toRegion.placeholder"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="contact__form-row">
+                  <div class="contact__form-field">
+                    <label class="contact__form-checkbox-inline">
+                      <input type="checkbox" name="air_residential" value="Yes" />
+                      <span data-i18n="quote.air.residential">Residential address (destination)</span>
+                    </label>
+                  </div>
+                </div>
+                <!-- Shipment type -->
+                <fieldset class="contact__form-radio-group" id="air-shipment-type-group">
+                  <legend data-i18n="quote.air.shipment.legend">What are you shipping? *</legend>
+                  <label>
+                    <input type="radio" name="air_shipment_type" value="Documents" required />
+                    <span data-i18n="quote.air.shipment.documents">Documents</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="air_shipment_type" value="Parcels" required />
+                    <span data-i18n="quote.air.shipment.parcels">Parcels</span>
+                  </label>
+                </fieldset>
+                <!-- Pieces -->
+                <div class="contact__form-row is-hidden" id="air-pieces-row">
+                  <div class="contact__form-field">
+                    <label for="air-pieces" data-i18n="quote.air.pieces.label">How many pieces? *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-pieces"
+                      name="air_pieces"
+                      placeholder="e.g., 1"
+                      data-i18n-placeholder="quote.air.pieces.placeholder"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- Weight -->
+                <div class="contact__form-row weight-row is-hidden" id="air-weight-row">
+                  <div class="contact__form-field">
+                    <label for="air-weight" data-i18n="quote.air.weight.label">Total Weight *</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      id="air-weight"
+                      name="air_weight"
+                      placeholder="e.g., 10"
+                      data-i18n-placeholder="quote.air.weight.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="air-weight-unit" data-i18n="quote.air.weightUnit.label">Weight unit *</label>
+                    <select
+                      class="contact__form-input"
+                      id="air-weight-unit"
+                      name="air_weight_unit"
+                      required
+                    >
+                      <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                      <option value="lb">lb</option>
+                      <option value="kg">kg</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Parcel dimensions – only for Parcels -->
+                <div id="air-parcel-fields" class="is-hidden">
+                  <div class="contact__form-row air-dimensions-row">
+                    <!-- Length -->
+                    <div class="contact__form-field air-dimension">
+                      <div class="dimension-input-group">
+                        <div class="dimension-input">
+                          <label for="air-length" data-i18n="quote.air.length.label">Length *</label>
+                          <input
+                            class="contact__form-input"
+                            type="text"
+                            id="air-length"
+                            name="air_length"
+                            placeholder="e.g., 10"
+                            data-i18n-placeholder="quote.air.length.placeholder"
+                            required
+                          />
+                        </div>
+                        <div class="dimension-unit">
+                          <label for="air-length-unit" data-i18n="quote.air.lengthUnit.label">Unit *</label>
+                          <select
+                            class="contact__form-input"
+                            id="air-length-unit"
+                            name="air_length_unit"
+                            required
+                          >
+                            <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                            <option value="in">in</option>
+                            <option value="cm">cm</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Width -->
+                    <div class="contact__form-field air-dimension">
+                      <div class="dimension-input-group">
+                        <div class="dimension-input">
+                          <label for="air-width" data-i18n="quote.air.width.label">Width *</label>
+                          <input
+                            class="contact__form-input"
+                            type="text"
+                            id="air-width"
+                            name="air_width"
+                            placeholder="e.g., 10"
+                            data-i18n-placeholder="quote.air.width.placeholder"
+                            required
+                          />
+                        </div>
+                        <div class="dimension-unit">
+                          <label for="air-width-unit" data-i18n="quote.air.widthUnit.label">Unit *</label>
+                          <select
+                            class="contact__form-input"
+                            id="air-width-unit"
+                            name="air_width_unit"
+                            required
+                          >
+                            <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                            <option value="in">in</option>
+                            <option value="cm">cm</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Height -->
+                    <div class="contact__form-field air-dimension">
+                      <div class="dimension-input-group">
+                        <div class="dimension-input">
+                          <label for="air-height" data-i18n="quote.air.height.label">Height *</label>
+                          <input
+                            class="contact__form-input"
+                            type="text"
+                            id="air-height"
+                            name="air_height"
+                            placeholder="e.g., 10"
+                            data-i18n-placeholder="quote.air.height.placeholder"
+                            required
+                          />
+                        </div>
+                        <div class="dimension-unit">
+                          <label for="air-height-unit" data-i18n="quote.air.heightUnit.label">Unit *</label>
+                          <select
+                            class="contact__form-input"
+                            id="air-height-unit"
+                            name="air_height_unit"
+                            required
+                          >
+                            <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                            <option value="in">in</option>
+                            <option value="cm">cm</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ==================== END AIR EXPRESS FIELDS ==================== -->
+              <!-- Volume / service details (shared) -->
+              <div id="general-fields" class="contact__form-general">
+                <label for="monthly-volume" data-i18n="quote.general.monthlyVolume.label">Anticipated Monthly Volume *</label>
+                <textarea
+                  class="contact__form-message"
+                  id="monthly-volume"
+                  name="monthly_volume"
+                  placeholder="e.g., 10&dash;15 shipments per month, typical weights, lanes, etc."
+                  data-i18n-placeholder="quote.general.monthlyVolume.placeholder"
+                  required
+                ></textarea>
+                <!-- ====================== OCEAN FIELDS ====================== -->
+                <div id="ocean-fields" class="contact__form-ocean-fields is-hidden">
+                  <div class="contact__form-row load-type-row">
+                    <div class="contact__form-field">
+                      <label for="ocean-load-type" data-i18n="quote.ocean.loadType.label">
+                        Full Container Load (FCL) or Less than Container Load (LCL)&nbsp;*
+                      </label>
+                      <select id="ocean-load-type" name="ocean-load-type" required>
+                        <option value="" selected data-i18n="quote.form.select.placeholder">Please select</option>
+                        <option value="FCL">Full Container Load (FCL)</option>
+                        <option value="LCL">Less than Container Load (LCL)</option>
+                      </select>
+                    </div>
+                    <div class="contact__form-field">
+                      <label for="incoterms" data-i18n="quote.ocean.incoterms.label">Incoterms</label>
+                      <select class="contact__form-input" id="incoterms" name="incoterms">
+                        <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                        <option value="FOB">FOB</option>
+                        <option value="EXW">EXW</option>
+                        <option value="CIF">CIF</option>
+                        <option value="DAP">DAP</option>
+                        <option value="DDP">DDP</option>
+                        <option value="Other" data-i18n="quote.ocean.incoterms.other">Other / Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="contact__form-row">
+                    <div class="contact__form-field">
+                      <label for="ocean-loading" data-i18n="quote.ocean.loading.label">Port of Loading *</label>
+                      <input type="text" id="ocean-loading" name="ocean-loading" required />
+                    </div>
+                    <div class="contact__form-field">
+                      <label for="ocean-destination" data-i18n="quote.ocean.destination.label">Port of Destination *</label>
+                      <input type="text" id="ocean-destination" name="ocean-destination" required />
+                    </div>
+                  </div>
+                </div>
+                <!-- ==================== END OCEAN FIELDS ==================== -->
+                <!-- ====================== TRUCKING FIELDS ====================== -->
+                <div id="trucking-fields" class="contact__form-trucking-fields is-hidden">
+                  <div class="contact__form-row load-type-row">
+                    <div class="contact__form-field">
+                      <label for="trucking-load-type" data-i18n="quote.trucking.loadType.label">
+                        Full Truck Load (FTL) or Less than Truckload (LTL) *
+                      </label>
+                      <select id="trucking-load-type" name="trucking-load-type" required>
+                        <option value="" selected data-i18n="quote.form.select.placeholder">Please select</option>
+                        <option value="FTL">Full Truck Load (FTL)</option>
+                        <option value="LTL">Less than Truckload (LTL)</option>
+                      </select>
+                    </div>
+                    <div class="contact__form-field">
+                      <label for="trucking-incoterms" data-i18n="quote.trucking.incoterms.label">Incoterms</label>
+                      <select
+                        class="contact__form-input"
+                        id="trucking-incoterms"
+                        name="trucking-incoterms"
+                      >
+                        <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                        <option value="FOB">FOB</option>
+                        <option value="EXW">EXW</option>
+                        <option value="CIF">CIF</option>
+                        <option value="DAP">DAP</option>
+                        <option value="DDP">DDP</option>
+                        <option value="Other" data-i18n="quote.trucking.incoterms.other">Other / Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="contact__form-row">
+                    <div class="contact__form-field">
+                      <label for="trucking-origin-city" data-i18n="quote.trucking.originCity.label">Origin City *</label>
+                      <input type="text" id="trucking-origin-city" name="trucking-origin-city" required />
+                    </div>
+                    <div class="contact__form-field">
+                      <label for="trucking-destination-city" data-i18n="quote.trucking.destinationCity.label">Destination City *</label>
+                      <input
+                        type="text"
+                        id="trucking-destination-city"
+                        name="trucking-destination-city"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="contact__form-row">
+                    <div class="contact__form-field">
+                      <label for="trucking-origin-region" data-i18n="quote.trucking.originRegion.label">Origin Province/State *</label>
+                      <input
+                        type="text"
+                        id="trucking-origin-region"
+                        name="trucking-origin-region"
+                        required
+                      />
+                    </div>
+                    <div class="contact__form-field">
+                      <label for="trucking-destination-region" data-i18n="quote.trucking.destinationRegion.label">Destination Province/State *</label>
+                      <input
+                        type="text"
+                        id="trucking-destination-region"
+                        name="trucking-destination-region"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!-- Trucking: Pallets -->
+                  <div class="contact__form-row">
+                    <div class="contact__form-field">
+                      <label for="trucking-pallets" data-i18n="quote.trucking.pallets.label">How many pallets? *</label>
+                      <input
+                        type="text"
+                        id="trucking-pallets"
+                        name="trucking_pallets"
+                        class="contact__form-input"
+                        placeholder="e.g., 1"
+                        data-i18n-placeholder="quote.trucking.pallets.placeholder"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!-- Trucking: Weight + Unit -->
+                  <div class="contact__form-row trucking-weight-row">
+                    <div class="contact__form-field">
+                      <label for="trucking-weight" data-i18n="quote.trucking.weight.label">Total Weight *</label>
+                      <input
+                        type="text"
+                        id="trucking-weight"
+                        name="trucking_weight"
+                        class="contact__form-input"
+                        placeholder="e.g., 500"
+                        data-i18n-placeholder="quote.trucking.weight.placeholder"
+                        required
+                      />
+                    </div>
+                    <div class="contact__form-field">
+                      <label for="trucking-weight-unit" data-i18n="quote.trucking.weightUnit.label">Weight unit *</label>
+                      <select
+                        id="trucking-weight-unit"
+                        name="trucking_weight_unit"
+                        class="contact__form-input"
+                        required
+                      >
+                        <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                        <option value="lb">lb</option>
+                        <option value="kg">kg</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Trucking: Dimensions -->
+                  <div class="contact__form-row trucking-dimensions-row">
+                    <!-- Length -->
+                    <div class="contact__form-field trucking-dimension">
+                      <div class="dimension-input-group">
+                        <div class="dimension-input">
+                          <label for="trucking-length" data-i18n="quote.trucking.length.label">Length *</label>
+                          <input
+                            type="text"
+                            id="trucking-length"
+                            name="trucking_length"
+                            class="contact__form-input"
+                            placeholder="e.g., 40"
+                            data-i18n-placeholder="quote.trucking.length.placeholder"
+                            required
+                          />
+                        </div>
+                        <div class="dimension-unit">
+                          <label for="trucking-length-unit" data-i18n="quote.trucking.lengthUnit.label">Unit *</label>
+                          <select
+                            id="trucking-length-unit"
+                            name="trucking_length_unit"
+                            class="contact__form-input"
+                            required
+                          >
+                            <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                            <option value="in">in</option>
+                            <option value="cm">cm</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Width -->
+                    <div class="contact__form-field trucking-dimension">
+                      <div class="dimension-input-group">
+                        <div class="dimension-input">
+                          <label for="trucking-width" data-i18n="quote.trucking.width.label">Width *</label>
+                          <input
+                            type="text"
+                            id="trucking-width"
+                            name="trucking_width"
+                            class="contact__form-input"
+                            placeholder="e.g., 48"
+                            data-i18n-placeholder="quote.trucking.width.placeholder"
+                            required
+                          />
+                        </div>
+                        <div class="dimension-unit">
+                          <label for="trucking-width-unit" data-i18n="quote.trucking.widthUnit.label">Unit *</label>
+                          <select
+                            id="trucking-width-unit"
+                            name="trucking_width_unit"
+                            class="contact__form-input"
+                            required
+                          >
+                            <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                            <option value="in">in</option>
+                            <option value="cm">cm</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Height -->
+                    <div class="contact__form-field trucking-dimension">
+                      <div class="dimension-input-group">
+                        <div class="dimension-input">
+                          <label for="trucking-height" data-i18n="quote.trucking.height.label">Height *</label>
+                          <input
+                            type="text"
+                            id="trucking-height"
+                            name="trucking_height"
+                            class="contact__form-input"
+                            placeholder="e.g., 60"
+                            data-i18n-placeholder="quote.trucking.height.placeholder"
+                            required
+                          />
+                        </div>
+                        <div class="dimension-unit">
+                          <label for="trucking-height-unit" data-i18n="quote.trucking.heightUnit.label">Unit *</label>
+                          <select
+                            id="trucking-height-unit"
+                            name="trucking_height_unit"
+                            class="contact__form-input"
+                            required
+                          >
+                            <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                            <option value="in">in</option>
+                            <option value="cm">cm</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ==================== END TRUCKING FIELDS ==================== -->
+                <!-- Door delivery – Freight only (Trucking + Ocean) -->
+                <div id="door-delivery-group" class="contact__form-door-delivery is-hidden">
+                  <label for="door-delivery" data-i18n="quote.doorDelivery.label">Do you need delivery to your door? *</label>
+                  <select class="contact__form-input" id="door-delivery" name="door_delivery" required>
+                    <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                    <option value="Yes" data-i18n="quote.common.yes">Yes</option>
+                    <option value="No" data-i18n="quote.common.no">No</option>
+                  </select>
+                </div>
+                <!-- Commodity & hazard/insurance -->
+                <div class="contact__form-commodity-group">
+                  <label for="commodity" data-i18n="quote.commodity.label">What commodity are you planning to ship? *</label>
+                  <textarea
+                    class="contact__form-message"
+                    id="commodity"
+                    name="commodity"
+                    placeholder="Brief description of your goods"
+                    data-i18n-placeholder="quote.commodity.placeholder"
+                    required
+                  ></textarea>
+                  <fieldset class="contact__form-radio-group">
+                    <legend data-i18n="quote.hazard.legend">Is your commodity hazardous?&nbsp;*</legend>
+                    <label>
+                      <input type="radio" name="hazardous" value="Yes" required />
+                      <span data-i18n="quote.common.yes">Yes</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="hazardous" value="No" required />
+                      <span data-i18n="quote.common.no">No</span>
+                    </label>
+                  </fieldset>
+                </div>
+                <label for="insurance" data-i18n="quote.insurance.label">Would you like to be covered through our insurance?</label>
+                <select class="contact__form-input" id="insurance" name="insurance">
+                  <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                  <option value="Yes" data-i18n="quote.insurance.option.yes">Yes</option>
+                  <option value="No" data-i18n="quote.insurance.option.no">No</option>
+                  <option value="Not sure" data-i18n="quote.insurance.option.unsure">Not sure / please advise</option>
+                </select>
+                <div id="commercial-value-group" class="contact__form-row commercial-value-row">
+                  <div class="contact__form-field">
+                    <label for="commercial-value" data-i18n="quote.commercialValue.label">Commercial Value *</label>
+                    <input
+                      class="contact__form-input"
+                      name="commercial_value"
+                      type="text"
+                      id="commercial-value"
+                      placeholder="Declared commercial value"
+                      data-i18n-placeholder="quote.commercialValue.placeholder"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="commercial-currency" data-i18n="quote.commercialCurrency.label">Currency *</label>
+                    <select
+                      class="contact__form-input"
+                      name="commercial_currency"
+                      id="commercial-currency"
+                      required
+                    >
+                      <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+                      <option value="CAD">CAD</option>
+                      <option value="AUD">AUD</option>
+                      <option value="CHF">CHF</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                      <option value="JPY">JPY</option>
+                      <option value="SEK">SEK</option>
+                      <option value="USD">USD</option>
+                      <option value="XAF">XAF</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- General notes (optional) -->
+                <label for="message" data-i18n="quote.additionalDetails.label">Additional Details</label>
+                <textarea
+                  class="contact__form-message"
+                  id="message"
+                  name="message"
+                  placeholder="Anything else we should know about this shipment or your needs?"
+                  data-i18n-placeholder="quote.additionalDetails.placeholder"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="contact__form-button btn_blue"
+                  aria-label="Send message"
+                  data-i18n="quote.submit"
+                >
+                  Request a Quote Now!
+                </button>
+              </div>
+              <!-- /general-fields -->
+            </div>
+            <!-- /contact__form-main-fields -->
+          </form>
+        </div>
+      </section>
+      <!-- Contact Us Form End -->
+    </main>
+    <!-- Footer Begin -->
+    <section class="footer" id="footer" role="contentinfo">
+      <div class="footer__grid">
+        <div class="footer__links" aria-label="Quick Links">
+          <h4 class="footer__header" data-i18n="footer.quickLinks.heading">Quick Links</h4>
+          <ul class="footer__links-list" aria-label="Quick Links List">
+            <li class="footer__links-item"><a href="index.html" class="footer__links-link" aria-label="Home" data-i18n="nav.home">Home</a></li>
+            <li class="footer__links-item"><a href="index.html#about" class="footer__links-link" aria-label="About us" data-i18n="nav.about">About Us</a></li>
+            <li class="footer__links-item"><a href="index.html#contact" class="footer__links-link" aria-label="Contact Us" data-i18n="nav.contact">Contact Us</a></li>
+            <li class="footer__links-item"><a href="services.html" class="footer__links-link" aria-label="Services" data-i18n="nav.services">Services</a></li>
+            <li class="footer__links-item"><a href="carriers.html" class="footer__links-link" aria-label="Carriers" data-i18n="nav.carriers">Carriers</a></li>
+            <li class="footer__links-item"><a href="insights.html" class="footer__links-link" aria-label="Insights" data-i18n="nav.insights">Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer__links" aria-label="Additional Information">
+          <h4 class="footer__header" data-i18n="footer.additional.heading">Additional Information</h4>
+          <ul class="footer__links-list" aria-label="Additional Information Links List">
+            <li class="footer__links-item"><a href="Privacy Policy.html" class="footer__links-link" aria-label="Privacy Policy" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li class="footer__links-item"><a href="T&C.html" class="footer__links-link" aria-label="Terms and Conditions" data-i18n="footer.terms">Terms and Conditions</a></li>
+            <li class="footer__links-item"><a href="FAQs.html" class="footer__links-link" aria-label="FAQs" data-i18n="footer.faqs">FAQs</a></li>
+            <li class="footer__links-item"><a href="sitemap.html" class="footer__links-link" aria-label="Sitemap" data-i18n="footer.sitemap">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer__links" aria-label="Contact">
+          <div class="footer__contact">
+            <h4 class="footer__header" data-i18n="footer.contact.heading">Contact Us</h4>
+            <ul class="footer__links-list" aria-label="contact">
+              <li class="footer__links-item">
+                <a href="mailto:admin@mymagicshipping.com" class="footer__links-link" target="_blank" aria-label="Email Address" data-i18n="footer.contact.emailLink">Email: admin@mymagicshipping.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__newsletter">
+            <div class="footer__title">
+              <h4 class="footer__header" data-i18n="footer.newsletter.heading">Newsletter Signup</h4>
+            </div>
+            <form action="https://formspree.io/f/xyzllnwe" method="post" role="form">
+              <input type="hidden" name="_redirect" value="https://www.mymagicshipping.com/email-thank-you.html">
+              <label for="email" class="visually-hidden" data-i18n="footer.newsletter.label">Sign Up</label>
+              <input class="footer__newsletter-input" name="Email" type="email" id="email" placeholder="Enter email to get updates" data-i18n-placeholder="footer.newsletter.placeholder"/>
+              <button type="submit" class="footer__newsletter-button" aria-label="Click to sign up"><i class="fas fa-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer__second-section" role="contentinfo"> 
+      <div class="footer__flex">
+        <div class="footer__copyright">
+          <p data-i18n="footer.copyright">&copy; 2025 Magic Shipping. All rights reserved</p>
+        </div>
+        <div class="footer__social">
+          <ul class="footer__social-links" aria-label="Social Links">
+            <li class="footer__social-item"><a class="footer__social-link" href="https://www.linkedin.com/company/magic-shipping/?viewAsMember=true" target="_blank" aria-label="Follow Us On LinkedIn"><span class="footer-social__icon-circle"><i class="fa-brands fa-linkedin"></i></span></a></li>
+            <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com" target="_blank" aria-label="Follow Us On Facebook"><span class="footer-social__icon-circle"><i class="fa-brands fa-facebook"></i></span></a></li>
+            <li class="footer__social-item"><a class="footer__social-link" href="https://www.twitter.com" target="_blank" aria-label="Follow Us On X"><span class="footer-social__icon-circle"><i class="fa-brands fa-tiktok"></i></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer End -->
+    <script src="script.js"></script>
+</body>
+</html>

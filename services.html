@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Disable Chrome/Google auto-translate -->
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Magic Shipping | Services</title>
+    <link rel="icon" href="Images/Magic Shipping Logo.jpg">
+</head>
+<body>
+    <!-- Navbar Begin -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar__container container">
+          <div class="navbar__logo">
+        <a href="index.html" aria-label="Magic Shipping Logo Home Link"><img src="Images/Magic Shipping Logo.jpg" alt="Magic Shipping logo"></a>
+      </div>
+          <!-- Desktop Menu Begin -->
+          <div class="navbar__main-menu-items">
+              <ul class="navbar__main-menu-list">
+                  <li class="navbar__menu-item"><a href="index.html" class="navbar__menu-link" data-i18n="nav.home">Home</a></li>
+                  <li class="navbar__menu-item"><a href="index.html#about" class="navbar__menu-link" data-i18n="nav.about">About Us</a></li>
+                  <li class="navbar__menu-item"><a href="index.html#contact" class="navbar__menu-link" data-i18n="nav.contact">Contact Us</a></li>
+                  <li class="navbar__menu-item"><a href="services.html" class="navbar__menu-link" data-i18n="nav.services">Services</a></li>
+                  <li class="navbar__menu-item"><a href="carriers.html" class="navbar__menu-link" data-i18n="nav.carriers">Carriers</a></li>
+                  <li class="navbar__menu-item"><a href="insights.html" class="navbar__menu-link" data-i18n="nav.insights">Insights</a></li>
+
+                  <!-- Language switcher (desktop) -->
+                  <li class="navbar__menu-item navbar__menu-item--language">
+                    <label for="language-switcher" class="visually-hidden">Select language</label>
+                    <select id="language-switcher" class="language-switcher">
+                      <option value="en">EN</option>
+                      <option value="fr">FR</option>
+                      <option value="es">ES</option>
+                    </select>
+                  </li>
+
+                  <li class="navbar__menu-item">
+                    <a href="Quotes.html#contact-form" class="btn_blue navbar__menu-link--primary" aria-label="Quotes" data-i18n="nav.quote">Get a Quote</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- Desktop Menu End -->
+          <!-- Mobile Menu Begin -->
+          <div class="navbar__mobile-menu">
+              <!-- Hamburger Button -->
+              <div class="navbar__mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="navbar__mobile-menu-items" aria-label="Open Mobile Menu" tabindex="0">
+                <i class="fas fa-bars fa-2x"></i>
+              </div>
+          <div class="navbar__mobile-menu-items" id="navbar__mobile-menu-items">
+              <ul class="navbar__mobile-menu-list">
+
+                  <!-- Language switcher (mobile) -->
+                  <li class="navbar__mobile-menu-item">
+                    <label for="language-switcher-mobile" class="visually-hidden">Select language</label>
+                    <select id="language-switcher-mobile" class="language-switcher">
+                      <option value="en">EN</option>
+                      <option value="fr">FR</option>
+                      <option value="es">ES</option>
+                    </select>
+                  </li>
+
+                  <li class="navbar__mobile-menu-item"><a href="index.html" class="navbar__mobile-menu-link" data-i18n="nav.home">Home</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="index.html#about" class="navbar__mobile-menu-link" data-i18n="nav.about">About Us</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="index.html#contact" class="navbar__mobile-menu-link" data-i18n="nav.contact">Contact Us</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="services.html" class="navbar__mobile-menu-link" data-i18n="nav.services">Services</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="carriers.html" class="navbar__mobile-menu-link" data-i18n="nav.carriers">Carriers</a></li>
+                  <li class="navbar__mobile-menu-item"><a href="insights.html" class="navbar__mobile-menu-link" data-i18n="nav.insights">Insights</a></li>
+                  <li class="navbar__mobile-menu-item">
+                    <a href="Quotes.html#contact-form" class="btn_blue" aria-label="Quotes" data-i18n="nav.quote">Get a Quote</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+          <!-- Mobile Menu End -->
+      </div>
+  </nav>
+  <!-- Navbar End -->
+       <!-- Services Begin -->
+        <section class="services" id="services" role="region" aria-label="Services">
+          <div class="container">
+            <div class="services__header">
+              <h2 class="services__title" data-i18n="services.heading">Services: What we offer</h2>
+              <!-- Image 1 Begin -->
+       <div class="Shipping_Image_section" role="img">
+          <div class="container-lg">
+              <div class="Shipping_image__content">
+              <div class="Shipping_image">
+              <img class="Shipping_image-img" src="Images/Index/Shipping Image.jpg" alt="Airplane, Shipping Containers and Trucks in background" role="img">
+            </div>
+          </div>
+          </div>              
+        </div>
+      <!-- Image 1 End -->
+              <p class="services__text" data-i18n="services.intro">
+              At Magic Shipping, we take pride in our streamlined approach to providing exceptional shipping services. Our goal is to deliver fast and reliable transportation for your cargo
+               that exceed your expectations. Please see below the shipping services that we can assist you with.
+              </p>
+            </div>
+            <div class="services__cards">
+              <!-- Card 1 Begin --> 
+              <div class="services__card">    
+                      <img class="services__icon" role="img" src="Images/Services/air-express.png" alt="Air Express">     
+                      <h4 class="services_card__header" data-i18n="services.card.air.title">Air Express</h4>
+                      <p class="services__description" data-i18n="services.card.air.p1">As an authorized DHL Express partner, enjoy exclusive savings through our corporate discounts. Ship documents and parcels worldwide with full real-time tracking available.</p>
+                      <p class="services__description" data-i18n="services.card.air.p2">Overnight shipping to and from USA. 3 days shipping to and from China. Fast and reliable service.</p>
+                    <div class="services__button">
+                      <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+                    </div>
+              </div>
+              <!-- Card 1 End -->
+              <!-- Card 2 Begin --> 
+              <div class="services__card"> 
+                <img class="services__icon" role="img" src="Images/Services/trucking.png" alt="Trucking">        
+                <h4 class="services_card__header" data-i18n="services.card.ltl.title">LTL/FTL</h4>
+                <p class="services__description" data-i18n="services.card.ltl.p1">We connect you to the best trucking companies for all of your LTL and FTL needs. We have exclusive discounts from our shipping partners that we pass on to all of our customers.</p>
+                <p class="services__description" data-i18n="services.card.ltl.p2">Domestic intra-Canada routes as well as international routes to and from the US and Mexico.</p>
+                <div class="services__button">
+                <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+              </div>
+        </div>
+              <!-- Card 2 End -->
+              <!-- Card 3 Begin --> 
+              <div class="services__card">  
+                <img class="services__icon" role="img" src="Images/Services/ocean-freight.png" alt="Ocean Freight">       
+                <h4 class="services_card__header" data-i18n="services.card.ocean.title">Ocean Freight</h4>
+                <p class="services__description" data-i18n="services.card.ocean.p1">Our vast global network provides us with the ability to offer our customers world class ocean freight LCL and FCL options and the best rates available.</p>
+                <p class="services__description" data-i18n="services.card.ocean.p2">Professional, safe and reliable support for all of your large container cargo needs.</p>
+                <div class="services__button">            
+                <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+              </div> 
+        </div>
+              <!-- Card 3 End -->
+               <!-- Card 4 Begin --> 
+              <div class="services__card">    
+                      <img class="services__icon" role="img" src="Images/Services/Expedite.jpg" alt="Expedite">     
+                      <h4 class="services_card__header" data-i18n="services.card.expedite.title">Expedite</h4>
+                      <p class="services__description" data-i18n="services.card.expedite.p1">When time is critical, Magic Shipping is built to respond. We specialize in fast, flexible expedite solutions — including ground options such as couriers, sprinter vans, box trucks, and team-driver routes, as well as air-expedite, private charter, and hand-carry services.</p>
+                      <p class="services__description" data-i18n="services.card.expedite.p2">With true 24/7 availability, we&rsquo;re ready to move urgent shipments at any hour.</p>
+                    <div class="services__button">
+                      <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+                    </div>
+              </div>
+              <!-- Card 4 End -->
+              <!-- Card 5 Begin --> 
+              <div class="services__card"> 
+                <img class="services__icon" role="img" src="Images/Services/Hazmat.png" alt="Hazmat">        
+                <h4 class="services_card__header" data-i18n="services.card.hazmat.title">Haz&dash;Mat</h4>
+                <p class="services__description" data-i18n="services.card.hazmat.p1">We provide both domestic and international hazardous-materials transport. Because haz-mat shipments require strict attention to detail, our team assists with proper packaging, compliant documentation, and safe, regulated movement from start to finish.</p>
+                <div class="services__button">
+                <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+              </div>
+        </div>
+              <!-- Card 5 End -->
+              <!-- Card 6 Begin --> 
+              <div class="services__card">  
+                <img class="services__icon" role="img" src="Images/Services/Temp Control.jpg" alt="Temperature Control">       
+                <h4 class="services_card__header" data-i18n="services.card.temp.title">Temperature Control</h4>
+                <p class="services__description" data-i18n="services.card.temp.p1">Whether your shipment must stay above freezing or maintain a refrigerated temperature, we have the right carriers and equipment. We work with trusted temperature-controlled LTL and dedicated truckload providers to protect sensitive products throughout the entire journey.</p>
+                <p class="services__description" data-i18n="services.card.temp.p2">Ask our team how we ensure your temperature requirements are monitored and met every time.</p>
+                <div class="services__button">            
+                <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+              </div> 
+        </div>
+              <!-- Card 6 End -->
+               <!-- Card 7 Begin --> 
+              <div class="services__card">    
+                      <img class="services__icon" role="img" src="Images/Services/Rail.jpg" alt="Rail">     
+                      <h4 class="services_card__header" data-i18n="services.card.rail.title">Rail</h4>
+                      <p class="services__description" data-i18n="services.card.rail.p1">If your freight schedule allows a bit more transit time, rail service can offer meaningful cost savings. Our intermodal network provides dedicated rail solutions as well as LTL options that integrate rail consolidation to lower transportation costs without sacrificing reliability.<br class="mobile-hidden"><br class="mobile-hidden"></p>
+                    <div class="services__button">
+                      <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+                    </div>
+              </div>
+              <!-- Card 7 End -->
+              <!-- Card 8 Begin --> 
+              <div class="services__card"> 
+                <img class="services__icon" role="img" src="Images/Services/Consulting.jpg" alt="Consulting">        
+                <h4 class="services_card__header" data-i18n="services.card.consulting.title">Consulting</h4>
+                <p class="services__description" data-i18n="services.card.consulting.p1">Whether you&rsquo;re a new company shipping for the first time or an established business re-evaluating your logistics strategy, we offer tailored consulting support. Our team helps you understand the most efficient, cost-effective shipping methods based on current industry conditions and your unique operational needs.</p>
+                <div class="services__button">
+                <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+              </div>
+        </div>
+              <!-- Card 8 End -->
+              <!-- Card 9 Begin --> 
+              <div class="services__card">  
+                <img class="services__icon" role="img" src="Images/Services/warehousing.jpg" alt="Warehousing">       
+                <h4 class="services_card__header" data-i18n="services.card.warehousing.title">Warehousing</h4>
+                <p class="services__description" data-i18n="services.card.warehousing.p1">With access to warehousing facilities across the continental U.S., we can create a storage and distribution plan built around your project requirements. From receiving and outbound processing to inventory control, reporting, security, and insurance&ndash;our team helps streamline your full logistics workflow.</p>
+                <div class="services__button">            
+                <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+              </div> 
+        </div>
+              <!-- Card 9 End -->
+               <!-- Card 10 Begin --> 
+              <div class="services__card">  
+                <img class="services__icon" role="img" src="Images/Services/White glove.jpg" alt="White Glove">       
+                <h4 class="services_card__header" data-i18n="services.card.whiteglove.title">White Glove</h4>
+                <p class="services__description" data-i18n="services.card.whiteglove.p1">Our white-glove service goes beyond standard delivery. We can provide inside delivery, assembly, unpacking, installation, and debris removal &ndash; offering a smooth, premium experience for shipments that require extra care and attention.</p>
+                <div class="services__button">            
+                <a class="btn_blue" href="Quotes.html#contact-form" role="button" data-i18n="contact.quote.link">Get Quote</a>
+              </div> 
+        </div>
+              <!-- Card 10 End -->
+      </div>
+          </div>
+        </section>
+       <!-- Services End -->
+        <!-- Footer Begin -->
+         <section class="footer" id="footer" role="contentinfo">
+            <div class="footer__grid">
+            <div class="footer__links" aria-label="Quick Links">
+              <h4 class="footer__header" data-i18n="footer.quickLinks.heading">Quick Links</h4>
+              <ul class="footer__links-list" aria-label="Quick Links List">
+                <li class="footer__links-item"><a href="index.html" class="footer__links-link" aria-label="Home" data-i18n="nav.home">Home</a></li>
+                <li class="footer__links-item"><a href="index.html#about" class="footer__links-link" aria-label="About us" data-i18n="nav.about">About Us</a></li>
+                <li class="footer__links-item"><a href="index.html#contact" class="footer__links-link" aria-label="Contact Us" data-i18n="nav.contact">Contact Us</a></li>
+                <li class="footer__links-item"><a href="services.html" class="footer__links-link" aria-label="Services" data-i18n="nav.services">Services</a></li>
+                <li class="footer__links-item"><a href="carriers.html" class="footer__links-link" aria-label="Carriers" data-i18n="nav.carriers">Carriers</a></li>
+                <li class="footer__links-item"><a href="insights.html" class="footer__links-link" aria-label="Insights" data-i18n="nav.insights">Insights</a></li>
+              </ul>
+            </div>
+            <div class="footer__links" aria-label="Additional Information">
+              <h4 class="footer__header" data-i18n="footer.additional.heading">Additional Information</h4>
+              <ul class="footer__links-list" aria-label="Additional Information Links List">
+                <li class="footer__links-item"><a href="Privacy Policy.html" class="footer__links-link" aria-label="Privacy Policy" data-i18n="footer.privacy">Privacy Policy</a></li>
+                <li class="footer__links-item"><a href="T&C.html" class="footer__links-link" aria-label="Terms and Conditions" data-i18n="footer.terms">Terms and Conditions</a></li>
+                <li class="footer__links-item"><a href="FAQs.html" class="footer__links-link" aria-label="FAQs" data-i18n="footer.faqs">FAQs</a></li>
+                <li class="footer__links-item"><a href="sitemap.html" class="footer__links-link" aria-label="Sitemap" data-i18n="footer.sitemap">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="footer__links" aria-label="Contact">
+              <div class="footer__contact">
+              <h4 class="footer__header" data-i18n="footer.contact.heading">Contact Us</h4>
+              <ul class="footer__links-list" aria-label="contact">
+                <li class="footer__links-item">
+                  <a href="mailto:admin@mymagicshipping.com" class="footer__links-link" target="_blank" aria-label="Email Address" data-i18n="footer.contact.emailLink">Email: admin@mymagicshipping.com</a></li>
+              </ul>
+            </div>
+              <div class="footer__newsletter">
+                <div class="footer__title">
+                <h4 class="footer__header" data-i18n="footer.newsletter.heading">Newsletter Signup</h4>
+              </div>
+                <form action="https://formspree.io/f/xyzllnwe" method="post" role="form">
+                <input type="hidden" name="_redirect" value="https://www.mymagicshipping.com/email-thank-you.html">
+                <label for="email" class="visually-hidden" data-i18n="footer.newsletter.label">Sign Up</label>
+                <input class="footer__newsletter-input" name="Email" type="email" id="email" placeholder="Enter email to get updates" data-i18n-placeholder="footer.newsletter.placeholder"/>
+                <button type="submit" class="footer__newsletter-button" aria-label="Click to sign up"><i class="fas fa-arrow-right"></i></button>
+              </form>
+              </div>
+            </div>
+          </div>
+          </div>
+         </section>
+         <section class="footer__second-section" role="contentinfo"> 
+            <div class="footer__flex">
+              <div class="footer__copyright">
+                <p data-i18n="footer.copyright">&copy; 2025 Magic Shipping. All rights reserved</p>
+              </div>
+              <div class="footer__social">
+                <ul class="footer__social-links" aria-label="Social Links">
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.linkedin.com/company/magic-shipping/?viewAsMember=true" target="_blank" aria-label="Follow Us On LinkedIn"><span class="footer-social__icon-circle"><i class="fa-brands fa-linkedin"></i></span></a></li>
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com" target="_blank" aria-label="Follow Us On Facebook"><span class="footer-social__icon-circle"><i class="fa-brands fa-facebook"></i></span></a></li>
+                  <li class="footer__social-item"><a class="footer__social-link" href="https://www.twitter.com" target="_blank" aria-label="Follow Us On X"><span class="footer-social__icon-circle"><i class="fa-brands fa-tiktok"></i></span></a></li>
+                </ul>
+              </div>
+            </div>
+         </section>
+        <!-- Footer End -->
+    <script src="script.js"></script>
+</body>
+</html>

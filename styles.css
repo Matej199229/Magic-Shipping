@@ -89,6 +89,9 @@ img {
     }
 }    
 
+.is-hidden {
+    display: none !important;
+}
 
 /* Navbar */
 
@@ -104,6 +107,29 @@ img {
     background-color: var(--primary-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease-in-out;
+}
+
+/* Language switcher */
+
+.navbar__menu-item--language {
+  margin-left: 1rem;
+}
+
+.language-switcher {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* when navbar is scrolled, invert colours so it still looks good */
+.navbar.navbar--scroll .language-switcher {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: #eee;
 }
 
 .navbar.navbar--scroll  {
@@ -168,6 +194,7 @@ img {
     color: var(--quaternary-color);
     opacity: 0.8;
 }
+
 
 
 /* Mobile Menu */
@@ -381,82 +408,10 @@ img {
 }
 
 
-/* Services */
-
-.services {
-    padding: 3rem 2rem 3rem;
-    border-bottom: 1px solid #d7d7d9;
-}
-
-.services__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.services__icon {
-    width: 200px;           /* fixed width (not max-width) */
-    aspect-ratio: 5 / 3;       /* pick a ratio you like */
-    object-fit: cover;      /* fill the box evenly */
-    background-color: var(--primary-color);
-    padding: 0rem;
-    border-radius: 20px;
-    margin-bottom: 1rem;
-}
-
-.services__title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.services__text {
-    font-size: 0.9rem;
-    opacity: 0.6;
-    max-width: 900px;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.services__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.services__card {
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.services_card__header {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.services__description {
-    font-size: 0.8rem;
-    opacity: 0.6;
-}
-
-.services__button {
-    margin-top: 1rem;
-}
-
-
 /* About */
 
 .about {
-    padding: 4rem 2rem 3rem;
+    padding: 0rem 2rem 3rem;
     text-align: center;
 }
 
@@ -590,15 +545,16 @@ img {
 .contact__content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     gap: 4rem;
     margin-top: 4rem;
 }
 
 .contact__section {
     display: flex;
+    flex: 1 1 0;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
     text-align: center;
     padding: 4rem 0;
 }
@@ -655,6 +611,10 @@ img {
 
 .contact__info {
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .contact__info-heading {
@@ -674,10 +634,12 @@ img {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--tertiary-color);
+    margin-top: auto;              /* pushes link to bottom so all 3 align */
 
     &:hover {
     color: var(--quinary-color);
     }
+    
 }
 
 
@@ -853,6 +815,341 @@ img {
     border: 0;
   }
 
+/* Services Page */
+
+.services {
+    padding: 8rem 2rem 3rem;
+    border-bottom: 1px solid #d7d7d9;
+}
+
+.services__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.services__icon {
+    width: 200px;           /* fixed width (not max-width) */
+    aspect-ratio: 5 / 3;       /* pick a ratio you like */
+    object-fit: cover;      /* fill the box evenly */
+    background-color: var(--primary-color);
+    padding: 0rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.services__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services__text {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    max-width: 900px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.services__card {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+    box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;         /* allows safe z-index stacking */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    z-index: 1;                 /* base */
+}
+
+.services__card:hover {
+    transform: scale(1.05);     /* subtle but premium feeling */
+    z-index: 5;                 /* bring it to the front so it doesn’t clip */
+    box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.12),
+    0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.services__card:nth-of-type(5) img {
+    object-fit: contain;
+}
+
+.services__card:nth-of-type(10) {
+    grid-column: 2 / 3;  /* place it in the middle column */
+  }
+
+.services_card__header {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.services__description {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+}
+
+.services__button {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Carriers Page */
+
+/* Centered band for the image */
+.carriers__hero-image-wrapper {
+    width: 100%;
+    max-width: 1200px;              /* how far in from the sides */
+    height: 500px;                  /* fixed band height on desktop */
+    margin: 0 auto;                 /* <-- centers it horizontally */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* The image itself */
+.carriers__hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;             /* fill the box, keep aspect ratio */
+    object-position: center 85%;   /* adjust focus (truck + mountain) */
+    border-radius: 10px;
+}
+
+/* Insights Page */
+
+.blog {
+  padding: 8rem 2rem 4rem; /* leaves space below fixed navbar */
+}
+
+.blog__hero-wrapper {
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.blog__subtitle {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+/* Controls row */
+
+.blog__controls {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search */
+
+.blog__search {
+  flex: 1 1 100px;
+  max-width: 420px;
+}
+
+.blog__search-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline-color: #cea9ca;
+}
+
+/* Filters */
+
+.blog__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.blog__filters-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-right: 0.25rem;
+}
+
+.blog__filter-btn {
+  border-radius: 999px;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.blog__filter-btn:hover {
+  border-color: var(--tertiary-color);
+}
+
+.blog__filter-btn--active {
+  background: var(--tertiary-color);
+  color: #fff;
+  border-color: var(--tertiary-color);
+}
+
+/* List */
+
+.blog__list-section {
+  margin-top: 3rem;
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Card */
+
+.blog-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.blog-card__image-link {
+  display: block;
+  flex: 0 0 220px;
+  max-width: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog-card__image {
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card__content {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.blog-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+.blog-card__badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* badge colours per category */
+.blog-card__badge--air {
+  background: #3f88ff;
+}
+
+.blog-card__badge--trucking {
+  background: #0b8f46;
+}
+
+.blog-card__badge--ocean {
+  background: #004c6d;
+}
+
+.blog-card__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.blog-card__title a {
+  color: inherit;
+}
+
+.blog-card__title a:hover {
+  color: var(--tertiary-color);
+}
+
+.blog-card__excerpt {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.blog-card__footer {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.blog-card__source {
+  opacity: 0.8;
+}
+
+.blog-card__read-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.blog-card__read-link:hover {
+  color: var(--quinary-color);
+}
+
+.blog__empty {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
 /* Quotes & Contact Page */
 
 .contact__hero {
@@ -940,7 +1237,13 @@ img {
 }
 
 
-.contact__form form input {
+.contact__form-main-fields {
+    background-color: #CBE9F5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact__form form input:not([type="checkbox"]):not([type="radio"]), .contact__form form select {
     position: relative;
     display: block;
     font-family: inherit;
@@ -952,6 +1255,8 @@ img {
     border-radius: 10px;
     outline-color: #cea9ca;
     z-index: 2;
+    height: 45px;          /* 🔑 force same height as textareas */
+    box-sizing: border-box;
 }
 
 
@@ -993,28 +1298,86 @@ img {
   flex: 1 1 0;
 }
 
+.contact__form-field label {
+  display: block;
+  margin-bottom: 0.5rem;      /* consistent space under every label */
+}
+
+/* ===== Total Weight row Air Express ONLY (number + unit) ===== */
+.weight-row .contact__form-field {
+  flex: 1 1 0;
+}
+
+/* ===== Trucking Weight Row (Amount + Unit side by side) ===== */
+.trucking-weight-row .contact__form-field {
+  flex: 1 1 0;
+}
+
+/* ===== Shared Dimensions Layout (Air + Trucking) ===== */
+
+/* Row that holds Length / Width / Height */
+.trucking-dimensions-row,
+.air-dimensions-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Each individual dimension column */
+.trucking-dimension,
+.air-dimension {
+  flex: 1 1 0;
+}
+
+/* Wrapper that holds the VALUE and UNIT mini-fields */
+.dimension-input-group {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.5rem 0;   /* matches other field spacing */
+}
+
+/* Inside the group: left = value, right = unit */
+.dimension-input,
+.dimension-unit {
+  flex: 1 1 0;
+}
+
+/* Labels inside the dimension group */
+.dimension-input-group label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Override global margins inside the group */
+.dimension-input-group input,
+.dimension-input-group select {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
 /* Make textareas smaller when used in side-by-side rows */
 .contact__form-message--small {
   height: 100px;
 }
 
-/* Give labels in that row a minimum height so they align nicely */
-.contact__form-row:nth-of-type(4) .contact__form-field > label {
-  display: block;
-  min-height: 4rem;  /* adjust if needed */
+
+/* Tighter spacing under address rows (From / To) */
+.contact__form-address-row .contact__form-input {
+  margin: 0.5rem 0; /* remove extra gap under ZIP/City/State inputs */
 }
 
-/* Style selects similar to inputs */
-.contact__form form select {
-  display: block;
-  font-family: inherit;
-  font-size: medium;
-  padding: 0.5rem 1rem;
-  width: 100%;
-  margin: 1rem 0;
-  border: 1px solid black;
-  border-radius: 10px;
-  outline-color: #cea9ca;
+.contact__form-address-row .contact__form-field label {
+  min-height: 2.8rem;         /* tweak (2.6–3.0rem) to taste */
+}
+
+/* Trucking / ocean rows with long labels */
+.contact__form-trucking-fields .contact__form-field label,
+.contact__form-ocean-fields .contact__form-field label {
+  min-height: 2.8rem;
 }
 
 /* Service checkboxes row */
@@ -1038,17 +1401,29 @@ img {
   margin-top: 1.5rem;
 }
 
-.contact__form-services-icons {
-  display: flex;
-  justify-content: center;
-  gap: 5.5rem;
-  margin-top: 2rem;
+/* Make the active service bigger */
+.contact__form-checkbox.service--active {
+  transform: scale(1.4);
 }
 
-.contact__form-checkbox i {
-  font-size: 2rem;   /* tweak size if needed */
-  color: var(--tertiary-color);
+/* Smooth transform so it feels nicer */
+.contact__form-checkbox {
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
+
+/* "Change service" link/button */
+.contact__form-change-service {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  background: none;
+  border: none;
+  color: var(--tertiary-color);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
 
 /* Individual service block */
 .contact__form-checkbox {
@@ -1058,20 +1433,40 @@ img {
   text-align: center;
 }
 
+
+/* Make the active icon + text pop a bit more */
+.contact__form-checkbox--active i {
+  color: var(--quinary-color); /* or keep var(--tertiary-color) if you prefer */
+}
+
+.contact__form-checkbox--active span {
+  font-weight: 600;
+  color: var(--tertiary-color);
+}
+
 /* Icon styling */
+
 .contact__form-checkbox i {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--tertiary-color);
 }
 
 .contact__form-checkbox input {
   margin-right: 0.35rem;
+  margin-bottom: 1rem;
 }
 
 .contact__form-note {
   font-size: 0.8rem;
   color: var(--quaternary-color);
   margin-top: 0.25rem;
+}
+
+/* Fix misalignment for the row with the container/truckload + incoterms fields */
+.contact__form-row.load-type-row .contact__form-field > label {
+  display: block;
+  min-height: 3rem;
 }
 
 /* Hazardous radios */
@@ -1088,7 +1483,7 @@ img {
 }
 
 .contact__form-radio-group label {
-  display: inline-flex;             /* aligns radio + text horizontally */
+  display: inline-flex;      /* aligns radio + text horizontally */
   align-items: center;       /* vertically center text with radio */
   gap: 0.35rem;              /* space between radio and text */
   margin-right: 1.5rem;
@@ -1249,6 +1644,7 @@ img {
     }
 }    
 
+
 /* Media Queries */
 
 @media(max-width: 992px) {
@@ -1308,19 +1704,6 @@ img {
         min-height: 2.2em;
   }
 
-    /* Shipping Services  */
-
-    .services__cards {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 700px;
-  }
-
-    .services__card:nth-child(3) {
-        grid-column: 1 / -1;     /* span both columns */
-        justify-self: center;    /* center it within the grid */
-        max-width: 400px;        /* optional: keep it from getting too wide */
-  }
-
     /* Testimonials */
     .testimonials__cards {
         grid-template-columns: repeat(2, 1fr);
@@ -1340,6 +1723,14 @@ img {
     white-space: nowrap;
     display: inline-block;
     }
+
+    /* Services Page  */
+
+    .services__cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+
 }
 
 @media(max-width: 768px) {  
@@ -1359,7 +1750,45 @@ img {
 
     .contact__content {
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;   /* center the three blocks */
+        gap: 2rem;             /* space between sections when stacked */
+    }
+
+    .contact__section {
+        padding: 2rem 0;       /* slightly smaller padding on mobile */
+    }
+
+    .contact__info {
+        margin: 0 auto;        /* ensure the inner content is centered */
+    }
+
+    .contact__section:nth-of-type(2) {
+        max-width: 350px;
+        margin-top: 0;
+    }
+
+    /* Insights Page */
+
+    .blog {
+        padding-top: 7rem;
+    }
+
+    .blog-card {
+        flex-direction: column;
+    }
+
+    .blog-card__image-link {
+        flex-basis: auto;
+        max-width: 100%;
+    }
+
+    /* Services Page */
+
+    .services__card:nth-of-type(5) .services_card__header,
+    .services__card:nth-of-type(6) .services_card__header {
+        min-height: 4rem;      /* tweak this value if needed */
+        display: flex;
+        align-items: flex-end;   /* single-line Haz-Mat sits at the bottom of that slot */
     }
 
     /* Quotes & Contact Page */
@@ -1367,14 +1796,55 @@ img {
     /* Quote Form */
 
     .contact__form-row {
-    flex-direction: column;
+        flex-direction: column;
+        gap: 0;
      }
 
-     /* Give labels in that row a minimum height so they align nicely */
-.contact__form-row:nth-of-type(4) .contact__form-field > label {
-  display: block;
-  min-height: 1.6rem;  /* adjust if needed */
-}
+    .weight-row {
+        flex-direction: row !important;
+        gap: 1.5rem;
+    }
+
+    .weight-row .contact__form-field {
+        width: 50%;
+    } 
+
+    .trucking-weight-row {
+        flex-direction: row !important;
+        gap: 1.5rem;
+    }
+
+    .trucking-weight-row .contact__form-field {
+        width: 50%;
+    }
+
+    .commercial-value-row {
+        flex-direction: row !important;
+        gap: 20px;
+    }
+
+    .commercial-value-row .contact__form-field {
+        width: 50%;
+    }
+
+    /* Normalize spacing between label and input/textarea/select */
+    .contact__form-field > label {
+        margin-bottom: 0.35rem !important;   /* consistent gap before input */
+        display: block;
+    }
+
+    .contact__form-field input,
+    .contact__form-field select,
+    .contact__form-field textarea {
+        margin-top: 0 !important;            /* remove uneven top spacing */
+    }
+
+    /* Reduce the oversized gaps on special freight rows */
+    .load-type-row .contact__form-field > label {
+        min-height: 0 !important;
+        margin-bottom: 0.35rem !important;
+    }
+
 
     /* Footer */
     .footer__grid {
@@ -1426,6 +1896,13 @@ img {
         max-width: 100%;
     }
 
+    /* Carriers Page */
+
+    /* Centered band for the image */
+    .carriers__hero-image-wrapper {
+        height: 300px;                  
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -1443,60 +1920,151 @@ img {
         width: 100%;
         gap: 1.5rem;
         padding: 2rem;
-  }
+    }
 
     .hero__services-item i {
         font-size: 1.6rem;
         height: 26px;
-  }
+    }
 
     .hero__services-item-title {
         font-size: 1rem;
         min-height: 2.8rem;
-  }
+    }
 
-    /* Shipping Services */
+    /* Services Page*/
     
     .Shipping_image {
-    height: 240px;                 /* a bit shorter for phones */
-  }
+        height: 240px;                 /* a bit shorter for phones */
+    }
 
-  .Shipping_image-img {
-    /* focus more on the right where the plane is */
-    object-position: 80% 40%;      /* horizontal 80% (towards right), vertical 40% */
-    /* still using object-fit: cover; from Desktop */
-  }
+    .Shipping_image-img {
+        /* focus more on the right where the plane is */
+        object-position: 80% 40%;      /* horizontal 80% (towards right), vertical 40% */
+        /* still using object-fit: cover; from Desktop */
+    }
 
-  .services__cards {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-  }
+    .services__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 
-  /* Quotes & Contact */
+    .services__card {
+        width: 100%;
+    }
 
-  .contact__form-services-options {
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
+    /* Insights Page */
+
+    .blog__controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .blog__filters {
+        justify-content: flex-start;
+    }
+
+    .blog__search {
+        margin-bottom: 0 !important;
+    }
+
+    .blog__filters {
+        margin-top: 0 !important;
+    }
+
+    /* Quotes & Contact Page*/
+
+    .contact__form-services-options {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .contact__form-services-icons {
+        flex-direction: column;
+    }
+
+    .contact__form-checkbox {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact__form-checkbox i {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact__form-checkbox span {
+        margin: 0.4rem 0;
+        display: block;
+    }
+
+    .commercial-value-row {
+        flex-direction: row !important;
+        gap: 2rem;              /* smaller gap so both fit */
+    }
+
+    .commercial-value-row .contact__form-field {
+        width: calc(50% - 1rem); /* 2 * (50% - 0.75rem) + 1.5rem gap = 100% → stays on one line */  
+    }
+
+    .commercial-value-row label {
+        white-space: nowrap;
+    }
+
+    /* Add small gap between CV + Currency labels */
+    .commercial-value-row .contact__form-field label {
+        margin-bottom: 0.5rem !important;
+    }
+
+    /* Stack number + Unit vertically in each dimension group */
+    .dimension-input-group {
+        flex-direction: column;
+    }
+
+    .dimension-input-group input,
+    .dimension-input-group select {
+        width: 100%;
+        flex: 1 1 0;
+    }
+
 }
 
-.contact__form-services-icons {
-  flex-direction: column;
-}
+@media (max-width: 400px) {
+  .commercial-value-row {
+    flex-direction: column !important;
+    gap: 0rem;              /* nice spacing between the two fields */
+  }
 
-.contact__form-checkbox {
+  .commercial-value-row .contact__form-field {
+    width: 100% !important;    /* full width when stacked */
+  }
+
+  .weight-row {
+    flex-direction: column !important;
+    gap: 0;
+  }
+
+  .weight-row .contact__form-field {
+    width: 100%;
+  }
+
+  .trucking-weight-row {
+    flex-direction: column !important;
+    gap: 0;
+  }
+
+  .trucking-weight-row .contact__form-field {
+    width: 100% !important;
+  }
+
+  .trucking-dimensions-row,
+  .air-dimensions-row {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
-
-  .contact__form-checkbox i {
-    margin-bottom: 0.5rem;
-  }
-
-  .contact__form-checkbox span {
-    margin: 0.4rem 0;
-    display: block;
-  }
-
 }
+
+
+
