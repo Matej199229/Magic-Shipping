@@ -934,6 +934,12 @@ img {
     border-radius: 10px;
 }
 
+.carrier-form-wrapper {
+    background-color: #CBE9F5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
 /* Insights Page */
 
 .blog {
