@@ -553,7 +553,7 @@ const translations = {
     "nav.quote": "Get a Quote",
 
     // hero (index)
-    "hero.title": "Professional and affordable Air Express, Trucking and Ocean Freight Shipping — Domestic & International Services",
+    "hero.title": "At Magic Shipping, we specialize in dependable international air express, trucking, and freight solutions.",
     "hero.line1": "We help businesses and individuals ship worldwide with real-time tracking, reliable partner networks, and discounted preferential shipping rates.",
     "hero.line2": "Get access to world class shipping services for a fraction of retail rates. Contact us for a quote now.",
     "hero.ctaPrimary": "Get a Quote",
@@ -971,7 +971,7 @@ const translations = {
     "nav.quote": "Obtenir un devis",
 
     // hero (index)
-    "hero.title": "Services d’expédition aériens, routiers et maritimes — professionnels et abordables, au Canada et à l’international",
+    "hero.title": "Chez Magic Shipping, nous sommes spécialisés dans des solutions internationales fiables en transport aérien express, en camionnage et en fret.",
     "hero.line1": "Nous aidons les entreprises et les particuliers à expédier partout dans le monde grâce au suivi en temps réel, à un réseau de partenaires fiables et à des tarifs préférentiels.",
     "hero.line2": "Profitez de services de transport de classe mondiale pour une fraction des tarifs de détail. Contactez-nous pour obtenir un devis.",
     "hero.ctaPrimary": "Obtenir un devis",
@@ -1409,7 +1409,7 @@ const translations = {
     "nav.quote": "Solicitar cotización",
 
     // hero
-    "hero.title": "Envíos aéreos, por camión y marítimos — profesionales y asequibles, nacionales e internacionales",
+    "hero.title": "En Magic Shipping, nos especializamos en soluciones internacionales confiables de envío aéreo exprés, transporte por carretera y servicios de carga.",
     "hero.line1": "Ayudamos a empresas y particulares a enviar a todo el mundo con seguimiento en tiempo real, una red de socios confiables y tarifas preferenciales.",
     "hero.line2": "Obtenga servicios de envío de clase mundial por una fracción del precio minorista. Contáctenos para solicitar una cotización.",
     "hero.ctaPrimary": "Solicitar cotización",
