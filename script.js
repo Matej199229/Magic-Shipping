@@ -1838,6 +1838,7 @@ function setLanguage(lang) {
   const dict = translations[lang];
   if (!dict) return;
 
+  // ✅ Set <html lang="..."> for accessibility & SEO  
   document.documentElement.lang = lang;
 
   const path = (window.location.pathname || "").toLowerCase();
@@ -1865,42 +1866,43 @@ function setLanguage(lang) {
     document.title = dict[titleKey];
   }
 
-  // Regular innerHTML translations
+  // Translate regular text
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key]) {
-      el.innerHTML = dict[key];
-    }
+    if (dict[key]) el.innerHTML = dict[key];
   });
 
-  // Placeholder translations
+  // Translate placeholders
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     const key = el.getAttribute("data-i18n-placeholder");
-    if (dict[key]) {
-      el.placeholder = dict[key];
-    }
+    if (dict[key]) el.placeholder = dict[key];
   });
 
-  // Keep language dropdowns in sync
+  // Keep both language dropdowns in sync
   document.querySelectorAll(".language-switcher").forEach(sel => {
     if (sel.value !== lang) sel.value = lang;
   });
 
-  // Remember choice
+  // Save the preference
   localStorage.setItem("siteLanguage", lang);
 
-  // Re-render blog page, if present
-  currentBlogLang = lang;
-  applyBlogFilters();
+  // If this is the blog page, re-render filters and items
+  if (typeof applyBlogFilters === "function") {
+    currentBlogLang = lang;
+    applyBlogFilters();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Load saved language OR fallback to EN
   const savedLang = localStorage.getItem("siteLanguage") || "en";
   setLanguage(savedLang);
 
+  // Event listeners for both language dropdowns
   document.querySelectorAll(".language-switcher").forEach(sel => {
     sel.addEventListener("change", (e) => {
       setLanguage(e.target.value);
     });
   });
 });
+
