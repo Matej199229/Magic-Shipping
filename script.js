@@ -533,7 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const translations = {
   en: {
     // meta
-    "meta.title": "Welcome to Magic Shipping | Reliable and Professional Air Express, Trucking & Ocean Freight",
+    "meta.title": "Magic Shipping | Logistics & Global Air, Ocean & Freight Services",
     "meta.services.title": "Magic Shipping | Services",
     "meta.carriers.title": "Magic Shipping | Carriers",
     "meta.insights.title": "Magic Shipping | Insights",
@@ -951,7 +951,7 @@ const translations = {
 
   fr: {
     // meta
-    "meta.title": "Bienvenue chez Magic Shipping | Transport aérien, routier et maritime fiable et professionnel",
+    "meta.title": "Magic Shipping | Logistique & Services de Fret Aérien, Maritime et International",
     "meta.services.title": "Magic Shipping | Services",
     "meta.carriers.title": "Magic Shipping | Transporteurs",
     "meta.insights.title": "Magic Shipping | Actualités",
@@ -1389,7 +1389,7 @@ const translations = {
 
   es: {
     // meta
-    "meta.title": "Bienvenido a Magic Shipping | Envíos aéreos, terrestres y marítimos confiables y profesionales",
+    "meta.title": "Magic Shipping | Logística y Servicios Globales de Carga Aérea, Marítima y Terrestre",
     "meta.services.title": "Magic Shipping | Servicios",
     "meta.carriers.title": "Magic Shipping | Transportistas",
     "meta.insights.title": "Magic Shipping | Noticias",
