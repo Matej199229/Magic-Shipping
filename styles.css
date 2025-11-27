@@ -1156,7 +1156,7 @@ img {
   opacity: 0.7;
 }
 
-/* Quotes & Contact Page */
+/* Quotes Page */
 
 .contact__hero {
     margin: 5rem auto 2rem;
@@ -1309,6 +1309,45 @@ img {
   margin-bottom: 0.5rem;      /* consistent space under every label */
 }
 
+.contact__form-section {
+  margin-bottom: 0.5rem;
+  flex: 1 1 0;      /* Make FROM and TO sections share the row evenly */
+  min-width: 0;     /* Prevent overflow / weird shrinking */
+}
+
+.contact__form-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* Shipping Details heading spacing */
+.contact__form-section-title--shipping-air,
+.contact__form-section-title--shipping-general {
+  margin-top: 1.5rem;
+}
+
+/* Slightly tighter bottom gap for the Air heading above FROM/TO */
+.contact__form-section-title--shipping-air {
+  margin-bottom: 1.75rem;
+}
+
+/* When Air Express fields are visible, hide the general Shipping Details heading */
+#air-express-fields:not(.is-hidden) ~ #general-fields .contact__form-section-title--shipping-general {
+  display: none;
+}
+
+/* When Air Express is hidden (Trucking/Ocean only), show the general Shipping Details heading */
+#air-express-fields.is-hidden ~ #general-fields .contact__form-section-title--shipping-general {
+  display: block;
+}
+
+.contact__form-general {
+  margin-top: 1.5rem;   
+}
+
 /* ===== Total Weight row Air Express ONLY (number + unit) ===== */
 .weight-row .contact__form-field {
   flex: 1 1 0;
@@ -1378,6 +1417,7 @@ img {
 
 .contact__form-address-row .contact__form-field label {
   min-height: 2.8rem;         /* tweak (2.6–3.0rem) to taste */
+  white-space: nowrap;
 }
 
 /* Trucking / ocean rows with long labels */
@@ -1797,7 +1837,7 @@ img {
         align-items: flex-end;   /* single-line Haz-Mat sits at the bottom of that slot */
     }
 
-    /* Quotes & Contact Page */
+    /* Quotes Page */
 
     /* Quote Form */
 
@@ -1980,7 +2020,7 @@ img {
         margin-top: 0 !important;
     }
 
-    /* Quotes & Contact Page*/
+    /* Quotes Page*/
 
     .contact__form-services-options {
         flex-direction: column;

@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const airWeightRow      = form.querySelector('#air-weight-row');
   const airParcelFields   = form.querySelector('#air-parcel-fields');
 
-  // ---- Air "parcel only" bottom fields (commodity, hazard, insurance, commercial value) ----
+  // Bottom extras (commodity, hazard, insurance, commercial value)
   const commodityGroup       = form.querySelector('.contact__form-commodity-group');
   const commodityTextarea    = form.querySelector('#commodity');
   const hazardousRadios      = Array.from(form.querySelectorAll('input[name="hazardous"]'));
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Store original required for service blocks, then disable all of them initially
   [airBlock, truckingBlock, oceanBlock, doorBlock, generalBlock].forEach(block => {
-    markBlockRequired(block, false); // this records data-was-required and turns off required
+    markBlockRequired(block, false); // records data-was-required and turns off required
   });
 
   // --- visual helpers for service cards ---
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-    // Handle submit via button click so we can adjust required on hidden fields
+  // Handle submit via button click so we can adjust required on hidden fields
   const submitBtn = form.querySelector('button[type="submit"]');
   if (submitBtn) {
     submitBtn.addEventListener('click', function (e) {
@@ -345,15 +345,59 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // ------------------------------------------------------
+  // INITIALISE / HARD RESET FUNCTION
+  // ------------------------------------------------------
+  function initQuoteForm() {
+    // Base reset
+    form.reset();
 
-  // --- initial state ---
-  form.reset();                 // clear any browser-saved values
-  serviceInputs.forEach(cb => { cb.checked = false; });
-  hideEl(mainFields);
-  hideAllServiceBlocks();
-  resetServiceVisuals();
-  console.log('Quote form initialized.');
+    // EXTRA hard reset to beat browser autofill
+    const fields = form.querySelectorAll('input, select, textarea');
+    fields.forEach(el => {
+      if (el.type === 'hidden') return; // keep _redirect etc.
+
+      if (el.tagName === 'TEXTAREA') {
+        el.value = '';
+      } else if (el.tagName === 'SELECT') {
+        el.selectedIndex = 0;
+      } else if (el.type === 'checkbox' || el.type === 'radio') {
+        el.checked = false;
+      } else {
+        el.value = '';
+      }
+    });
+
+    // Reset service UI/state
+    serviceInputs.forEach(cb => { cb.checked = false; });
+    hideEl(mainFields);
+    hideAllServiceBlocks();
+    resetServiceVisuals();
+
+    // Also make sure commodity/hazard radios are cleared
+    hazardousRadios.forEach(r => { r.checked = false; });
+
+    console.log('Quote form hard-reset.');
+  }
+
+  // initial state on first load (after DOM is ready)
+  initQuoteForm();
+
+  // Also run after full load (in case autofill fires late)
+  window.addEventListener('load', function () {
+    // small timeout so we definitely run after autofill
+    setTimeout(initQuoteForm, 50);
+  });
+
+  // ------------------------------------------------------
+  // Handle browser back/forward so form is blank
+  // ------------------------------------------------------
+  window.addEventListener('pageshow', function () {
+    // regardless of persisted/not – always reset when page is shown
+    setTimeout(initQuoteForm, 50);
+  });
 });
+
 
 
 // ==============================
@@ -705,6 +749,8 @@ const translations = {
     "quote.services.note": "Please select the service(s) you’re interested in.",
     "quote.services.change": "Change service",
 
+    "quote.form.fromSection.title": "FROM",
+    "quote.form.toSection.title": "TO",
     "quote.form.firstName.label": "First Name *",
     "quote.form.firstName.placeholder": "First name",
     "quote.form.lastName.label": "Last Name *",
@@ -720,27 +766,33 @@ const translations = {
 
     "quote.form.select.placeholder": "Please select",
 
-    "quote.air.fromCountry.label": "From Country/Territory *",
+    // Air Express address labels (EN)
+    "quote.air.fromCountry.label": "Country/Territory *",
     "quote.air.fromCountry.placeholder": "Canada",
-    "quote.air.toCountry.label": "To Country/Territory *",
+    "quote.air.toCountry.label": "Country/Territory *",
     "quote.air.toCountry.placeholder": "United States of America",
-    "quote.air.fromAddress.label": "From Address *",
+
+    "quote.air.fromAddress.label": "Address *",
     "quote.air.fromAddress.placeholder": "123 My Street",
-    "quote.air.toAddress.label": "To Address *",
+    "quote.air.toAddress.label": "Address *",
     "quote.air.toAddress.placeholder": "123 Your Street",
-    "quote.air.fromPostal.label": "From Postal/ZIP Code *",
+
+    "quote.air.fromPostal.label": "Postal/ZIP Code *",
     "quote.air.fromPostal.placeholder": "A1A 1A1",
-    "quote.air.fromCity.label": "From City *",
+    "quote.air.fromCity.label": "City *",
     "quote.air.fromCity.placeholder": "Toronto",
-    "quote.air.fromRegion.label": "From Province/State *",
+    "quote.air.fromRegion.label": "Province/State *",
     "quote.air.fromRegion.placeholder": "Ontario",
-    "quote.air.toPostal.label": "To ZIP/Postal Code *",
+
+    "quote.air.toPostal.label": "Postal/ZIP Code *",
     "quote.air.toPostal.placeholder": "60139",
-    "quote.air.toCity.label": "To City *",
+    "quote.air.toCity.label": "City *",
     "quote.air.toCity.placeholder": "Glendale Heights",
-    "quote.air.toRegion.label": "To State/Province *",
+    "quote.air.toRegion.label": "Province/State *",
     "quote.air.toRegion.placeholder": "Illinois",
-    "quote.air.residential": "Residential address (destination)",
+
+    "quote.air.residential": "Residential address",
+
 
     "quote.air.shipment.legend": "What are you shipping? *",
     "quote.air.shipment.documents": "Documents",
@@ -765,6 +817,7 @@ const translations = {
 
     "quote.general.monthlyVolume.label": "Anticipated Monthly Volume *",
     "quote.general.monthlyVolume.placeholder": "e.g., 10–15 shipments per month, typical weights, lanes, etc.",
+    "quote.shippingDetails.title": "Shipping Details",
 
     "quote.ocean.loadType.label": "Full Container Load (FCL) or Less than Container Load (LCL) *",
     "quote.ocean.incoterms.label": "Incoterms",
@@ -775,10 +828,8 @@ const translations = {
     "quote.trucking.loadType.label": "Full Truck Load (FTL) or Less than Truckload (LTL) *",
     "quote.trucking.incoterms.label": "Incoterms",
     "quote.trucking.incoterms.other": "Other / Not sure",
-    "quote.trucking.originCity.label": "Origin City *",
-    "quote.trucking.destinationCity.label": "Destination City *",
-    "quote.trucking.originRegion.label": "Origin Province/State *",
-    "quote.trucking.destinationRegion.label": "Destination Province/State *",
+    "quote.trucking.city.label": "City *",
+    "quote.trucking.region.label": "Province/State *",
     "quote.trucking.pallets.label": "How many pallets? *",
     "quote.trucking.pallets.placeholder": "e.g., 1",
     "quote.trucking.weight.label": "Total Weight *",
@@ -1144,6 +1195,8 @@ const translations = {
     "quote.services.note": "Veuillez sélectionner le ou les service(s) qui vous intéressent.",
     "quote.services.change": "Modifier le service",
 
+    "quote.form.fromSection.title": "Expéditeur",
+    "quote.form.toSection.title": "Destinataire",
     "quote.form.firstName.label": "Prénom *",
     "quote.form.firstName.placeholder": "Prénom",
     "quote.form.lastName.label": "Nom de famille *",
@@ -1159,27 +1212,31 @@ const translations = {
 
     "quote.form.select.placeholder": "Veuillez choisir",
 
-    "quote.air.fromCountry.label": "Pays/territoire d’origine *",
+    "quote.air.fromCountry.label": "Pays/territoire *",
     "quote.air.fromCountry.placeholder": "Canada",
-    "quote.air.toCountry.label": "Pays/territoire de destination *",
+    "quote.air.toCountry.label": "Pays/territoire *",
     "quote.air.toCountry.placeholder": "États-Unis d’Amérique",
-    "quote.air.fromAddress.label": "Adresse d’origine *",
+
+    "quote.air.fromAddress.label": "Adresse *",
     "quote.air.fromAddress.placeholder": "123, rue Mon Adresse",
-    "quote.air.toAddress.label": "Adresse de destination *",
+    "quote.air.toAddress.label": "Adresse *",
     "quote.air.toAddress.placeholder": "123, rue Votre Adresse",
-    "quote.air.fromPostal.label": "Code postal (origine) *",
+
+    "quote.air.fromPostal.label": "Code postal / ZIP *",
     "quote.air.fromPostal.placeholder": "A1A 1A1",
-    "quote.air.fromCity.label": "Ville d’origine *",
+    "quote.air.fromCity.label": "Ville *",
     "quote.air.fromCity.placeholder": "Toronto",
-    "quote.air.fromRegion.label": "Province/État d’origine *",
+    "quote.air.fromRegion.label": "Province/État *",
     "quote.air.fromRegion.placeholder": "Ontario",
-    "quote.air.toPostal.label": "Code postal / ZIP (destination) *",
+
+    "quote.air.toPostal.label": "Code postal / ZIP *",
     "quote.air.toPostal.placeholder": "60139",
-    "quote.air.toCity.label": "Ville de destination *",
+    "quote.air.toCity.label": "Ville *",
     "quote.air.toCity.placeholder": "Glendale Heights",
-    "quote.air.toRegion.label": "Province/État de destination *",
+    "quote.air.toRegion.label": "Province/État *",
     "quote.air.toRegion.placeholder": "Illinois",
-    "quote.air.residential": "Adresse résidentielle (destination)",
+
+    "quote.air.residential": "Adresse résidentielle",
 
     "quote.air.shipment.legend": "Que souhaitez-vous expédier? *",
     "quote.air.shipment.documents": "Documents",
@@ -1204,6 +1261,7 @@ const translations = {
 
     "quote.general.monthlyVolume.label": "Volume mensuel estimé *",
     "quote.general.monthlyVolume.placeholder": "p. ex. 10–15 envois par mois, poids typiques, trajets, etc.",
+    "quote.shippingDetails.title": "Détails d’expédition",
 
     "quote.ocean.loadType.label": "Chargement complet (FCL) ou partiel (LCL) *",
     "quote.ocean.incoterms.label": "Incoterms",
@@ -1214,10 +1272,8 @@ const translations = {
     "quote.trucking.loadType.label": "Chargement complet (FTL) ou partiel (LTL) *",
     "quote.trucking.incoterms.label": "Incoterms",
     "quote.trucking.incoterms.other": "Autre / Incertain",
-    "quote.trucking.originCity.label": "Ville d’origine *",
-    "quote.trucking.destinationCity.label": "Ville de destination *",
-    "quote.trucking.originRegion.label": "Province/État d’origine *",
-    "quote.trucking.destinationRegion.label": "Province/État de destination *",
+    "quote.trucking.city.label": "Ville *",
+    "quote.trucking.region.label": "Province/État *",
     "quote.trucking.pallets.label": "Combien de palettes? *",
     "quote.trucking.pallets.placeholder": "p. ex. 1",
     "quote.trucking.weight.label": "Poids total *",
@@ -1582,6 +1638,8 @@ const translations = {
     "quote.services.note": "Seleccione el o los servicios que le interesan.",
     "quote.services.change": "Cambiar servicio",
 
+    "quote.form.fromSection.title": "Remitente",
+    "quote.form.toSection.title": "Destinatario",
     "quote.form.firstName.label": "Nombre *",
     "quote.form.firstName.placeholder": "Nombre",
     "quote.form.lastName.label": "Apellido *",
@@ -1597,27 +1655,31 @@ const translations = {
 
     "quote.form.select.placeholder": "Seleccione una opción",
 
-    "quote.air.fromCountry.label": "País/territorio de origen *",
+    "quote.air.fromCountry.label": "País/territorio *",
     "quote.air.fromCountry.placeholder": "Canadá",
-    "quote.air.toCountry.label": "País/territorio de destino *",
+    "quote.air.toCountry.label": "País/territorio *",
     "quote.air.toCountry.placeholder": "Estados Unidos de América",
-    "quote.air.fromAddress.label": "Dirección de origen *",
+
+    "quote.air.fromAddress.label": "Dirección *",
     "quote.air.fromAddress.placeholder": "Calle Mi Dirección 123",
-    "quote.air.toAddress.label": "Dirección de destino *",
+    "quote.air.toAddress.label": "Dirección *",
     "quote.air.toAddress.placeholder": "Calle Su Dirección 123",
-    "quote.air.fromPostal.label": "Código postal (origen) *",
+
+    "quote.air.fromPostal.label": "Código postal / ZIP *",
     "quote.air.fromPostal.placeholder": "A1A 1A1",
-    "quote.air.fromCity.label": "Ciudad de origen *",
+    "quote.air.fromCity.label": "Ciudad *",
     "quote.air.fromCity.placeholder": "Toronto",
-    "quote.air.fromRegion.label": "Provincia/Estado de origen *",
+    "quote.air.fromRegion.label": "Provincia/Estado *",
     "quote.air.fromRegion.placeholder": "Ontario",
-    "quote.air.toPostal.label": "Código postal / ZIP (destino) *",
+
+    "quote.air.toPostal.label": "Código postal / ZIP *",
     "quote.air.toPostal.placeholder": "60139",
-    "quote.air.toCity.label": "Ciudad de destino *",
+    "quote.air.toCity.label": "Ciudad *",
     "quote.air.toCity.placeholder": "Glendale Heights",
-    "quote.air.toRegion.label": "Provincia/Estado de destino *",
+    "quote.air.toRegion.label": "Provincia/Estado *",
     "quote.air.toRegion.placeholder": "Illinois",
-    "quote.air.residential": "Dirección residencial (destino)",
+
+    "quote.air.residential": "Dirección residencial",
 
     "quote.air.shipment.legend": "¿Qué desea enviar? *",
     "quote.air.shipment.documents": "Documentos",
@@ -1642,6 +1704,7 @@ const translations = {
 
     "quote.general.monthlyVolume.label": "Volumen mensual estimado *",
     "quote.general.monthlyVolume.placeholder": "p. ej., 10–15 envíos por mes, pesos típicos, rutas, etc.",
+    "quote.shippingDetails.title": "Detalles del envío",
 
     "quote.ocean.loadType.label": "Carga completa (FCL) o parcial (LCL) *",
     "quote.ocean.incoterms.label": "Incoterms",
@@ -1652,10 +1715,8 @@ const translations = {
     "quote.trucking.loadType.label": "Carga completa (FTL) o parcial (LTL) *",
     "quote.trucking.incoterms.label": "Incoterms",
     "quote.trucking.incoterms.other": "Otro / No estoy seguro",
-    "quote.trucking.originCity.label": "Ciudad de origen *",
-    "quote.trucking.destinationCity.label": "Ciudad de destino *",
-    "quote.trucking.originRegion.label": "Provincia/Estado de origen *",
-    "quote.trucking.destinationRegion.label": "Provincia/Estado de destino *",
+    "quote.trucking.city.label": "Ciudad *",
+    "quote.trucking.region.label": "Provincia/Estado *",
     "quote.trucking.pallets.label": "¿Cuántas tarimas/palés? *",
     "quote.trucking.pallets.placeholder": "p. ej., 1",
     "quote.trucking.weight.label": "Peso total *",

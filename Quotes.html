@@ -138,232 +138,350 @@
             <!-- MAIN FIELDS (hidden until a service is chosen) -->
             <div class="contact__form-main-fields is-hidden">
               <!-- Basic contact info -->
+              <!-- FROM contact info -->
+            <div class="contact__form-section">
+              <h3 class="contact__form-section-title" data-i18n="quote.form.fromSection.title">
+                FROM
+              </h3>
               <div class="contact__form-row">
                 <div class="contact__form-field">
-                  <label for="first-name" data-i18n="quote.form.firstName.label">First Name *</label>
+                  <label for="from-first-name" data-i18n="quote.form.firstName.label">First Name *</label>
                   <input
                     class="contact__form-input"
-                    name="first_name"
+                    name="from_first_name"
                     type="text"
-                    id="first-name"
+                    id="from-first-name"
                     placeholder="First name"
                     data-i18n-placeholder="quote.form.firstName.placeholder"
                     required
                   />
                 </div>
-                <div class="contact__form-field">
-                  <label for="last-name" data-i18n="quote.form.lastName.label">Last Name *</label>
-                  <input
+               <div class="contact__form-field">
+                 <label for="from-last-name" data-i18n="quote.form.lastName.label">Last Name *</label>
+                 <input
                     class="contact__form-input"
-                    name="last_name"
+                    name="from_last_name"
                     type="text"
-                    id="last-name"
+                    id="from-last-name"
                     placeholder="Last name"
-                    data-i18n-placeholder="quote.form.lastName.placeholder"
+                   data-i18n-placeholder="quote.form.lastName.placeholder"
                     required
                   />
                 </div>
               </div>
-              <div class="contact__form-row">
+              <div class="contact__form-row">           
+           <div class="contact__form-field">
+           <label for="from-email" data-i18n="quote.form.email.label">Email Address *</label>
+            <input
+              class="contact__form-input"
+              name="from_email"
+              type="email"
+             id="from-email"
+             placeholder="you@company.com"
+              data-i18n-placeholder="quote.form.email.placeholder"
+             required
+            />
+         </div>
+         <div class="contact__form-field">
+            <label for="from-company" data-i18n="quote.form.company.label">Company Name</label>
+                <input
+                  class="contact__form-input"
+                  name="from_company"
+                 type="text"
+                  id="from-company"
+                 placeholder="Company name (optional)"
+                  data-i18n-placeholder="quote.form.company.placeholder"
+                />
+              </div>
+           </div>
+            <div class="contact__form-row">
+              <div class="contact__form-field">
+                <label for="from-phone" data-i18n="quote.form.phone.label">Phone Number *</label>
+                <input
+                  class="contact__form-input"
+                  name="from_phone"
+                  type="tel"
+                  id="from-phone"
+                  placeholder="+1 (555) 555-5555"
+                 data-i18n-placeholder="quote.form.phone.placeholder"
+                 required
+                />
+              </div>
+              <div class="contact__form-field">
+               <label for="from-website" data-i18n="quote.form.website.label">Website</label>
+                <textarea
+                  class="contact__form-message contact__form-message--small"
+                  id="from-website"
+                  name="from_website"
+                  placeholder="Website (optional)"
+                  data-i18n-placeholder="quote.form.website.placeholder"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- TO contact info -->
+          <div class="contact__form-section">
+            <h3 class="contact__form-section-title" data-i18n="quote.form.toSection.title">
+              TO
+            </h3>
+
+            <div class="contact__form-row">
+              <div class="contact__form-field">
+                <label for="to-first-name" data-i18n="quote.form.firstName.label">First Name *</label>
+                <input
+                  class="contact__form-input"
+                  name="to_first_name"
+                  type="text"
+                  id="to-first-name"
+                  placeholder="First name"
+                  data-i18n-placeholder="quote.form.firstName.placeholder"
+                  required
+                />
+                      </div>
+              <div class="contact__form-field">
+                <label for="to-last-name" data-i18n="quote.form.lastName.label">Last Name *</label>
+                <input
+                  class="contact__form-input"
+                  name="to_last_name"
+                  type="text"
+                  id="to-last-name"
+                  placeholder="Last name"
+                  data-i18n-placeholder="quote.form.lastName.placeholder"
+                  required
+                />
+              </div>
+            </div>
+             <div class="contact__form-row">
                 <div class="contact__form-field">
-                  <label for="email" data-i18n="quote.form.email.label">Email Address *</label>
-                  <input
+                  <label for="to-email" data-i18n="quote.form.email.label">Email Address *</label>
+                 <input
                     class="contact__form-input"
-                    name="email"
+                   name="to_email"
                     type="email"
-                    id="email"
+                   id="to-email"
                     placeholder="you@company.com"
                     data-i18n-placeholder="quote.form.email.placeholder"
                     required
                   />
-                </div>
+               </div>
                 <div class="contact__form-field">
-                  <label for="company" data-i18n="quote.form.company.label">Company Name</label>
+                  <label for="to-company" data-i18n="quote.form.company.label">Company Name</label>
                   <input
                     class="contact__form-input"
-                    name="company"
-                    type="text"
-                    id="company"
+                    name="to_company"
+                              type="text"
+                    id="to-company"
                     placeholder="Company name (optional)"
                     data-i18n-placeholder="quote.form.company.placeholder"
                   />
                 </div>
               </div>
-              <div class="contact__form-row">
-                <div class="contact__form-field">
-                  <label for="phone" data-i18n="quote.form.phone.label">Phone Number *</label>
-                  <input
-                    class="contact__form-input"
-                    name="phone"
-                    type="tel"
-                    id="phone"
-                    placeholder="+1 (555) 555-5555"
-                    data-i18n-placeholder="quote.form.phone.placeholder"
-                    required
-                  />
-                </div>
-                <div class="contact__form-field">
-                  <label for="website" data-i18n="quote.form.website.label">Website</label>
-                  <textarea
-                    class="contact__form-message contact__form-message--small"
-                    id="website"
-                    name="website"
-                    placeholder="Website (optional)"
-                    data-i18n-placeholder="quote.form.website.placeholder"
-                  ></textarea>
-                </div>
+                <div class="contact__form-row">
+                  <div class="contact__form-field">
+                     <label for="to-phone" data-i18n="quote.form.phone.label">Phone Number *</label>
+                      <input
+                        class="contact__form-input"
+                        name="to_phone"
+                        type="tel"
+                        id="to-phone"
+                        placeholder="+1 (555) 555-5555"
+                        data-i18n-placeholder="quote.form.phone.placeholder"
+                        required
+                       />
+               </div>
+                 <div class="contact__form-field">
+              <label for="to-website" data-i18n="quote.form.website.label">Website</label>
+                      <textarea
+                            class="contact__form-message contact__form-message--small"
+                            id="to-website"
+                             name="to_website"
+                             placeholder="Website (optional)"
+                             data-i18n-placeholder="quote.form.website.placeholder"
+                    ></textarea>
+                  </div>
               </div>
+            </div>
               <!-- ====================== AIR EXPRESS FIELDS ====================== -->
               <div id="air-express-fields" class="air-express-fields is-hidden">
-                <!-- From/To countries -->
-                <div class="contact__form-row">
-                  <div class="contact__form-field">
-                    <label for="air-from-country" data-i18n="quote.air.fromCountry.label">From Country/Territory *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-from-country"
-                      name="air_from_country"
-                      placeholder="Canada"
-                      data-i18n-placeholder="quote.air.fromCountry.placeholder"
-                      required
-                    />
-                  </div>
-                  <div class="contact__form-field">
-                    <label for="air-to-country" data-i18n="quote.air.toCountry.label">To Country/Territory *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-to-country"
-                      name="air_to_country"
-                      placeholder="United States of America"
-                      data-i18n-placeholder="quote.air.toCountry.placeholder"
-                      required
-                    />
-                  </div>
-                </div>
-                <!-- From/To street address -->
-                <div class="contact__form-row">
-                  <div class="contact__form-field">
-                    <label for="air-from-address" data-i18n="quote.air.fromAddress.label">From Address *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-from-address"
-                      name="air_from_address"
-                      placeholder="123 My Street"
-                      data-i18n-placeholder="quote.air.fromAddress.placeholder"
-                      required
-                    />
-                  </div>
-                  <div class="contact__form-field">
-                    <label for="air-to-address" data-i18n="quote.air.toAddress.label">To Address *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-to-address"
-                      name="air_to_address"
-                      placeholder="123 Your Street"
-                      data-i18n-placeholder="quote.air.toAddress.placeholder"
-                      required
-                    />
-                  </div>
-                </div>
-                <!-- From address details -->
-                <div class="contact__form-row contact__form-address-row">
-                  <div class="contact__form-field">
-                    <label for="air-from-postal" data-i18n="quote.air.fromPostal.label">From Postal/ZIP Code *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-from-postal"
-                      name="air_from_postal"
-                      placeholder="A1A 1A1"
-                      data-i18n-placeholder="quote.air.fromPostal.placeholder"
-                      required
-                    />
-                  </div>
-                  <div class="contact__form-field">
-                    <label for="air-from-city" data-i18n="quote.air.fromCity.label">From City *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-from-city"
-                      name="air_from_city"
-                      placeholder="Toronto"
-                      data-i18n-placeholder="quote.air.fromCity.placeholder"
-                      required
-                    />
-                  </div>
-                  <div class="contact__form-field">
-                    <label for="air-from-region" data-i18n="quote.air.fromRegion.label">From Province/State *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-from-region"
-                      name="air_from_region"
-                      placeholder="Ontario"
-                      data-i18n-placeholder="quote.air.fromRegion.placeholder"
-                      required
-                    />
-                  </div>
-                </div>
-               <!-- To address details -->
-                <div class="contact__form-row contact__form-address-row">
-                  <div class="contact__form-field">
-                    <label for="air-to-postal" data-i18n="quote.air.toPostal.label">To ZIP/Postal Code *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-to-postal"
-                      name="air_to_postal"
-                      placeholder="60139"
-                      data-i18n-placeholder="quote.air.toPostal.placeholder"
-                      required
-                    />
-                  </div>
-                  <div class="contact__form-field">
-                    <label for="air-to-city" data-i18n="quote.air.toCity.label">To City *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-to-city"
-                      name="air_to_city"
-                      placeholder="Glendale Heights"
-                      data-i18n-placeholder="quote.air.toCity.placeholder"
-                      required
-                    />
-                  </div>
-                  <div class="contact__form-field">
-                    <label for="air-to-region" data-i18n="quote.air.toRegion.label">To State/Province *</label>
-                    <input
-                      class="contact__form-input"
-                      type="text"
-                      id="air-to-region"
-                      name="air_to_region"
-                      placeholder="Illinois"
-                      data-i18n-placeholder="quote.air.toRegion.placeholder"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="contact__form-row">
-                  <div class="contact__form-field">
-                    <label class="contact__form-checkbox-inline">
-                      <input type="checkbox" name="air_residential" value="Yes" />
-                      <span data-i18n="quote.air.residential">Residential address (destination)</span>
-                    </label>
-                  </div>
-                </div>
-                <!-- Shipment type -->
-                <fieldset class="contact__form-radio-group" id="air-shipment-type-group">
-                  <legend data-i18n="quote.air.shipment.legend">What are you shipping? *</legend>
-                  <label>
-                    <input type="radio" name="air_shipment_type" value="Documents" required />
-                    <span data-i18n="quote.air.shipment.documents">Documents</span>
-                  </label>
-                  <label>
-                    <input type="radio" name="air_shipment_type" value="Parcels" required />
+                <!-- SHIPPING DETAILS title (Air Express only) -->
+              <h3
+              class="contact__form-section-title contact__form-section-title--shipping-air"
+              data-i18n="quote.shippingDetails.title"
+              >
+              Shipping Details
+              </h3>
+                <!-- FROM / TO ADDRESS BLOCKS -->
+               <div class="contact__form-row">
+                  <!-- FROM address -->
+                  <div class="contact__form-section">
+                    <h3 class="contact__form-section-title" data-i18n="quote.form.fromSection.title">
+                      FROM
+                   </h3>
+                   <!-- Country -->
+                   <div class="contact__form-field">
+                      <label for="air-from-country" data-i18n="quote.air.fromCountry.label">Country/Territory *</label>
+                     <input
+                       class="contact__form-input"
+                        type="text"
+                       id="air-from-country"
+                       name="air_from_country"
+                       placeholder="Canada"
+                       data-i18n-placeholder="quote.air.fromCountry.placeholder"
+                       required
+                     />
+                   </div>
+                   <!-- Street address -->
+                   <div class="contact__form-field">
+                     <label for="air-from-address" data-i18n="quote.air.fromAddress.label">Address *</label>
+                     <input
+                       class="contact__form-input"
+                       type="text"
+                       id="air-from-address"
+                       name="air_from_address"
+                       placeholder="123 My Street"
+                       data-i18n-placeholder="quote.air.fromAddress.placeholder"
+                       required
+                      />
+                   </div>
+                   <!-- Postal / City / Region -->
+                   <div class="contact__form-row contact__form-address-row">
+                     <div class="contact__form-field">
+                       <label for="air-from-postal" data-i18n="quote.air.fromPostal.label">Postal/ZIP Code *</label>
+                       <input
+                         class="contact__form-input"
+                         type="text"
+                         id="air-from-postal"
+                         name="air_from_postal"
+                         placeholder="A1A 1A1"
+                         data-i18n-placeholder="quote.air.fromPostal.placeholder"
+                         required
+                       />
+                     </div>
+                     <div class="contact__form-field">
+                       <label for="air-from-city" data-i18n="quote.air.fromCity.label">City *</label>
+                       <input
+                         class="contact__form-input"
+                         type="text"
+                         id="air-from-city"
+                          name="air_from_city"
+                         placeholder="Toronto"
+                         data-i18n-placeholder="quote.air.fromCity.placeholder"
+                         required
+                       />
+                     </div>
+                     <div class="contact__form-field">
+                       <label for="air-from-region" data-i18n="quote.air.fromRegion.label">Province/State *</label>
+                       <input
+                         class="contact__form-input"
+                         type="text"
+                         id="air-from-region"
+                         name="air_from_region"
+                         placeholder="Ontario"
+                         data-i18n-placeholder="quote.air.fromRegion.placeholder"
+                         required
+                       />
+                     </div>
+                   </div>
+                   <!-- Residential checkbox (FROM) -->
+                                 <div class="contact__form-row">
+                     <div class="contact__form-field">
+                       <label class="contact__form-checkbox-inline">
+                         <input type="checkbox" name="air_from_residential" value="Yes" />
+                         <span data-i18n="quote.air.residential">Residential address</span>
+                       </label>
+                      </div>
+                   </div>
+                 </div>
+                  <!-- TO address -->
+                 <div class="contact__form-section">
+                   <h3 class="contact__form-section-title" data-i18n="quote.form.toSection.title">
+                     TO
+                   </h3>
+                    <!-- Country -->
+                   <div class="contact__form-field">
+                      <label for="air-to-country" data-i18n="quote.air.toCountry.label">Country/Territory *</label>
+                     <input
+                       class="contact__form-input"
+                       type="text"
+                       id="air-to-country"
+                       name="air_to_country"
+                       placeholder="United States of America"
+                       data-i18n-placeholder="quote.air.toCountry.placeholder"
+                       required
+                     />
+                   </div>
+                   <!-- Street address -->
+                   <div class="contact__form-field">
+                     <label for="air-to-address" data-i18n="quote.air.toAddress.label">Address *</label>
+                     <input
+                       class="contact__form-input"
+                       type="text"
+                       id="air-to-address"
+                       name="air_to_address"
+                       placeholder="123 Your Street"
+                       data-i18n-placeholder="quote.air.toAddress.placeholder"
+                       required
+                     />
+                   </div>
+                   <!-- Postal / City / Region -->
+                   <div class="contact__form-row contact__form-address-row">
+                     <div class="contact__form-field">
+                       <label for="air-to-postal" data-i18n="quote.air.toPostal.label">Postal/Code ZIP *</label>
+                       <input
+                         class="contact__form-input"
+                         type="text"
+                         id="air-to-postal"
+                         name="air_to_postal"
+                         placeholder="60139"
+                         data-i18n-placeholder="quote.air.toPostal.placeholder"
+                         required
+                       />
+                     </div>
+                     <div class="contact__form-field">
+                       <label for="air-to-city" data-i18n="quote.air.toCity.label">City *</label>
+                        <input
+                         class="contact__form-input"
+                         type="text"
+                         id="air-to-city"
+                         name="air_to_city"
+                         placeholder="Glendale Heights"
+                         data-i18n-placeholder="quote.air.toCity.placeholder"
+                         required
+                       />
+                     </div>
+                     <div class="contact__form-field">
+                       <label for="air-to-region" data-i18n="quote.air.toRegion.label">Province/State *</label>
+                       <input
+                          class="contact__form-input"
+                         type="text"
+                         id="air-to-region"
+                         name="air_to_region"
+                         placeholder="Illinois"
+                         data-i18n-placeholder="quote.air.toRegion.placeholder"
+                         required
+                       />
+                     </div>
+                   </div>
+                   <!-- Residential checkbox (TO) -->
+                   <div class="contact__form-row">
+                     <div class="contact__form-field">
+                       <label class="contact__form-checkbox-inline">
+                         <input type="checkbox" name="air_to_residential" value="Yes" />
+                         <span data-i18n="quote.air.residential">Residential address</span>
+                       </label>
+                      </div>
+                   </div>
+                 </div>
+               </div>
+               <!-- Shipment type -->
+               <fieldset class="contact__form-radio-group" id="air-shipment-type-group">
+                 <legend data-i18n="quote.air.shipment.legend">What are you shipping? *</legend>
+                 <label>
+                   <input type="radio" name="air_shipment_type" value="Documents" required />
+                   <span data-i18n="quote.air.shipment.documents">Documents</span>
+                 </label>
+                 <label>
+                   <input type="radio" name="air_shipment_type" value="Parcels" required />
                     <span data-i18n="quote.air.shipment.parcels">Parcels</span>
                   </label>
                 </fieldset>
@@ -403,13 +521,14 @@
                       id="air-weight-unit"
                       name="air_weight_unit"
                       required
-                    >
+                   >
                       <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
                       <option value="lb">lb</option>
                       <option value="kg">kg</option>
                     </select>
                   </div>
                 </div>
+                <!-- Parcel dimensions – only for Parcels -->
                 <!-- Parcel dimensions – only for Parcels -->
                 <div id="air-parcel-fields" class="is-hidden">
                   <div class="contact__form-row air-dimensions-row">
@@ -509,18 +628,22 @@
               <!-- ==================== END AIR EXPRESS FIELDS ==================== -->
               <!-- Volume / service details (shared) -->
               <div id="general-fields" class="contact__form-general">
-                <label for="monthly-volume" data-i18n="quote.general.monthlyVolume.label">Anticipated Monthly Volume *</label>
-                <textarea
-                  class="contact__form-message"
-                  id="monthly-volume"
-                  name="monthly_volume"
-                  placeholder="e.g., 10&dash;15 shipments per month, typical weights, lanes, etc."
-                  data-i18n-placeholder="quote.general.monthlyVolume.placeholder"
-                  required
+              <!-- SHIPPING DETAILS section title (for Trucking & Ocean) -->
+              <h3 class="contact__form-section-title contact__form-section-title--shipping-general" data-i18n="quote.shippingDetails.title">
+               Shipping Details
+              </h3>
+              <label for="monthly-volume" data-i18n="quote.general.monthlyVolume.label">Anticipated Monthly Volume *</label>
+              <textarea
+                class="contact__form-message"
+                id="monthly-volume"
+                name="monthly_volume"
+                placeholder="e.g., 10&dash;15 shipments per month, typical weights, lanes, etc."
+                data-i18n-placeholder="quote.general.monthlyVolume.placeholder"
+                required
                 ></textarea>
-                <!-- ====================== OCEAN FIELDS ====================== -->
+                  <!-- ====================== OCEAN FIELDS ====================== -->
                 <div id="ocean-fields" class="contact__form-ocean-fields is-hidden">
-                  <div class="contact__form-row load-type-row">
+                 <div class="contact__form-row load-type-row">
                     <div class="contact__form-field">
                       <label for="ocean-load-type" data-i18n="quote.ocean.loadType.label">
                         Full Container Load (FCL) or Less than Container Load (LCL)&nbsp;*
@@ -543,84 +666,121 @@
                         <option value="Other" data-i18n="quote.ocean.incoterms.other">Other / Not sure</option>
                       </select>
                     </div>
-                  </div>
+                  </div>             
+                  <!-- FROM / TO ports -->
                   <div class="contact__form-row">
-                    <div class="contact__form-field">
-                      <label for="ocean-loading" data-i18n="quote.ocean.loading.label">Port of Loading *</label>
-                      <input type="text" id="ocean-loading" name="ocean-loading" required />
-                    </div>
-                    <div class="contact__form-field">
-                      <label for="ocean-destination" data-i18n="quote.ocean.destination.label">Port of Destination *</label>
-                      <input type="text" id="ocean-destination" name="ocean-destination" required />
+                    <!-- FROM -->
+                    <div class="contact__form-section">
+                      <h3 class="contact__form-section-title" data-i18n="quote.form.fromSection.title">FROM</h3>
+                      <div class="contact__form-field">
+                        <label for="ocean-from-port" data-i18n="quote.ocean.loading.label">Port of Loading *</label>
+                        <input
+                          type="text"
+                          id="ocean-from-port"
+                         name="ocean_from_port"
+                          class="contact__form-input"
+                          required
+                        />
+                      </div>
+                    </div>               
+                    <!-- TO -->
+                    <div class="contact__form-section">
+                      <h3 class="contact__form-section-title" data-i18n="quote.form.toSection.title">TO</h3>
+                      <div class="contact__form-field">
+                        <label for="ocean-to-port" data-i18n="quote.ocean.destination.label">Port of Destination *</label>
+                        <input
+                          type="text"
+                          id="ocean-to-port"
+                          name="ocean_to_port"
+                          class="contact__form-input"
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
                 <!-- ==================== END OCEAN FIELDS ==================== -->
                 <!-- ====================== TRUCKING FIELDS ====================== -->
-                <div id="trucking-fields" class="contact__form-trucking-fields is-hidden">
-                  <div class="contact__form-row load-type-row">
-                    <div class="contact__form-field">
-                      <label for="trucking-load-type" data-i18n="quote.trucking.loadType.label">
-                        Full Truck Load (FTL) or Less than Truckload (LTL) *
-                      </label>
-                      <select id="trucking-load-type" name="trucking-load-type" required>
-                        <option value="" selected data-i18n="quote.form.select.placeholder">Please select</option>
-                        <option value="FTL">Full Truck Load (FTL)</option>
-                        <option value="LTL">Less than Truckload (LTL)</option>
-                      </select>
-                    </div>
-                    <div class="contact__form-field">
-                      <label for="trucking-incoterms" data-i18n="quote.trucking.incoterms.label">Incoterms</label>
-                      <select
-                        class="contact__form-input"
-                        id="trucking-incoterms"
-                        name="trucking-incoterms"
-                      >
-                        <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
-                        <option value="FOB">FOB</option>
-                        <option value="EXW">EXW</option>
-                        <option value="CIF">CIF</option>
-                        <option value="DAP">DAP</option>
-                        <option value="DDP">DDP</option>
-                        <option value="Other" data-i18n="quote.trucking.incoterms.other">Other / Not sure</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="contact__form-row">
-                    <div class="contact__form-field">
-                      <label for="trucking-origin-city" data-i18n="quote.trucking.originCity.label">Origin City *</label>
-                      <input type="text" id="trucking-origin-city" name="trucking-origin-city" required />
-                    </div>
-                    <div class="contact__form-field">
-                      <label for="trucking-destination-city" data-i18n="quote.trucking.destinationCity.label">Destination City *</label>
-                      <input
-                        type="text"
-                        id="trucking-destination-city"
-                        name="trucking-destination-city"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="contact__form-row">
-                    <div class="contact__form-field">
-                      <label for="trucking-origin-region" data-i18n="quote.trucking.originRegion.label">Origin Province/State *</label>
-                      <input
-                        type="text"
-                        id="trucking-origin-region"
-                        name="trucking-origin-region"
-                        required
-                      />
-                    </div>
-                    <div class="contact__form-field">
-                      <label for="trucking-destination-region" data-i18n="quote.trucking.destinationRegion.label">Destination Province/State *</label>
-                      <input
-                        type="text"
-                        id="trucking-destination-region"
-                        name="trucking-destination-region"
-                        required
-                      />
-                    </div>
-                  </div>
+<div id="trucking-fields" class="contact__form-trucking-fields is-hidden">
+  <div class="contact__form-row load-type-row">
+    <div class="contact__form-field">
+      <label for="trucking-load-type" data-i18n="quote.trucking.loadType.label">
+        Full Truck Load (FTL) or Less than Truckload (LTL) *
+      </label>
+      <select id="trucking-load-type" name="trucking-load-type" required>
+        <option value="" selected data-i18n="quote.form.select.placeholder">Please select</option>
+        <option value="FTL">Full Truck Load (FTL)</option>
+        <option value="LTL">Less than Truckload (LTL)</option>
+      </select>
+    </div>
+    <div class="contact__form-field">
+      <label for="trucking-incoterms" data-i18n="quote.trucking.incoterms.label">Incoterms</label>
+      <select
+        class="contact__form-input"
+        id="trucking-incoterms"
+        name="trucking-incoterms"
+      >
+        <option value="" data-i18n="quote.form.select.placeholder">Please select</option>
+        <option value="FOB">FOB</option>
+        <option value="EXW">EXW</option>
+        <option value="CIF">CIF</option>
+        <option value="DAP">DAP</option>
+        <option value="DDP">DDP</option>
+        <option value="Other" data-i18n="quote.trucking.incoterms.other">Other / Not sure</option>
+      </select>
+    </div>
+  </div>
+  <!-- FROM / TO city + region -->
+  <div class="contact__form-row">
+    <!-- FROM -->
+    <div class="contact__form-section">
+      <h3 class="contact__form-section-title" data-i18n="quote.form.fromSection.title">FROM</h3>
+      <div class="contact__form-field">
+        <label for="trucking-from-city" data-i18n="quote.trucking.city.label">City *</label>
+        <input
+          type="text"
+          id="trucking-from-city"
+          name="trucking_from_city"
+          class="contact__form-input"
+          required
+        />
+      </div>
+      <div class="contact__form-field">
+        <label for="trucking-from-region" data-i18n="quote.trucking.region.label">Province/State *</label>
+        <input
+          type="text"
+          id="trucking-from-region"
+          name="trucking_from_region"
+          class="contact__form-input"
+          required
+        />
+      </div>
+    </div>
+    <!-- TO -->
+    <div class="contact__form-section">
+      <h3 class="contact__form-section-title" data-i18n="quote.form.toSection.title">TO</h3>
+      <div class="contact__form-field">
+        <label for="trucking-to-city" data-i18n="quote.trucking.city.label">City *</label>
+        <input
+          type="text"
+          id="trucking-to-city"
+          name="trucking_to_city"
+          class="contact__form-input"
+          required
+        />
+      </div>
+      <div class="contact__form-field">
+        <label for="trucking-to-region" data-i18n="quote.trucking.region.label">Province/State *</label>
+        <input
+          type="text"
+          id="trucking-to-region"
+          name="trucking_to_region"
+          class="contact__form-input"
+          required
+        />
+      </div>
+    </div>
+  </div>
                   <!-- Trucking: Pallets -->
                   <div class="contact__form-row">
                     <div class="contact__form-field">
