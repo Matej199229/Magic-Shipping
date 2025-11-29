@@ -647,7 +647,7 @@ const translations = {
 
     "contact.phone.heading": "Phone",
     "contact.phone.desc": "Call us now!",
-    "contact.phone.number": "123-456-7890",
+    "contact.phone.number": "647&#8209;799&#8209;0606",
 
     "contact.quote.heading": "Get a Quote",
     "contact.quote.desc": "Fill out our online form now!",
@@ -1072,7 +1072,7 @@ const translations = {
 
     "contact.phone.heading": "Téléphone",
     "contact.phone.desc": "Appelez-nous dès maintenant!",
-    "contact.phone.number": "123-456-7890",
+    "contact.phone.number": "647&#8209;799&#8209;0606",
 
     "contact.quote.heading": "Obtenir un devis",
     "contact.quote.desc": "Remplissez notre formulaire en ligne dès maintenant!",
@@ -1515,7 +1515,7 @@ const translations = {
 
     "contact.phone.heading": "Teléfono",
     "contact.phone.desc": "¡Llámenos ahora!",
-    "contact.phone.number": "123-456-7890",
+    "contact.phone.number": "647&#8209;799&#8209;0606",
 
     "contact.quote.heading": "Solicitar cotización",
     "contact.quote.desc": "Complete nuestro formulario en línea ahora mismo!",
