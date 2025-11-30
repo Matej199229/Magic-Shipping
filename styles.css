@@ -891,10 +891,9 @@ img {
 .services__card:nth-of-type(5) img {
     object-fit: contain;
 }
-
-.services__card:nth-of-type(10) {
-    grid-column: 2 / 3;  /* place it in the middle column */
-  }
+.services__card:nth-of-type(12) img {
+    object-fit: contain;
+}
 
 .services_card__header {
     font-size: 1.2rem;
