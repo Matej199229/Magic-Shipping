@@ -597,28 +597,28 @@ const translations = {
     "nav.quote": "Get a Quote",
 
     // hero (index)
-    "hero.title": "At Magic Shipping, we specialize in dependable international air express, trucking, and freight solutions.",
-    "hero.line1": "We help businesses and individuals ship worldwide with real-time tracking, reliable partner networks, and discounted preferential shipping rates.",
-    "hero.line2": "Get access to world class shipping services for a fraction of retail rates. Contact us for a quote now.",
+    "hero.title": "International air express, LTL/FTL trucking, and ocean freight solutions from your trusted Toronto-based freight forwarder.",
+    "hero.line1": "Magic Shipping helps businesses and individuals ship worldwide across air, road, rail, and ocean. We combine real-time tracking, reliable carrier networks, and 3PL-style logistics support to move your cargo safely and on time.",
+    "hero.line2": "Get discounted DHL air express rates plus competitive trucking and ocean freight pricing &ndash; request a quote today.",
     "hero.ctaPrimary": "Get a Quote",
     "hero.ctaSecondary": "Email Us",
 
-    "hero.service.air.title": "Air Express",
-    "hero.service.air.desc": "Door-to-Door Services",
-    "hero.service.trucking.title": "Trucking",
-    "hero.service.trucking.desc": "FTL/LTL Services",
+    "hero.service.air.title": "Air Express &amp; Air Freight",
+    "hero.service.air.desc": "International express &amp; commercial air cargo",
+    "hero.service.trucking.title": "LTL/FTL Trucking",
+    "hero.service.trucking.desc": "Domestic &amp; cross-border freight",
     "hero.service.ocean.title": "Ocean Freight",
-    "hero.service.ocean.desc": "Container Services",
+    "hero.service.ocean.desc": "FCL &amp; LCL container shipping",
     "hero.service.tracking.title": "Real-Time Tracking",
-    "hero.service.tracking.desc": "and professional support",
+    "hero.service.tracking.desc": "Proactive updates &amp; support",
 
     // about (index)
-    "about.heading": "About us : Who we are",
-    "about.text1": "Magic Shipping is a Toronto-based logistics provider specializing in affordable international air express shipping through our business partnership with DHL Express, FedEx and UPS. We also provide domestic trucking and ocean freight services to all of our customers; from large businesses that are shipping massive ocean containers to individuals with one off documents, we are here to help everyone with their shipping needs. With substantial corporate account discounts, we help businesses and individuals alike access world-class shipping services at a fraction of retail rates.",
+    "about.heading": "About Magic Shipping",
+    "about.text1": "Magic Shipping is a Toronto-based freight forwarder and 3PL-style logistics partner. Through our corporate partnerships with DHL Express (for whom we are an authorized reseller) and leading trucking, rail, and ocean carriers, we provide affordable international air express, LTL/FTL trucking, rail, and ocean freight solutions. We support both businesses and individuals &ndash; from one-off document shipments to full container loads and multi-mode commercial freight.",
     "about.missionTitle": "Our Mission",
-    "about.missionText": "To simplify and reduce the cost of international and domestic shipping for businesses and individuals, while ensuring reliable service, full tracking, and professional support along the way.",
+    "about.missionText": "To simplify and reduce the cost of international and domestic shipping for businesses and individuals, while providing reliable transit, full tracking visibility, and expert logistics support at every step.",
     "about.visionTitle": "Our Vision",
-    "about.visionText": "Magic Shipping aims to provide seamless global logistics through trusted partnerships, transparent pricing, and an unwavering commitment to service excellence.",
+    "about.visionText": "Magic Shipping aims to be a trusted logistics partner for businesses of all sizes, delivering seamless global freight forwarding and 3PL-style services through strong carrier relationships, transparent pricing, and an unwavering commitment to service excellence.",
 
     // testimonials (index)
     "testimonials.heading": "Testimonials: What clients say about us",
@@ -1030,28 +1030,29 @@ const translations = {
     "nav.quote": "Obtenir un devis",
 
     // hero (index)
-    "hero.title": "Chez Magic Shipping, nous sommes spécialisés dans des solutions internationales fiables en transport aérien express, en camionnage et en fret.",
-    "hero.line1": "Nous aidons les entreprises et les particuliers à expédier partout dans le monde grâce au suivi en temps réel, à un réseau de partenaires fiables et à des tarifs préférentiels.",
-    "hero.line2": "Profitez de services de transport de classe mondiale pour une fraction des tarifs de détail. Contactez-nous pour obtenir un devis.",
-    "hero.ctaPrimary": "Obtenir un devis",
+    "hero.title": "Solutions de messagerie aérienne internationale, transport routier LTL/FTL et fret maritime offertes par votre transitaire de confiance basé à Toronto.",
+    "hero.line1": "Magic Shipping aide les entreprises et les particuliers à expédier dans le monde entier par voie aérienne, routière, ferroviaire et maritime. Nous combinons le suivi en temps réel, un réseau fiable de transporteurs et un soutien logistique de type 3PL pour acheminer votre cargaison en toute sécurité et dans les délais.",
+    "hero.line2": "Obtenez des tarifs réduits sur la messagerie aérienne DHL ainsi que des prix compétitifs pour le transport routier et maritime &ndash; demandez une soumission dès aujourd’hui.",
+    "hero.ctaPrimary": "Obtenir une soumission",
     "hero.ctaSecondary": "Nous écrire",
 
-    "hero.service.air.title": "Express aérien",
-    "hero.service.air.desc": "Service porte-à-porte",
-    "hero.service.trucking.title": "Transport routier",
-    "hero.service.trucking.desc": "Services FTL / LTL",
+    "hero.service.air.title": "Messagerie &amp; Fret aérien",
+    "hero.service.air.desc": "Messagerie internationale &amp; cargaison aérienne commerciale",
+    "hero.service.trucking.title": "Transport routier LTL/FTL",
+    "hero.service.trucking.desc": "Fret domestique &amp; transfrontalier",
     "hero.service.ocean.title": "Fret maritime",
-    "hero.service.ocean.desc": "Services par conteneur",
+    "hero.service.ocean.desc": "Expédition de conteneurs FCL &amp; LCL",
     "hero.service.tracking.title": "Suivi en temps réel",
-    "hero.service.tracking.desc": "et soutien professionnel",
+    "hero.service.tracking.desc": "Mises à jour proactives &amp; soutien",
 
     // about (index)
-    "about.heading": "À propos de nous : qui nous sommes",
-    "about.text1": "Magic Shipping est un fournisseur de services logistiques basé à Toronto, spécialisé dans l’expédition internationale économique par express aérien grâce à nos partenariats avec DHL Express, FedEx et UPS. Nous offrons également des services de camionnage national et de fret maritime à tous nos clients; des grandes entreprises expédiant des conteneurs complets aux particuliers qui envoient un seul document, nous sommes là pour répondre à tous les besoins d’expédition. Grâce à d’importants rabais corporatifs, nous permettons aux entreprises et aux particuliers de profiter de services de transport de classe mondiale à une fraction des tarifs de détail.",
+    "about.heading": "À propos de Magic Shipping",
+    "about.text1": "Magic Shipping est un transitaire basé à Toronto et un partenaire logistique de style 3PL. Grâce à nos partenariats corporatifs avec DHL Express (dont nous sommes un revendeur autorisé) ainsi qu’avec des transporteurs routiers, ferroviaires et maritimes de premier plan, nous offrons des solutions abordables en messagerie aérienne internationale, transport LTL/FTL, fret ferroviaire et maritime. Nous soutenons autant les entreprises que les particuliers &ndash; qu’il s’agisse d’expéditions ponctuelles de documents ou d’expéditions commerciales multimodales et de conteneurs complets.",
     "about.missionTitle": "Notre mission",
-    "about.missionText": "Simplifier et réduire le coût des expéditions nationales et internationales pour les entreprises et les particuliers, tout en assurant un service fiable, un suivi complet et un soutien professionnel tout au long du processus.",
+    "about.missionText": "Simplifier et réduire le coût des expéditions internationales et domestiques pour les entreprises et les particuliers, tout en offrant un transport fiable, une visibilité complète du suivi et un soutien logistique expert à chaque étape.",
     "about.visionTitle": "Notre vision",
-    "about.visionText": "Magic Shipping vise à offrir une logistique mondiale fluide grâce à des partenariats de confiance, des prix transparents et un engagement constant envers l’excellence du service.",
+    "about.visionText": "Magic Shipping vise à devenir un partenaire logistique de confiance pour les entreprises de toutes tailles, en offrant un service de transit mondial fluide et des solutions de style 3PL grâce à des relations solides avec les transporteurs, une tarification transparente et un engagement inébranlable envers l’excellence du service.",
+
 
     // testimonials (index)
     "testimonials.heading": "Témoignages : ce que nos clients disent de nous",
@@ -1483,29 +1484,30 @@ const translations = {
     "nav.insights": "Artículos",
     "nav.quote": "Solicitar cotización",
 
-    // hero
-    "hero.title": "En Magic Shipping, nos especializamos en soluciones internacionales confiables de envío aéreo exprés, transporte por carretera y servicios de carga.",
-    "hero.line1": "Ayudamos a empresas y particulares a enviar a todo el mundo con seguimiento en tiempo real, una red de socios confiables y tarifas preferenciales.",
-    "hero.line2": "Obtenga servicios de envío de clase mundial por una fracción del precio minorista. Contáctenos para solicitar una cotización.",
-    "hero.ctaPrimary": "Solicitar cotización",
-    "hero.ctaSecondary": "Escríbanos",
+    // hero (index)
+    "hero.title": "Mensajería aérea internacional, transporte LTL/FTL y soluciones de carga marítima de su agente de carga de confianza con sede en Toronto.",
+    "hero.line1": "Magic Shipping ayuda a empresas y particulares a enviar mercancías a todo el mundo por vía aérea, terrestre, ferroviaria y marítima. Combinamos seguimiento en tiempo real, redes confiables de transportistas y soporte logístico estilo 3PL para mover su carga de forma segura y puntual.",
+    "hero.line2": "Obtenga tarifas descontadas de mensajería aérea DHL y precios competitivos para el transporte por carretera y marítimo &ndash; solicite una cotización hoy mismo.",
+    "hero.ctaPrimary": "Obtener cotización",
+    "hero.ctaSecondary": "Envíenos un correo",
 
-    "hero.service.air.title": "Envío aéreo exprés",
-    "hero.service.air.desc": "Servicio puerta a puerta",
-    "hero.service.trucking.title": "Transporte por camión",
-    "hero.service.trucking.desc": "Servicios FTL / LTL",
-    "hero.service.ocean.title": "Flete marítimo",
-    "hero.service.ocean.desc": "Servicios en contenedor",
+    "hero.service.air.title": "Mensajería &amp; Carga aérea",
+    "hero.service.air.desc": "Mensajería internacional &amp; carga aérea comercial",
+    "hero.service.trucking.title": "Transporte LTL/FTL",
+    "hero.service.trucking.desc": "Flete nacional &amp; transfronterizo",
+    "hero.service.ocean.title": "Carga marítima",
+    "hero.service.ocean.desc": "Envío de contenedores FCL &amp; LCL",
     "hero.service.tracking.title": "Seguimiento en tiempo real",
-    "hero.service.tracking.desc": "y soporte profesional",
+    "hero.service.tracking.desc": "Actualizaciones proactivas &amp; soporte",
 
-    // about
-    "about.heading": "Quiénes somos",
-    "about.text1": "Magic Shipping es un proveedor de logística con sede en Toronto, especializado en envíos internacionales económicos por mensajería aérea gracias a nuestras alianzas con DHL Express, FedEx y UPS. También ofrecemos servicios de transporte por camión dentro de Canadá y de carga marítima para todo tipo de clientes. Con importantes descuentos corporativos, ayudamos a empresas y particulares a acceder a servicios de envío de clase mundial.",
+    // about (index)
+    "about.heading": "Acerca de Magic Shipping",
+    "about.text1": "Magic Shipping es un agente de carga con sede en Toronto y un socio logístico estilo 3PL. A través de nuestras alianzas corporativas con DHL Express (de quienes somos revendedores autorizados) y con transportistas líderes de carretera, ferrocarril y marítimo, ofrecemos soluciones accesibles de mensajería aérea internacional, transporte LTL/FTL, carga ferroviaria y marítima. Atendemos tanto a empresas como a particulares &ndash; desde envíos únicos de documentos hasta cargas comerciales multimodales y contenedores completos.",
     "about.missionTitle": "Nuestra misión",
-    "about.missionText": "Simplificar y reducir el costo de los envíos nacionales e internacionales para empresas y particulares.",
+    "about.missionText": "Simplificar y reducir el costo del transporte internacional y doméstico para empresas y particulares, ofreciendo tránsito confiable, visibilidad total de seguimiento y soporte logístico experto en cada etapa.",
     "about.visionTitle": "Nuestra visión",
-    "about.visionText": "Magic Shipping busca ofrecer logística global fluida con alianzas confiables y precios transparentes.",
+    "about.visionText": "Magic Shipping busca ser un socio logístico confiable para empresas de todos los tamaños, proporcionando transporte global sin fricciones y servicios estilo 3PL mediante relaciones sólidas con transportistas, precios transparentes y un compromiso inquebrantable con la excelencia en el servicio.",
+
 
     // testimonials
     "testimonials.heading": "Testimonios: lo que dicen nuestros clientes",
