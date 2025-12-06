@@ -433,6 +433,30 @@ const blogPosts = [
     url: 'https://theloadstar.com/asia-europe-spots-stay-strong-while-carriers-hunt-cargo-to-fill-ships-to-the-us/',
     imageUrl: '/Images/Insights/Ocean Freight/17b37d33846ce8fa482f0795c2e552a7-680x0-c-default.jpg',
     date: '2025-11-21'
+  },
+  {
+    id: 4,
+    category: 'trucking',
+    source: 'TruckNews',
+    url: 'https://www.trucknews.com/products/kenworth-offers-paccar-tx-12-pro-tx-18-pro-automated-transmissions-for-mixer-applications/',
+    imageUrl: 'https://www.trucknews.com/wp-content/uploads/2025/12/Kenworth.jpg',
+    date: '2025-12-5'
+  },
+  {
+    id: 5,
+    category: 'air',
+    source: 'Air Cargo News',
+    url: 'https://www.aircargonews.net/supply-chains/air-cargo-up-again-in-november-but-e-commerce-weakens/1080995.article',
+    imageUrl: 'https://d1m8zjqyxnlv3j.cloudfront.net/Pictures/780xany/1/3/6/12136_xeneta_november_2025_figures_865211.jpeg',
+    date: '2025-12-5'
+  },
+  {
+    id: 6,
+    category: 'ocean',
+    source: 'The Loadstar',
+    url: 'https://theloadstar.com/container-spot-rates-edge-back-up-but-carrier-hikes-may-not-hold/',
+    imageUrl: 'https://theloadstar.com/wp-content/uploads/e34b7ede907f0a2b89e0b8844114d328-680x0-c-default.jpg',
+    date: '2025-12-5'
   }
 ];
 
@@ -622,15 +646,15 @@ const translations = {
 
     // testimonials (index)
     "testimonials.heading": "Testimonials: What clients say about us",
-    "testimonials.subheading": "Hear from some of our amazing customers who are building faster.",
+    "testimonials.subheading": "Hear from some of our amazing customers who are shipping with us.",
 
-    "testimonials.card1.text": "“This store has never let me down. They have a wide range of products and their prices are very reasonable. The customer service is excellent.”",
-    "testimonials.card1.name": "Full Name",
-    "testimonials.card1.role": "Product Manager, Company 1",
+    "testimonials.card1.text": "&quot;Magic Shipping handled my document delivery from Yaound&eacute; to the UN office in Geneva with outstanding professionalism. Pickup was quick, tracking was clear, and the shipment arrived on time. They delivered exactly as promised &mdash; fast, reliable, and stress-free service.&quot;",
+    "testimonials.card1.name": "H. Nsanyu",
+    "testimonials.card1.role": "Presidency of the Rebuplic of Cameroon, Yaound&eacute;,&nbsp;Cameroon",
 
-    "testimonials.card2.text": "“Their repair services are life-savers! They fixed my phone's water damage when I thought all hope was lost. Absolutely recommend!”",
-    "testimonials.card2.name": "Full Name",
-    "testimonials.card2.role": "Head of Design, Company 2",
+    "testimonials.card2.text": "&quot;I opened an account with Magic Shipping and use their air express service to ship to customers across the USA. They are very professional, reliable, and offer great customer service. Highly recommended!&quot;",
+    "testimonials.card2.name": "Emmanuel Ndeh Sah",
+    "testimonials.card2.role": "CEO, Kmer Outsourcing Inc.",
 
     "testimonials.card3.text": "“My phone’s screen was shattered and I thought I’d have to buy a new one, but the repair service here saved me a lot of money. The screen looks brand new now!”",
     "testimonials.card3.name": "Full Name",
@@ -745,6 +769,12 @@ const translations = {
     "blog.post2.excerpt": "Emirates SkyCargo is partnering with a drone manufacturer to test VTOL cargo aircraft, running feasibility studies and live demonstrations across its network.",
     "blog.post3.title": "Asia–Europe spot rates stay firm as carriers hunt cargo to fill US services",
     "blog.post3.excerpt": "Mid-November FAK increases continue to support spot container rates on Asia–Europe lanes while carriers look for cargo to fill sailings to North America.",
+    "blog.post4.title": "Kenworth offers Paccar TX-12 PRO, TX-18 PRO automated transmissions for mixer applications",
+    "blog.post4.excerpt": "Kenworth has expanded availability of its Paccar TX-12 PRO and TX-18 PRO automated transmissions to T880 and W990 models equipped with Paccar engines and a rear engine power take-off (REPTO). The change enables concrete mixer and other REPTO-dependent vocational customers to spec the transmissions on Class 8 trucks.",
+    "blog.post5.title": "Air cargo up again in November but e-commerce weakens",
+    "blog.post5.excerpt": "Latest Xeneta data reveals air cargo demand rose 5% in November while rates fell 5% to $2.73/kg as carriers chase market share",
+    "blog.post6.title": "Container spot rates edge back up – but carrier hikes may not hold",
+    "blog.post6.excerpt": "Container spot freight rates out of Asia on the deepsea trades to North America and Europe were lifted this week by carrier-led price increases.",
 
     // GET A QUOTE PAGE
     "quote.title": "Request a Quote",
@@ -757,6 +787,7 @@ const translations = {
     "quote.services.note": "Please select the service(s) you’re interested in.",
     "quote.services.change": "Change service",
 
+    "quote.form.shipDate.label": "When are you looking to ship?",
     "quote.form.fromSection.title": "FROM",
     "quote.form.toSection.title": "TO",
     "quote.form.firstName.label": "First Name *",
@@ -1056,15 +1087,15 @@ const translations = {
 
     // testimonials (index)
     "testimonials.heading": "Témoignages : ce que nos clients disent de nous",
-    "testimonials.subheading": "Découvrez ce que disent certains de nos formidables clients.",
+    "testimonials.subheading": "Découvrez ce que disent certains de nos clients qui expédient avec nous.",
 
-    "testimonials.card1.text": "« Cette boutique ne m’a jamais déçu. Le choix de produits est vaste, les prix sont très raisonnables et le service à la clientèle est excellent. »",
-    "testimonials.card1.name": "Nom complet",
-    "testimonials.card1.role": "Chef de produit, Société 1",
+    "testimonials.card1.text": "« Magic Shipping a géré la livraison de mes documents de Yaound&eacute; au bureau de l’ONU à Genève avec un professionnalisme exceptionnel. L’enlèvement a été rapide, le suivi clair, et l’envoi est arrivé à temps. Ils ont livré exactement comme promis — un service rapide, fiable et sans stress. »",
+    "testimonials.card1.name": "H. Nsanyu",
+    "testimonials.card1.role": "Présidence de la République du Cameroun, Yaound&eacute;, Cameroun",
 
-    "testimonials.card2.text": "« Leurs services de réparation m’ont sauvé la vie! Ils ont réparé mon téléphone endommagé par l’eau alors que je pensais qu’il était perdu. Je recommande fortement! »",
-    "testimonials.card2.name": "Nom complet",
-    "testimonials.card2.role": "Directrice du design, Société 2",
+    "testimonials.card2.text": "« J’ai ouvert un compte avec Magic Shipping et j’utilise leur service d’expédition express aérienne pour envoyer des colis à mes clients aux États-Unis. Ils sont très professionnels, fiables et offrent un excellent service client. Je les recommande vivement ! »",
+    "testimonials.card2.name": "Emmanuel Ndeh Sah",
+    "testimonials.card2.role": "PDG, Kmer Outsourcing Inc.",
 
     "testimonials.card3.text": "« L’écran de mon téléphone était complètement brisé et je pensais devoir en acheter un nouveau, mais le service de réparation m’a fait économiser beaucoup d’argent. L’écran a l’air comme neuf! »",
     "testimonials.card3.name": "Nom complet",
@@ -1203,6 +1234,12 @@ const translations = {
     "blog.post2.excerpt": "Emirates SkyCargo collabore avec un fabricant de drones pour tester des appareils VTOL de fret, via des études de faisabilité et des démonstrations en direct sur son réseau.",
     "blog.post3.title": "Les taux spot Asie–Europe restent fermes tandis que les transporteurs recherchent du fret vers les États-Unis",
     "blog.post3.excerpt": "Les hausses FAK de mi-novembre continuent de soutenir les tarifs spot des conteneurs sur les liaisons Asie–Europe, tandis que les transporteurs cherchent à remplir leurs services vers l’Amérique du Nord.",
+    "blog.post4.title": "Kenworth propose les transmissions automatisées Paccar TX-12 PRO et TX-18 PRO pour les applications de bétonnières",
+    "blog.post4.excerpt": "Kenworth a élargi la disponibilité de ses transmissions automatisées Paccar TX-12 PRO et TX-18 PRO aux modèles T880 et W990 équipés de moteurs Paccar et d’une prise de force moteur arrière (REPTO). Ce changement permet aux clients du secteur des bétonnières et autres applications dépendantes du REPTO de spécifier ces transmissions sur des camions de classe 8.",
+    "blog.post5.title": "Le fret aérien repart à la hausse en novembre, mais l’e-commerce s’affaiblit",
+    "blog.post5.excerpt": "Les dernières données de Xeneta montrent que la demande de fret aérien a augmenté de 5 % en novembre, tandis que les tarifs ont baissé de 5 % pour atteindre 2,73 $/kg, les transporteurs cherchant à gagner des parts de marché.",
+    "blog.post6.title": "Les tarifs spot des conteneurs repartent légèrement à la hausse – mais les hausses des transporteurs pourraient ne pas durer",
+    "blog.post6.excerpt": "Les tarifs spot du fret conteneurisé en provenance d’Asie vers l’Amérique du Nord et l’Europe ont augmenté cette semaine en raison des hausses tarifaires imposées par les transporteurs.",
 
     // GET A QUOTE PAGE
     "quote.title": "Demander un devis",
@@ -1215,6 +1252,7 @@ const translations = {
     "quote.services.note": "Veuillez sélectionner le ou les service(s) qui vous intéressent.",
     "quote.services.change": "Modifier le service",
 
+    "quote.form.shipDate.label": "À quelle date souhaitez-vous expédier ?",
     "quote.form.fromSection.title": "Expéditeur",
     "quote.form.toSection.title": "Destinataire",
     "quote.form.firstName.label": "Prénom *",
@@ -1511,17 +1549,17 @@ const translations = {
 
     // testimonials
     "testimonials.heading": "Testimonios: lo que dicen nuestros clientes",
-    "testimonials.subheading": "Conozca lo que comentan algunos de nuestros increíbles clientes.",
+    "testimonials.subheading": "Conozca las opiniones de algunos de nuestros increíbles clientes que envían con nosotros.",
 
-    "testimonials.card1.text": "“Esta tienda nunca me ha decepcionado. Amplia variedad de productos, buenos precios y excelente servicio al cliente.”",
-    "testimonials.card1.name": "Nombre completo",
-    "testimonials.card1.role": "Gerente de producto, Empresa 1",
+    "testimonials.card1.text": "¡Magic Shipping gestionó la entrega de mis documentos desde Yaund&eacute; hasta la oficina de la ONU en Ginebra con un profesionalismo excepcional. La recolección fue rápida, el seguimiento fue claro y el envío llegó a tiempo. Cumplieron exactamente lo prometido: un servicio rápido, confiable y sin estrés.",
+    "testimonials.card1.name": "H. Nsanyu",
+    "testimonials.card1.role": "Presidencia de la Rep&uacute;blica de Camer&uacute;n, Yaund&eacute;, Camer&uacute;n",
 
-    "testimonials.card2.text": "“¡Sus servicios de reparación me salvaron! Arreglaron mi teléfono dañado por agua. Muy recomendados.”",
-    "testimonials.card2.name": "Nombre completo",
-    "testimonials.card2.role": "Jefa de diseño, Empresa 2",
+    "testimonials.card2.text": "¡Abrí una cuenta con Magic Shipping y utilizo su servicio de envío aéreo exprés para enviar productos a mis clientes en Estados Unidos. Son muy profesionales, confiables y ofrecen una excelente atención al cliente. ¡Altamente recomendados!",
+    "testimonials.card2.name": "Emmanuel Ndeh Sah",
+    "testimonials.card2.role": "CEO, Kmer Outsourcing Inc.",
 
-    "testimonials.card3.text": "“La pantalla de mi teléfono estaba destrozada y ahora se ve como nueva. Un excelente servicio de reparación.”",
+    "testimonials.card3.text": "¡La pantalla de mi teléfono estaba destrozada y ahora se ve como nueva. Un excelente servicio de reparación.",
     "testimonials.card3.name": "Nombre completo",
     "testimonials.card3.role": "Diseñador UX, Empresa 3",
 
@@ -1658,6 +1696,12 @@ const translations = {
     "blog.post2.excerpt": "Emirates SkyCargo se asocia con un fabricante de drones para probar aeronaves VTOL de carga mediante estudios de viabilidad y demostraciones en vivo a lo largo de su red.",
     "blog.post3.title": "Las tarifas spot Asia–Europa se mantienen firmes mientras los transportistas buscan carga hacia EE. UU.",
     "blog.post3.excerpt": "Los aumentos FAK de mediados de noviembre siguen respaldando las tarifas spot de contenedores en los corredores Asia–Europa, mientras las navieras buscan llenar sus servicios hacia Norteamérica.",
+    "blog.post4.title": "Kenworth ofrece las transmisiones automatizadas Paccar TX-12 PRO y TX-18 PRO para aplicaciones de mezcladoras",
+    "blog.post4.excerpt": "Kenworth ha ampliado la disponibilidad de sus transmisiones automatizadas Paccar TX-12 PRO y TX-18 PRO a los modelos T880 y W990 equipados con motores Paccar y una toma de fuerza trasera del motor (REPTO). Este cambio permite que los clientes de mezcladoras de concreto y otros equipos que dependen del REPTO puedan especificar estas transmisiones en camiones Clase 8.",
+    "blog.post5.title": "El transporte aéreo vuelve a subir en noviembre, pero el comercio electrónico se debilita",
+    "blog.post5.excerpt": "Los datos más recientes de Xeneta revelan que la demanda de carga aérea aumentó un 5 % en noviembre, mientras que las tarifas cayeron un 5 % hasta 2,73 $/kg, ya que las aerolíneas compiten por cuota de mercado.",
+    "blog.post6.title": "Las tarifas spot de contenedores suben ligeramente, pero los aumentos de los transportistas podrían no mantenerse",
+    "blog.post6.excerpt": "Las tarifas spot del transporte marítimo de contenedores desde Asia hacia Norteamérica y Europa aumentaron esta semana debido a incrementos de precios impulsados por los transportistas.",
 
     // GET A QUOTE PAGE
     "quote.title": "Solicitar una cotización",
@@ -1670,6 +1714,7 @@ const translations = {
     "quote.services.note": "Seleccione el o los servicios que le interesan.",
     "quote.services.change": "Cambiar servicio",
 
+    "quote.form.shipDate.label": "¿Para cuándo desea realizar el envío?",
     "quote.form.fromSection.title": "Remitente",
     "quote.form.toSection.title": "Destinatario",
     "quote.form.firstName.label": "Nombre *",

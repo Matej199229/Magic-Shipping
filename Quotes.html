@@ -137,6 +137,28 @@
             </fieldset>
             <!-- MAIN FIELDS (hidden until a service is chosen) -->
             <div class="contact__form-main-fields is-hidden">
+               <!-- Ship date row -->
+              <div class="contact__form-row contact__form-row--centered">
+                <div class="contact__form-field">
+                  <label
+                    for="ship-date"
+                    class="contact__form-inline-label"
+                    data-i18n="quote.form.shipDate.label"
+                  >
+                    When are you looking to ship?
+                  </label>
+                </div>
+                <div class="contact__form-field">
+                  <input
+                    class="contact__form-input"
+                    type="date"
+                    id="ship-date"
+                    name="ship_date"
+                    aria-label="Desired shipping date"
+                    required
+                  />
+                </div>
+              </div>
               <!-- Basic contact info -->
               <!-- FROM contact info -->
             <div class="contact__form-section">
