@@ -404,9 +404,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //  BLOG / INSIGHTS PAGE LOGIC
 // ==============================
 
-let blogListEl, emptyStateEl, searchInput, filterButtons;
+let blogListEl, emptyStateEl, searchInput, filterButtons, sortButtons;
 let blogActiveCategory = 'all';
 let currentBlogLang = 'en';
+let blogSortOrder = 'newest';
 
 // Core blog data (language-independent)
 const blogPosts = [
@@ -440,7 +441,7 @@ const blogPosts = [
     source: 'TruckNews',
     url: 'https://www.trucknews.com/products/kenworth-offers-paccar-tx-12-pro-tx-18-pro-automated-transmissions-for-mixer-applications/',
     imageUrl: 'https://www.trucknews.com/wp-content/uploads/2025/12/Kenworth.jpg',
-    date: '2025-12-5'
+    date: '2025-12-05'
   },
   {
     id: 5,
@@ -448,7 +449,7 @@ const blogPosts = [
     source: 'Air Cargo News',
     url: 'https://www.aircargonews.net/supply-chains/air-cargo-up-again-in-november-but-e-commerce-weakens/1080995.article',
     imageUrl: 'https://d1m8zjqyxnlv3j.cloudfront.net/Pictures/780xany/1/3/6/12136_xeneta_november_2025_figures_865211.jpeg',
-    date: '2025-12-5'
+    date: '2025-12-05'
   },
   {
     id: 6,
@@ -456,7 +457,7 @@ const blogPosts = [
     source: 'The Loadstar',
     url: 'https://theloadstar.com/container-spot-rates-edge-back-up-but-carrier-hikes-may-not-hold/',
     imageUrl: 'https://theloadstar.com/wp-content/uploads/e34b7ede907f0a2b89e0b8844114d328-680x0-c-default.jpg',
-    date: '2025-12-5'
+    date: '2025-12-05'
   }
 ];
 
@@ -562,14 +563,26 @@ function applyBlogFilters() {
     return matchesCategory && matchesQuery;
   });
 
-  renderBlogPostsForLang(lang, filtered);
+    // Sort by date according to blogSortOrder
+  const sorted = filtered.slice().sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+
+    if (blogSortOrder === 'oldest') {
+      return dateA - dateB; // oldest first
+    }
+    return dateB - dateA;   // newest first
+  });
+
+  renderBlogPostsForLang(lang, sorted);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   blogListEl   = document.getElementById('blog-list');
   emptyStateEl = document.getElementById('blog-empty-state');
   searchInput  = document.getElementById('blog-search');
-  filterButtons = document.querySelectorAll('.blog__filter-btn');
+  filterButtons = document.querySelectorAll('.blog__filters .blog__filter-btn');
+  sortButtons   = document.querySelectorAll('.blog__sort-btn');
 
   if (!blogListEl || !searchInput) {
     // Not on insights page
@@ -581,6 +594,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   searchInput.addEventListener('input', applyBlogFilters);
 
+  // Service category filters
   filterButtons.forEach(btn => {
     btn.addEventListener('click', function () {
       filterButtons.forEach(b => b.classList.remove('blog__filter-btn--active'));
@@ -590,6 +604,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Sort buttons
+  if (sortButtons && sortButtons.length) {
+    sortButtons.forEach(btn => {
+      btn.addEventListener('click', function () {
+        sortButtons.forEach(b => b.classList.remove('blog__filter-btn--active'));
+        this.classList.add('blog__filter-btn--active');
+
+        const sort = this.getAttribute('data-sort');
+        blogSortOrder = sort === 'oldest' ? 'oldest' : 'newest';
+
+        applyBlogFilters();
+      });
+    });
+  }
+  // Initial render: newest first by default
   applyBlogFilters();
 });
 
@@ -755,6 +784,9 @@ const translations = {
     "blog.filters.air": "Air Express",
     "blog.filters.trucking": "Trucking",
     "blog.filters.ocean": "Ocean Freight",
+    "blog.sort.label": "Sort by:",
+    "blog.sort.newest": "Newest",
+    "blog.sort.oldest": "Oldest",
     "blog.empty": "No articles match your search. Try a different keyword or choose another service.",
     "blog.readLink": "Read full article →",
     "blog.sourceLabel": "Source:",
@@ -1220,6 +1252,9 @@ const translations = {
     "blog.filters.air": "Express aérien",
     "blog.filters.trucking": "Transport routier",
     "blog.filters.ocean": "Fret maritime",
+    "blog.sort.label": "Trier par :",
+    "blog.sort.newest": "Les plus récents",
+    "blog.sort.oldest": "Les plus anciens",
     "blog.empty": "Aucun article ne correspond à votre recherche. Essayez un autre mot-clé ou choisissez un autre service.",
     "blog.readLink": "Lire l’article complet →",
     "blog.sourceLabel": "Source :",
@@ -1682,6 +1717,9 @@ const translations = {
     "blog.filters.air": "Envío aéreo exprés",
     "blog.filters.trucking": "Transporte por camión",
     "blog.filters.ocean": "Flete marítimo",
+    "blog.sort.label": "Ordenar por:",
+    "blog.sort.newest": "Más recientes",
+    "blog.sort.oldest": "Más antiguos",
     "blog.empty": "Ningún artículo coincide con su búsqueda. Pruebe con otra palabra clave o seleccione otro servicio.",
     "blog.readLink": "Leer artículo completo →",
     "blog.sourceLabel": "Fuente:",
