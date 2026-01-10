@@ -458,6 +458,30 @@ const blogPosts = [
     url: 'https://theloadstar.com/container-spot-rates-edge-back-up-but-carrier-hikes-may-not-hold/',
     imageUrl: 'https://theloadstar.com/wp-content/uploads/e34b7ede907f0a2b89e0b8844114d328-680x0-c-default.jpg',
     date: '2025-12-05'
+  },
+  {
+    id: 7,
+    category: 'trucking',
+    source: 'TruckNews',
+    url: 'https://www.trucknews.com/products/toyo-tire-canada-launches-m177-longhaul-steer-tire/',
+    imageUrl: 'https://www.trucknews.com/wp-content/uploads/2026/01/m177plus_sidewall_hires.jpg',
+    date: '2026-01-09'
+  },
+  {
+    id: 8,
+    category: 'air',
+    source: 'Air Cargo News',
+    url: 'https://www.aircargonews.net/freighter-conversions/mro/kf-aerospace-gains-certification-for-737-800-combi-conversion/1081106.article',
+    imageUrl: 'https://d1m8zjqyxnlv3j.cloudfront.net/Pictures/780xany/2/6/1/12261_boeing_737800_aei_kf_aerospace_18126.jpg',
+    date: '2026-01-09'
+  },
+  {
+    id: 9,
+    category: 'ocean',
+    source: 'The Loadstar',
+    url: 'https://theloadstar.com/late-rally-too-little-too-late-to-offset-poor-oocl-2025/',
+    imageUrl: 'https://theloadstar.com/wp-content/uploads/525766015f931f31ce2d5be256fec7d4-680x0-c-default.jpg',
+    date: '2026-01-09'
   }
 ];
 
@@ -807,6 +831,12 @@ const translations = {
     "blog.post5.excerpt": "Latest Xeneta data reveals air cargo demand rose 5% in November while rates fell 5% to $2.73/kg as carriers chase market share",
     "blog.post6.title": "Container spot rates edge back up – but carrier hikes may not hold",
     "blog.post6.excerpt": "Container spot freight rates out of Asia on the deepsea trades to North America and Europe were lifted this week by carrier-led price increases.",
+    "blog.post7.title": "Toyo Tire Canada launches M177+ longhaul steer tire",
+    "blog.post7.excerpt": "Toyo Tire Canada has introduced the M177+, a longhaul steer tire designed to improve wear life and retreadability.",
+    "blog.post8.title": "KF Aerospace gains certification for 737-800 combi conversion",
+    "blog.post8.excerpt": "Supplemental Type Certificate enables mixed-configuration operations with five pallet positions forward and 90 passengers aft on modified airframe",
+    "blog.post9.title": "Late rally too little and too late to offset poor 2025 for OOCL",
+    "blog.post9.excerpt": "Fourth-quarter operational results released by Cosco-owned OOCL today showed that despite a late spot freight rate rally in the final months of the year, its total revenues in 2025 were some 10.6% down on 2024.",
 
     // GET A QUOTE PAGE
     "quote.title": "Request a Quote",
@@ -1275,6 +1305,13 @@ const translations = {
     "blog.post5.excerpt": "Les dernières données de Xeneta montrent que la demande de fret aérien a augmenté de 5 % en novembre, tandis que les tarifs ont baissé de 5 % pour atteindre 2,73 $/kg, les transporteurs cherchant à gagner des parts de marché.",
     "blog.post6.title": "Les tarifs spot des conteneurs repartent légèrement à la hausse – mais les hausses des transporteurs pourraient ne pas durer",
     "blog.post6.excerpt": "Les tarifs spot du fret conteneurisé en provenance d’Asie vers l’Amérique du Nord et l’Europe ont augmenté cette semaine en raison des hausses tarifaires imposées par les transporteurs.",
+    "blog.post7.title": "Toyo Tire Canada lance le pneu directeur longue distance M177+",
+    "blog.post7.excerpt": "Toyo Tire Canada a présenté le M177+, un pneu directeur longue distance conçu pour améliorer la durée de vie de l’usure et la rechapabilité.",
+    "blog.post8.title": "KF Aerospace obtient la certification pour la conversion combi du 737-800",
+    "blog.post8.excerpt": "Le certificat de type supplémentaire permet des opérations en configuration mixte avec cinq positions de palettes à l’avant et 90 passagers à l’arrière sur la cellule modifiée.",
+    "blog.post9.title": "Rallye tardif insuffisant pour compenser une mauvaise année 2025 pour OOCL",
+    "blog.post9.excerpt": "Les résultats opérationnels du quatrième trimestre publiés aujourd’hui par OOCL, filiale de Cosco, montrent que malgré un rebond tardif des taux de fret spot au cours des derniers mois de l’année, ses revenus totaux en 2025 ont reculé d’environ 10,6 % par rapport à 2024.",
+    
 
     // GET A QUOTE PAGE
     "quote.title": "Demander un devis",
@@ -1740,6 +1777,12 @@ const translations = {
     "blog.post5.excerpt": "Los datos más recientes de Xeneta revelan que la demanda de carga aérea aumentó un 5 % en noviembre, mientras que las tarifas cayeron un 5 % hasta 2,73 $/kg, ya que las aerolíneas compiten por cuota de mercado.",
     "blog.post6.title": "Las tarifas spot de contenedores suben ligeramente, pero los aumentos de los transportistas podrían no mantenerse",
     "blog.post6.excerpt": "Las tarifas spot del transporte marítimo de contenedores desde Asia hacia Norteamérica y Europa aumentaron esta semana debido a incrementos de precios impulsados por los transportistas.",
+    "blog.post7.title": "Toyo Tire Canada lanza el neumático direccional de larga distancia M177+",
+    "blog.post7.excerpt": "Toyo Tire Canada ha presentado el M177+, un neumático direccional de larga distancia diseñado para mejorar la vida útil del desgaste y la capacidad de recauchutado.",
+    "blog.post8.title": "KF Aerospace obtiene la certificación para la conversión combi del 737-800",
+    "blog.post8.excerpt": "El Certificado de Tipo Suplementario permite operaciones en configuración mixta con cinco posiciones de palés en la parte delantera y 90 pasajeros en la sección trasera del fuselaje modificado.",
+    "blog.post9.title": "El repunte tardío resulta insuficiente para compensar un mal 2025 para OOCL",
+    "blog.post9.excerpt": "Los resultados operativos del cuarto trimestre publicados hoy por OOCL, propiedad de Cosco, muestran que, a pesar de un repunte tardío de las tarifas spot de flete en los últimos meses del año, sus ingresos totales en 2025 fueron aproximadamente un 10,6 % inferiores a los de 2024.",
 
     // GET A QUOTE PAGE
     "quote.title": "Solicitar una cotización",
