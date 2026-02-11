@@ -701,17 +701,17 @@ const translations = {
     "testimonials.heading": "Testimonials: What clients say about us",
     "testimonials.subheading": "Hear from some of our amazing customers who are shipping with us.",
 
-    "testimonials.card1.text": "&quot;Magic Shipping handled my document delivery from Yaound&eacute; to the UN office in Geneva with outstanding professionalism. Pickup was quick, tracking was clear, and the shipment arrived on time. They delivered exactly as promised &mdash; fast, reliable, and stress-free service.&quot;",
-    "testimonials.card1.name": "H. Nsanyu",
-    "testimonials.card1.role": "Presidency of the Rebuplic of Cameroon, Yaound&eacute;,&nbsp;Cameroon",
+    "testimonials.card1.text": "&quot;I used their service for a shipment from Toronto to Chicago. Comparing their prices to others I’d say they are great! They also have great customer service and answered all my questions!&quot;",
+    "testimonials.card1.name": "Jeanna",
+    "testimonials.card1.role": "Jeanna's World",
 
     "testimonials.card2.text": "&quot;I opened an account with Magic Shipping and use their air express service to ship to customers across the USA. They are very professional, reliable, and offer great customer service. Highly recommended!&quot;",
     "testimonials.card2.name": "Emmanuel Ndeh Sah",
     "testimonials.card2.role": "CEO, Kmer Outsourcing Inc.",
 
-    "testimonials.card3.text": "“My phone’s screen was shattered and I thought I’d have to buy a new one, but the repair service here saved me a lot of money. The screen looks brand new now!”",
-    "testimonials.card3.name": "Full Name",
-    "testimonials.card3.role": "UX Designer, Company 3",
+    "testimonials.card3.text": "&quot;They have the greatest and fast shipping method. I will be ordering with them again.&quot;",
+    "testimonials.card3.name": "Fernanda Sah",
+    "testimonials.card3.role": "",
 
     // contact section (index)
     "contact.heading": "Contact Us",
@@ -1151,17 +1151,17 @@ const translations = {
     "testimonials.heading": "Témoignages : ce que nos clients disent de nous",
     "testimonials.subheading": "Découvrez ce que disent certains de nos clients qui expédient avec nous.",
 
-    "testimonials.card1.text": "« Magic Shipping a géré la livraison de mes documents de Yaound&eacute; au bureau de l’ONU à Genève avec un professionnalisme exceptionnel. L’enlèvement a été rapide, le suivi clair, et l’envoi est arrivé à temps. Ils ont livré exactement comme promis — un service rapide, fiable et sans stress. »",
-    "testimonials.card1.name": "H. Nsanyu",
-    "testimonials.card1.role": "Présidence de la République du Cameroun, Yaound&eacute;, Cameroun",
+    "testimonials.card1.text": "« J’ai utilisé leur service pour un envoi de Toronto à Chicago. En comparant leurs prix à ceux des autres, je dirais qu’ils sont excellents ! Ils offrent également un excellent service à la clientèle et ont répondu à toutes mes questions. »",
+    "testimonials.card1.name": "Jeanna",
+    "testimonials.card1.role": "Jeanna's World",
 
     "testimonials.card2.text": "« J’ai ouvert un compte avec Magic Shipping et j’utilise leur service d’expédition express aérienne pour envoyer des colis à mes clients aux États-Unis. Ils sont très professionnels, fiables et offrent un excellent service client. Je les recommande vivement ! »",
     "testimonials.card2.name": "Emmanuel Ndeh Sah",
     "testimonials.card2.role": "PDG, Kmer Outsourcing Inc.",
 
-    "testimonials.card3.text": "« L’écran de mon téléphone était complètement brisé et je pensais devoir en acheter un nouveau, mais le service de réparation m’a fait économiser beaucoup d’argent. L’écran a l’air comme neuf! »",
-    "testimonials.card3.name": "Nom complet",
-    "testimonials.card3.role": "Designer UX, Société 3",
+    "testimonials.card3.text": "« Ils proposent le mode d’expédition le plus rapide et le plus efficace. Je passerai de nouveau commande chez eux. »",
+    "testimonials.card3.name": "Fernanda Sah",
+    "testimonials.card3.role": "",
 
     // contact (index)
     "contact.heading": "Nous joindre",
@@ -1623,17 +1623,17 @@ const translations = {
     "testimonials.heading": "Testimonios: lo que dicen nuestros clientes",
     "testimonials.subheading": "Conozca las opiniones de algunos de nuestros increíbles clientes que envían con nosotros.",
 
-    "testimonials.card1.text": "¡Magic Shipping gestionó la entrega de mis documentos desde Yaund&eacute; hasta la oficina de la ONU en Ginebra con un profesionalismo excepcional. La recolección fue rápida, el seguimiento fue claro y el envío llegó a tiempo. Cumplieron exactamente lo prometido: un servicio rápido, confiable y sin estrés.",
-    "testimonials.card1.name": "H. Nsanyu",
-    "testimonials.card1.role": "Presidencia de la Rep&uacute;blica de Camer&uacute;n, Yaund&eacute;, Camer&uacute;n",
+    "testimonials.card1.text": "¡Utilicé su servicio para un envío de Toronto a Chicago. Comparando sus precios con los de otros, diría que son excelentes. Además, cuentan con un excelente servicio al cliente y respondieron a todas mis preguntas.",
+    "testimonials.card1.name": "Jeanna",
+    "testimonials.card1.role": "Jeanna's World",
 
     "testimonials.card2.text": "¡Abrí una cuenta con Magic Shipping y utilizo su servicio de envío aéreo exprés para enviar productos a mis clientes en Estados Unidos. Son muy profesionales, confiables y ofrecen una excelente atención al cliente. ¡Altamente recomendados!",
     "testimonials.card2.name": "Emmanuel Ndeh Sah",
     "testimonials.card2.role": "CEO, Kmer Outsourcing Inc.",
 
-    "testimonials.card3.text": "¡La pantalla de mi teléfono estaba destrozada y ahora se ve como nueva. Un excelente servicio de reparación.",
-    "testimonials.card3.name": "Nombre completo",
-    "testimonials.card3.role": "Diseñador UX, Empresa 3",
+    "testimonials.card3.text": "¡Ofrecen el método de envío más rápido y eficiente. Volveré a hacer un pedido con ellos.",
+    "testimonials.card3.name": "Fernanda Sah",
+    "testimonials.card3.role": "",
 
     // contact
     "contact.heading": "Contáctenos",
