@@ -674,9 +674,9 @@ const translations = {
     "nav.quote": "Get a Quote",
 
     // hero (index)
-    "hero.title": "International air express, LTL/FTL trucking, and ocean freight solutions from your trusted Toronto-based freight forwarder.",
-    "hero.line1": "Magic Shipping helps businesses and individuals ship worldwide across air, road, rail, and ocean. We combine real-time tracking, reliable carrier networks, and 3PL-style logistics support to move your cargo safely and on time.",
-    "hero.line2": "Get discounted DHL air express rates plus competitive trucking and ocean freight pricing &ndash; request a quote today.",
+    "hero.title": "Authorized DHL Express Reseller and Global Freight Solutions from Your Trusted Toronto Logistics Partner.",
+    "hero.line1": "Ship worldwide with exclusive DHL Express rates, plus reliable LTL/FTL trucking, air cargo, and ocean freight services — all managed under one 3PL platform.",
+    "hero.line2": "Magic Shipping helps businesses and individuals move shipments across air, road, rail, and sea with real-time tracking, highly discounted carrier pricing, and hands-on logistics support to ensure delivery on time and on budget.",
     "hero.ctaPrimary": "Get a Quote",
     "hero.ctaSecondary": "Email Us",
 
@@ -689,14 +689,13 @@ const translations = {
     "hero.service.tracking.title": "Real-Time Tracking",
     "hero.service.tracking.desc": "Proactive updates &amp; support",
 
-    // about (index)
-    "about.heading": "About Magic Shipping",
-    "about.text1": "Magic Shipping is a Toronto-based freight forwarder and 3PL-style logistics partner. Through our corporate partnerships with DHL Express (for whom we are an authorized reseller) and leading trucking, rail, and ocean carriers, we provide affordable international air express, LTL/FTL trucking, rail, and ocean freight solutions. We support both businesses and individuals &ndash; from one-off document shipments to full container loads and multi-mode commercial freight.",
-    "about.missionTitle": "Our Mission",
-    "about.missionText": "To simplify and reduce the cost of international and domestic shipping for businesses and individuals, while providing reliable transit, full tracking visibility, and expert logistics support at every step.",
-    "about.visionTitle": "Our Vision",
-    "about.visionText": "Magic Shipping aims to be a trusted logistics partner for businesses of all sizes, delivering seamless global freight forwarding and 3PL-style services through strong carrier relationships, transparent pricing, and an unwavering commitment to service excellence.",
+    // DHL Express CTA (index)
 
+    "dhlCta.title": "Get a DHL Express Quote — Preferential Rates Through an Authorized Reseller",
+    "dhlCta.text": "Ship international air express with confidence. As an authorized DHL Express reseller, we provide preferential pricing, fast transit times, and end-to-end tracking — backed by hands-on support from our Toronto team.",
+    "dhlCta.cta": "Get a DHL Express Quote",
+    "dhlCta.ctaSecondary": "Email Us",
+    
     // testimonials (index)
     "testimonials.heading": "Testimonials: What clients say about us",
     "testimonials.subheading": "Hear from some of our amazing customers who are shipping with us.",
@@ -713,7 +712,15 @@ const translations = {
     "testimonials.card3.name": "Fernanda Sah",
     "testimonials.card3.role": "",
 
-    // contact section (index)
+    // about (about us)
+    "about.heading": "About Magic Shipping",
+    "about.text1": "Magic Shipping is an authorized DHL Express reseller and global freight forwarding partner based in Toronto, delivering cost-efficient international air express shipping and fully managed 3PL logistics solutions. Backed by strong carrier partnerships across air, road, rail, and ocean networks, we provide dependable express shipping, LTL/FTL trucking, air freight, and ocean freight services. From one-time shipments to full container loads and complex multi-modal supply chains, we support businesses and individuals with scalable logistics solutions tailored to their needs.",
+    "about.missionTitle": "Our Mission",
+    "about.missionText": "To simplify and reduce the cost of international and domestic shipping for businesses and individuals, while providing reliable transit, full tracking visibility, and expert logistics support at every step.",
+    "about.visionTitle": "Our Vision",
+    "about.visionText": "Magic Shipping aims to be a trusted logistics partner for businesses of all sizes, delivering seamless global freight forwarding and 3PL-style services through strong carrier relationships, transparent pricing, and an unwavering commitment to service excellence.",
+
+    // contact section (contact us)
     "contact.heading": "Contact Us",
     "contact.subheading1": "Got questions or need a quote?",
     "contact.subheading2": "Contact us at Magic Shipping! Our friendly and knowledgeable customer support team is ready to help you. Reach out to us via email or phone otherwise, for all quote requests just fill out our online form and we will get back to you with your own personalized quote within 24 hours. Don't hesitate to get in touch with us for all your shipping needs!",
@@ -732,11 +739,11 @@ const translations = {
 
     // SERVICES PAGE (content omitted here for brevity – keep your existing EN services keys)
     "services.heading": "Services: What we offer",
-    "services.intro-1": "Magic Shipping provides end-to-end logistics solutions across air, land, and ocean, serving businesses and individuals throughout North America and worldwide. As a modern freight forwarder and 3PL-style logistics partner, we offer fast transit times, secure handling, and competitive pricing across all major transport modes.",
+    "services.intro-1": "Magic Shipping provides end-to-end logistics solutions across air, land, and ocean, serving businesses and individuals throughout North America and worldwide. As an authorized DHL Express reseller and 3PL-style logistics partner, we combine discounted international air express shipping with comprehensive freight services across all major transport modes. Through strong carrier relationships, including Air Canada Cargo, we deliver fast transit times, secure handling, and competitive pricing tailored to your shipping needs.",
     "services.intro-2": "Our goal is simple: safe, reliable, and affordable shipping — delivered with transparency and expert support.",
     "services.card.air.title": "Air Express &amp; Air Freight",
-    "services.card.air.p1": "Fast, secure, and ideal for urgent shipments. We are an authorized DHL Express partner and offer both international air express and air freight forwarding, providing reliable delivery for documents, parcels, and commercial goods. With strong carrier partnerships and real-time tracking, we ensure your cargo moves quickly and safely across global airports.",
-    "services.card.air.p2": "<strong>Ideal for:</strong> urgent shipments, cross-border documents, commercial air cargo, time-sensitive freight.",
+    "services.card.air.p1": "Fast, secure, and ideal for urgent shipments. As an authorized DHL Express reseller, we offer international air express solutions, providing fast and reliable delivery for documents, parcels, and commercial goods. We also work with leading air carriers, including Air Canada Cargo, to provide domestic and international air cargo solutions. With strong carrier partnerships and real-time tracking, your cargo moves quickly and safely worldwide.",
+    "services.card.air.p2": "<strong>Ideal for:</strong> urgent shipments, cross-border shipping, commercial air cargo, time-sensitive freight.",
     "services.card.ltl.title": "LTL/FTL Trucking",
     "services.card.ltl.p1": "Flexible, cost-efficient transportation across North America. Whether you need Less-Than-Truckload (LTL) or Full-Truckload (FTL) services, our carrier network ensures fast pickup, dependable transit, and safe delivery. Perfect for commercial shipments, pallets, e-commerce, and oversized freight.",
     "services.card.ltl.p2": "<strong>Ideal for:</strong> palletized freight, commercial cargo, regional &amp; long-haul shipments.",
@@ -1123,9 +1130,9 @@ const translations = {
     "nav.quote": "Obtenir un devis",
 
     // hero (index)
-    "hero.title": "Solutions de messagerie aérienne internationale, transport routier LTL/FTL et fret maritime offertes par votre transitaire de confiance basé à Toronto.",
-    "hero.line1": "Magic Shipping aide les entreprises et les particuliers à expédier dans le monde entier par voie aérienne, routière, ferroviaire et maritime. Nous combinons le suivi en temps réel, un réseau fiable de transporteurs et un soutien logistique de type 3PL pour acheminer votre cargaison en toute sécurité et dans les délais.",
-    "hero.line2": "Obtenez des tarifs réduits sur la messagerie aérienne DHL ainsi que des prix compétitifs pour le transport routier et maritime &ndash; demandez une soumission dès aujourd’hui.",
+    "hero.title": "Revendeur autorisé DHL Express et Solutions de fret mondiales par votre partenaire logistique de confiance basé à Toronto",
+    "hero.line1": "Expédiez dans le monde entier avec des tarifs DHL Express exclusifs, ainsi que des services fiables de camionnage LTL/FTL, fret aérien et fret maritime — le tout géré sur une seule plateforme 3PL.",
+    "hero.line2": "Magic Shipping aide les entreprises et les particuliers à expédier leurs marchandises par voie aérienne, routière, ferroviaire et maritime grâce à un suivi en temps réel, des tarifs transporteurs négociés et un accompagnement logistique personnalisé afin d’assurer des livraisons ponctuelles et économiques.",
     "hero.ctaPrimary": "Obtenir une soumission",
     "hero.ctaSecondary": "Nous écrire",
 
@@ -1138,14 +1145,12 @@ const translations = {
     "hero.service.tracking.title": "Suivi en temps réel",
     "hero.service.tracking.desc": "Mises à jour proactives &amp; soutien",
 
-    // about (index)
-    "about.heading": "À propos de Magic Shipping",
-    "about.text1": "Magic Shipping est un transitaire basé à Toronto et un partenaire logistique de style 3PL. Grâce à nos partenariats corporatifs avec DHL Express (dont nous sommes un revendeur autorisé) ainsi qu’avec des transporteurs routiers, ferroviaires et maritimes de premier plan, nous offrons des solutions abordables en messagerie aérienne internationale, transport LTL/FTL, fret ferroviaire et maritime. Nous soutenons autant les entreprises que les particuliers &ndash; qu’il s’agisse d’expéditions ponctuelles de documents ou d’expéditions commerciales multimodales et de conteneurs complets.",
-    "about.missionTitle": "Notre mission",
-    "about.missionText": "Simplifier et réduire le coût des expéditions internationales et domestiques pour les entreprises et les particuliers, tout en offrant un transport fiable, une visibilité complète du suivi et un soutien logistique expert à chaque étape.",
-    "about.visionTitle": "Notre vision",
-    "about.visionText": "Magic Shipping vise à devenir un partenaire logistique de confiance pour les entreprises de toutes tailles, en offrant un service de transit mondial fluide et des solutions de style 3PL grâce à des relations solides avec les transporteurs, une tarification transparente et un engagement inébranlable envers l’excellence du service.",
+    // DHL Express CTA (index)
 
+    "dhlCta.title": "Obtenez un devis DHL Express — tarifs préférentiels via un revendeur autorisé",
+    "dhlCta.text": "Expédiez vos envois express internationaux par avion en toute confiance. En tant que revendeur autorisé DHL Express, nous offrons des tarifs préférentiels, des délais rapides et un suivi de bout en bout — avec l’accompagnement direct de notre équipe à Toronto.",
+    "dhlCta.cta": "Obtenir un devis DHL Express",
+    "dhlCta.ctaSecondary": "Nous envoyer un courriel",
 
     // testimonials (index)
     "testimonials.heading": "Témoignages : ce que nos clients disent de nous",
@@ -1163,7 +1168,15 @@ const translations = {
     "testimonials.card3.name": "Fernanda Sah",
     "testimonials.card3.role": "",
 
-    // contact (index)
+    // about (about us)
+    "about.heading": "À propos de Magic Shipping",
+    "about.text1": "Magic Shipping est un revendeur autorisé DHL Express et un partenaire mondial de transit de fret basé à Toronto, offrant des services d’expédition internationale express par avion à coût optimisé ainsi que des solutions logistiques 3PL entièrement gérées. Soutenus par de solides partenariats avec des transporteurs couvrant les réseaux aérien, routier, ferroviaire et maritime, nous proposons des services d’expédition express fiables, de camionnage LTL/FTL, de fret aérien et de fret maritime. Des envois ponctuels aux chargements complets de conteneurs et aux chaînes d’approvisionnement multimodales complexes, nous accompagnons les entreprises et les particuliers avec des solutions logistiques évolutives adaptées à leurs besoins.",
+    "about.missionTitle": "Notre mission",
+    "about.missionText": "Simplifier et réduire le coût des expéditions internationales et domestiques pour les entreprises et les particuliers, tout en offrant un transport fiable, une visibilité complète du suivi et un soutien logistique expert à chaque étape.",
+    "about.visionTitle": "Notre vision",
+    "about.visionText": "Magic Shipping vise à devenir un partenaire logistique de confiance pour les entreprises de toutes tailles, en offrant un service de transit mondial fluide et des solutions de style 3PL grâce à des relations solides avec les transporteurs, une tarification transparente et un engagement inébranlable envers l’excellence du service.",
+
+    // contact (contact us)
     "contact.heading": "Nous joindre",
     "contact.subheading1": "Des questions ou besoin d’un devis?",
     "contact.subheading2": "Communiquez avec Magic Shipping! Notre équipe de soutien à la clientèle, sympathique et expérimentée, est prête à vous aider. Écrivez-nous par courriel ou appelez-nous; pour toute demande de devis, remplissez simplement notre formulaire en ligne et nous vous répondrons avec une offre personnalisée dans les 24 heures. N’hésitez pas à nous contacter pour tous vos besoins d’expédition!",
@@ -1182,12 +1195,12 @@ const translations = {
 
     // SERVICES PAGE
     "services.heading": "Services : ce que nous offrons",
-    "services.intro-1": "Magic Shipping offre des solutions logistiques complètes par avion, par voie terrestre et par voie maritime, au service des entreprises et des particuliers en Amérique du Nord et partout dans le monde. En tant que transitaire moderne et partenaire logistique de type 3PL, nous proposons des délais de transit rapides, une manutention sécurisée et des tarifs compétitifs sur tous les principaux modes de transport.",
+    "services.intro-1": "Magic Shipping fournit des solutions logistiques de bout en bout couvrant le transport aérien, terrestre et maritime, au service des entreprises et des particuliers partout en Amérique du Nord et dans le monde. En tant que revendeur autorisé DHL Express et partenaire logistique de type 3PL, nous combinons des services d’expédition express internationale à tarifs préférentiels avec des solutions complètes de fret couvrant tous les principaux modes de transport. Grâce à de solides relations avec des transporteurs, dont Air Canada Cargo, nous assurons des délais rapides, une manutention sécurisée et des tarifs compétitifs adaptés à vos besoins d’expédition.",
     "services.intro-2": "Notre objectif est simple : un transport sûr, fiable et abordable — assuré avec transparence et expertise.",
 
     "services.card.air.title": "Transport aérien express et fret aérien",
-    "services.card.air.p1": "Rapide, sécurisé et idéal pour les envois urgents. Nous sommes un partenaire autorisé DHL Express et proposons des services internationaux de messagerie aérienne et de fret aérien, assurant une livraison fiable des documents, colis et marchandises commerciales. Grâce à nos partenariats solides avec les transporteurs et au suivi en temps réel, nous garantissons un acheminement rapide et sûr à travers les aéroports du monde entier.",
-    "services.card.air.p2": "<strong>Idéal pour :</strong> envois urgents, documents transfrontaliers, cargaison commerciale, fret sensible au temps.",
+    "services.card.air.p1": "Rapide, sécurisé et idéal pour les envois urgents. En tant que revendeur autorisé DHL Express, nous proposons des solutions d’expédition express internationale, offrant des livraisons rapides et fiables pour les documents, colis et marchandises commerciales. Nous collaborons également avec des transporteurs aériens de premier plan, dont Air Canada Cargo, afin de fournir des solutions de fret aérien nationales et internationales. Grâce à de solides partenariats avec des transporteurs et à un suivi en temps réel, votre cargaison circule rapidement et en toute sécurité partout dans le monde.",
+    "services.card.air.p2": "<strong>Idéal pour :</strong> envois urgents, expédition transfrontalière, cargaison commerciale, fret sensible au temps.",
 
     "services.card.ltl.title": "Transport routier LTL/FTL",
     "services.card.ltl.p1": "Transport flexible et économique à travers l’Amérique du Nord. Que vous ayez besoin de LTL (Less-Than-Truckload) ou de FTL (Full-Truckload), notre réseau de transporteurs assure une collecte rapide, un transit fiable et une livraison sécurisée. Parfait pour les expéditions commerciales, palettes, e-commerce et marchandises surdimensionnées.",
@@ -1595,9 +1608,9 @@ const translations = {
     "nav.quote": "Solicitar cotización",
 
     // hero (index)
-    "hero.title": "Mensajería aérea internacional, transporte LTL/FTL y soluciones de carga marítima de su agente de carga de confianza con sede en Toronto.",
-    "hero.line1": "Magic Shipping ayuda a empresas y particulares a enviar mercancías a todo el mundo por vía aérea, terrestre, ferroviaria y marítima. Combinamos seguimiento en tiempo real, redes confiables de transportistas y soporte logístico estilo 3PL para mover su carga de forma segura y puntual.",
-    "hero.line2": "Obtenga tarifas descontadas de mensajería aérea DHL y precios competitivos para el transporte por carretera y marítimo &ndash; solicite una cotización hoy mismo.",
+    "hero.title": "Revendedor autorizado de DHL Express y Soluciones globales de carga de su socio logístico de confianza en Toronto",
+    "hero.line1": "Envíe a todo el mundo con tarifas exclusivas de DHL Express, además de servicios confiables de transporte terrestre LTL/FTL, carga aérea y flete marítimo — todo gestionado en una sola plataforma 3PL.",
+    "hero.line2": "Magic Shipping ayuda a empresas y particulares a enviar mercancías por aire, carretera, ferrocarril y mar con seguimiento en tiempo real, tarifas de transportistas negociadas y soporte logístico personalizado para garantizar entregas puntuales y rentables.",
     "hero.ctaPrimary": "Obtener cotización",
     "hero.ctaSecondary": "Envíenos un correo",
 
@@ -1610,14 +1623,12 @@ const translations = {
     "hero.service.tracking.title": "Seguimiento en tiempo real",
     "hero.service.tracking.desc": "Actualizaciones proactivas &amp; soporte",
 
-    // about (index)
-    "about.heading": "Acerca de Magic Shipping",
-    "about.text1": "Magic Shipping es un agente de carga con sede en Toronto y un socio logístico estilo 3PL. A través de nuestras alianzas corporativas con DHL Express (de quienes somos revendedores autorizados) y con transportistas líderes de carretera, ferrocarril y marítimo, ofrecemos soluciones accesibles de mensajería aérea internacional, transporte LTL/FTL, carga ferroviaria y marítima. Atendemos tanto a empresas como a particulares &ndash; desde envíos únicos de documentos hasta cargas comerciales multimodales y contenedores completos.",
-    "about.missionTitle": "Nuestra misión",
-    "about.missionText": "Simplificar y reducir el costo del transporte internacional y doméstico para empresas y particulares, ofreciendo tránsito confiable, visibilidad total de seguimiento y soporte logístico experto en cada etapa.",
-    "about.visionTitle": "Nuestra visión",
-    "about.visionText": "Magic Shipping busca ser un socio logístico confiable para empresas de todos los tamaños, proporcionando transporte global sin fricciones y servicios estilo 3PL mediante relaciones sólidas con transportistas, precios transparentes y un compromiso inquebrantable con la excelencia en el servicio.",
+    // DHL Express CTA (index)
 
+    "dhlCta.title": "Solicite una cotización de DHL Express — tarifas preferenciales con un revendedor autorizado",
+    "dhlCta.text": "Envíe internacionalmente por vía aérea exprés con confianza. Como revendedor autorizado de DHL Express, ofrecemos tarifas preferenciales, tiempos de tránsito rápidos y seguimiento de extremo a extremo — con soporte directo de nuestro equipo en Toronto.",
+    "dhlCta.cta": "Solicitar cotización DHL Express",
+    "dhlCta.ctaSecondary": "Enviar un correo",
 
     // testimonials
     "testimonials.heading": "Testimonios: lo que dicen nuestros clientes",
@@ -1635,7 +1646,15 @@ const translations = {
     "testimonials.card3.name": "Fernanda Sah",
     "testimonials.card3.role": "",
 
-    // contact
+    // about (about us)
+    "about.heading": "Acerca de Magic Shipping",
+    "about.text1": "Magic Shipping es un revendedor autorizado de DHL Express y socio global de transporte de carga con sede en Toronto, que ofrece envíos internacionales exprés por vía aérea a costos optimizados y soluciones logísticas 3PL totalmente gestionadas. Respaldados por sólidas alianzas con transportistas que abarcan redes aéreas, terrestres, ferroviarias y marítimas, proporcionamos servicios confiables de envío exprés, transporte terrestre LTL/FTL, carga aérea y flete marítimo. Desde envíos puntuales hasta cargas completas de contenedor y complejas cadenas de suministro multimodales, apoyamos a empresas y particulares con soluciones logísticas escalables adaptadas a sus necesidades.",
+    "about.missionTitle": "Nuestra misión",
+    "about.missionText": "Simplificar y reducir el costo del transporte internacional y doméstico para empresas y particulares, ofreciendo tránsito confiable, visibilidad total de seguimiento y soporte logístico experto en cada etapa.",
+    "about.visionTitle": "Nuestra visión",
+    "about.visionText": "Magic Shipping busca ser un socio logístico confiable para empresas de todos los tamaños, proporcionando transporte global sin fricciones y servicios estilo 3PL mediante relaciones sólidas con transportistas, precios transparentes y un compromiso inquebrantable con la excelencia en el servicio.",
+
+    // contact (contact us)
     "contact.heading": "Contáctenos",
     "contact.subheading1": "¿Tiene preguntas o necesita una cotización?",
     "contact.subheading2": "Nuestro equipo está listo para ayudarle. Complete el formulario para recibir una oferta personalizada dentro de las 24 horas.",
@@ -1654,12 +1673,12 @@ const translations = {
 
     // SERVICES PAGE
     "services.heading": "Servicios: lo que ofrecemos",
-    "services.intro-1": "Magic Shipping ofrece soluciones logísticas integrales por aire, tierra y mar, atendiendo a empresas y particulares en toda Norteamérica y en todo el mundo. Como un transitario moderno y socio logístico tipo 3PL, proporcionamos tiempos de tránsito rápidos, manejo seguro y precios competitivos en todos los principales modos de transporte.",
+    "services.intro-1": "Magic Shipping ofrece soluciones logísticas integrales por aire, tierra y mar, atendiendo a empresas y particulares en toda Norteamérica y a nivel mundial. Como revendedor autorizado de DHL Express y socio logístico de estilo 3PL, combinamos envíos internacionales exprés con descuento junto con servicios completos de carga en todos los principales modos de transporte. Gracias a sólidas relaciones con transportistas, incluyendo Air Canada Cargo, garantizamos tiempos de tránsito rápidos, manejo seguro y tarifas competitivas adaptadas a sus necesidades de envío.",
     "services.intro-2": "Nuestro objetivo es simple: envíos seguros, confiables y accesibles — entregados con transparencia y soporte experto.",
 
     "services.card.air.title": "Envíos exprés y transporte aéreo",
-    "services.card.air.p1": "Rápido, seguro e ideal para envíos urgentes. Somos un socio autorizado de DHL Express y ofrecemos servicios internacionales de mensajería aérea y carga aérea, proporcionando entregas confiables de documentos, paquetes y mercancías comerciales. Con sólidas alianzas con transportistas y seguimiento en tiempo real, garantizamos que su carga se mueva de forma rápida y segura a través de aeropuertos internacionales.",
-    "services.card.air.p2": "<strong>Ideal para:</strong> envíos urgentes, documentos transfronterizos, carga comercial, mercancía sensible al tiempo.",
+    "services.card.air.p1": "Rápido, seguro e ideal para envíos urgentes. Como revendedor autorizado de DHL Express, ofrecemos soluciones internacionales de envío exprés, proporcionando entregas rápidas y confiables para documentos, paquetes y mercancías comerciales. También trabajamos con aerolíneas de carga líderes, incluyendo Air Canada Cargo, para ofrecer soluciones de carga aérea nacionales e internacionales. Con sólidas alianzas con transportistas y seguimiento en tiempo real, su carga se mueve rápida y seguramente por todo el mundo.",
+    "services.card.air.p2": "<strong>Ideal para:</strong> envíos urgentes, envíos transfronterizos, carga comercial, mercancía sensible al tiempo.",
 
     "services.card.ltl.title": "Transporte terrestre LTL/FTL",
     "services.card.ltl.p1": "Transporte flexible y rentable en toda Norteamérica. Ya sea LTL (Less-Than-Truckload) o FTL (Full-Truckload), nuestra red de transportistas garantiza recolecciones rápidas, tránsito confiable y entregas seguras. Perfecto para envíos comerciales, pallets, e-commerce y carga sobredimensionada.",
