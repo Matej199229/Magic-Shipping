@@ -709,7 +709,7 @@ const translations = {
     "testimonials.card2.role": "CEO, Kmer Outsourcing Inc.",
 
     "testimonials.card3.text": "&quot;They have the greatest and fast shipping method. I will be ordering with them again.&quot;",
-    "testimonials.card3.name": "Fernanda Sah",
+    "testimonials.card3.name": "Fernanda S.",
     "testimonials.card3.role": "",
 
     // about (about us)
@@ -1165,7 +1165,7 @@ const translations = {
     "testimonials.card2.role": "PDG, Kmer Outsourcing Inc.",
 
     "testimonials.card3.text": "« Ils proposent le mode d’expédition le plus rapide et le plus efficace. Je passerai de nouveau commande chez eux. »",
-    "testimonials.card3.name": "Fernanda Sah",
+    "testimonials.card3.name": "Fernanda S.",
     "testimonials.card3.role": "",
 
     // about (about us)
@@ -1643,7 +1643,7 @@ const translations = {
     "testimonials.card2.role": "CEO, Kmer Outsourcing Inc.",
 
     "testimonials.card3.text": "¡Ofrecen el método de envío más rápido y eficiente. Volveré a hacer un pedido con ellos.",
-    "testimonials.card3.name": "Fernanda Sah",
+    "testimonials.card3.name": "Fernanda S.",
     "testimonials.card3.role": "",
 
     // about (about us)
